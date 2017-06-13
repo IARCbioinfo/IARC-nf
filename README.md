@@ -1,14 +1,22 @@
 # IARC bioinformatics nextflow pipelines
 
-* [mutect-nf](https://github.com/IARCbioinfo/mutect-nf)
+## Raw NGS data processing
 * [alignment-nf](https://github.com/IARCbioinfo/alignment-nf)
-* [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)
-* [platypus-nf](https://github.com/IARCbioinfo/platypus-nf)
-* [abra-nf](https://github.com/IARCbioinfo/abra-nf)
-* [strelka-nf](https://github.com/IARCbioinfo/strelka-nf)
 * [BQSR-nf](https://github.com/IARCbioinfo/BQSR-nf)
-* [bamsurgeon-nf](https://github.com/IARCbioinfo/bamsurgeon-nf)
-* [damage-estimator-nf](https://github.com/IARCbioinfo/damage-estimator-nf)
-* [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)
+* [abra-nf](https://github.com/IARCbioinfo/abra-nf)
+* [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)
+
+## QC
 * [conpair-nf](https://github.com/IARCbioinfo/conpair-nf)
+* [damage-estimator-nf](https://github.com/IARCbioinfo/damage-estimator-nf)
+* [bamsurgeon-nf](https://github.com/IARCbioinfo/bamsurgeon-nf)
+
+## Variant calling
+* [platypus-nf](https://github.com/IARCbioinfo/platypus-nf)
+* [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)
+* [needlestack](https://github.com/IARCbioinfo/needlestack)
+* [mutect-nf](https://github.com/IARCbioinfo/mutect-nf)
+* [strelka-nf](https://github.com/IARCbioinfo/strelka-nf)
+
+## Other
 * [addreplacerg-nf](https://github.com/IARCbioinfo/addreplacerg-nf)
