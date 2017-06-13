@@ -13,6 +13,7 @@
 
 ## Variant calling
 * [platypus-nf](https://github.com/IARCbioinfo/platypus-nf)
+* [GATK-Alignment-nf](https://github.com/IARCbioinfo/GATK-Alignment-nf)
 * [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)
 * [needlestack](https://github.com/IARCbioinfo/needlestack)
 * [mutect-nf](https://github.com/IARCbioinfo/mutect-nf)
