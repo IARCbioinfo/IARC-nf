@@ -40,6 +40,8 @@
 	sudo mv nextflow /usr/local/bin
 	```
   
+### Configuration file
+
 ### Pipelines updates :
 
 You can update the nextflow sofware and the pipeline itself simply using:
