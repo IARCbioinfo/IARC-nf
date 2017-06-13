@@ -50,7 +50,7 @@ nextflow pull iarcbioinfo/pipeline_name
 
 You can also automatically update the pipeline when you run it by adding the option `-latest` in the `nextflow run` command. Doing so you will always run the latest version from Github.
 
-### Display help :
+### Display help :
 
 ```bash
 nextflow run iarcbioinfo/pipeline_name --help
