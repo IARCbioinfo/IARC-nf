@@ -6,9 +6,9 @@
 | Name      | Description     |
 |-----------|-----------------| 
 | [alignment-nf](https://github.com/IARCbioinfo/alignment-nf)    | Performs BAM realignment or fastq alignment, with/without local indel realignment and base quality score recalibration |
-| [BQSR-nf](https://github.com/IARCbioinfo/BQSR-nf)   | ...... |
-| [abra-nf](https://github.com/IARCbioinfo/abra-nf)   | ...... |
-| [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)   | RNAseq mapping, quality control, and reads counting nextflow pipeline - See also [RNAseq_analysis_scripts](https://github.com/IARCbioinfo/RNAseq_analysis_scripts) for post-processing  |
+| [BQSR-nf](https://github.com/IARCbioinfo/BQSR-nf)   | Performs base quality score recalibration of bam files using GATK |
+| [abra-nf](https://github.com/IARCbioinfo/abra-nf)   | Runs ABRA (Assembly Based ReAligner) |
+| [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)   | Performs RNAseq mapping, quality control, and reads counting - See also [RNAseq_analysis_scripts](https://github.com/IARCbioinfo/RNAseq_analysis_scripts) for post-processing  |
 | [GATK-Alignment-nf](https://github.com/IARCbioinfo/GATK-Alignment-nf)   | Performs bwa alignment and pre-processing (realignment and recalibration) following GATK best practices (less performant than [alignment-nf](https://github.com/IARCbioinfo/alignment-nf) )
 
  |
@@ -16,19 +16,19 @@
 ### QC
 | Name      | Description     |
 |-----------|-----------------| 
-| [conpair-nf](https://github.com/IARCbioinfo/conpair-nf)   | ...... |
-| [damage-estimator-nf](https://github.com/IARCbioinfo/damage-estimator-nf)   | Nextflow pipeline to run "Damage Estimator" |
-| [bamsurgeon-nf](https://github.com/IARCbioinfo/bamsurgeon-nf)   | ...... |
+| [conpair-nf](https://github.com/IARCbioinfo/conpair-nf)   | Runs conpair (concordance and contamination estimator) |
+| [damage-estimator-nf](https://github.com/IARCbioinfo/damage-estimator-nf)   | Runs "Damage Estimator" |
+| [bamsurgeon-nf](https://github.com/IARCbioinfo/bamsurgeon-nf)   | Runs bamsurgeon with step of variant simulation |
 
 ### Variant calling
 | Name      | Description     |
 |-----------|-----------------| 
-| [platypus-nf](https://github.com/IARCbioinfo/platypus-nf)   | Platypus germline variant calling |
-| [GATK-Alignment-nf](https://github.com/IARCbioinfo/GATK-Alignment-nf)   | Runs variant calling in GVCF mode on bam files, joint genotyping and variant recalibration (SNPs and indels) following GATK best practices |
-| [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)   | ...... |
-| [needlestack](https://github.com/IARCbioinfo/needlestack)   | A multi-sample somatic variant caller |
-| [mutect-nf](https://github.com/IARCbioinfo/mutect-nf)   | Mutect pipeline on tumor-matched normal bam folder |
-| [strelka-nf](https://github.com/IARCbioinfo/strelka-nf)   | Strelka pipeline with Nextflow |
+| [platypus-nf](https://github.com/IARCbioinfo/platypus-nf)   | Runs Platypus (germline variant caller) |
+| [GATK-Calling-GVCF-nf](https://github.com/IARCbioinfo/GATK-Calling-GVCF-nf)   | Runs variant calling in GVCF mode on bam files, joint genotyping and variant recalibration (SNPs and indels) following GATK best practices - still in development!!|
+| [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)   | Performs copy number variant calling from whole exome sequencing data using CODEX |
+| [needlestack](https://github.com/IARCbioinfo/needlestack)   | Performs multi-sample somatic variant calling |
+| [mutect-nf](https://github.com/IARCbioinfo/mutect-nf)   | Runs Mutect on tumor-matched normal bam pairs |
+| [strelka-nf](https://github.com/IARCbioinfo/strelka-nf)   | Runs Strelka |
 
 ### Other
 | Name      | Description     |
