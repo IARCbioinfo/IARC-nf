@@ -5,28 +5,29 @@
 ### Raw NGS data processing
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
-| [alignment-nf](https://github.com/IARCbioinfo/alignment-nf)    | Performs BAM realignment or fastq alignment, with/without local indel realignment and base quality score recalibration |...|
+| [alignment-nf](https://github.com/IARCbioinfo/alignment-nf)    | Performs BAM realignment or fastq alignment, with/without local indel realignment and base quality score recalibration |[bwa](https://github.com/lh3/bwa), [samblaster](https://github.com/GregoryFaust/samblaster), [sambamba](https://github.com/lomereiter/sambamba) & in option: [samtools](http://samtools.sourceforge.net/), [AdapterRemoval](https://github.com/MikkelSchubert/adapterremoval), GATK [*GenomeAnalysisTK.jar*](https://software.broadinstitute.org/gatk/guide/quickstart), [k8 javascript execution shell](https://sourceforge.net/projects/bio-bwa/files/bwakit/), [bwa-postalt.js](https://github.com/lh3/bwa/tree/master/bwakit) |
 | [BQSR-nf](https://github.com/IARCbioinfo/BQSR-nf)   | Performs base quality score recalibration of bam files using GATK |samtools, samblaster, sambamba, GATK|
-| [abra-nf](https://github.com/IARCbioinfo/abra-nf)   | Runs ABRA (Assembly Based ReAligner) |...|
-| [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)   | Performs RNAseq mapping, quality control, and reads counting - See also [RNAseq_analysis_scripts](https://github.com/IARCbioinfo/RNAseq_analysis_scripts) for post-processing  |[fastqc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/INSTALL.txt), [cutadapt](http://cutadapt.readthedocs.io/en/stable/installation.html), Python version > 2.7, [trim_galore](https://github.com/FelixKrueger/TrimGalore),[RESeQC](http://rseqc.sourceforge.net/),[multiQC](http://multiqc.info/docs/), [STAR](https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf), [htseq](http://www-huber.embl.de/HTSeq/doc/install.html#install) & in option:[hisat2](https://ccb.jhu.edu/software/hisat2/index.shtml), [GATK](https://software.broadinstitute.org/gatk/guide/quickstart), samtools|
+| [abra-nf](https://github.com/IARCbioinfo/abra-nf)   | Runs ABRA (Assembly Based ReAligner) |[ABRA](https://github.com/mozack/abra), [bedtools](http://bedtools.readthedocs.io/en/latest/), [bwa](http://bio-bwa.sourceforge.net), [sambamba](http://lomereiter.github.io/sambamba/), [samtools](http://www.htslib.org/) |
+| [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)   | Performs RNAseq mapping, quality control, and reads counting - See also [RNAseq_analysis_scripts](https://github.com/IARCbioinfo/RNAseq_analysis_scripts) for post-processing  |[fastqc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/INSTALL.txt), [cutadapt](http://cutadapt.readthedocs.io/en/stable/installation.html), Python version > 2.7, [trim_galore](https://github.com/FelixKrueger/TrimGalore),[RESeQC](http://rseqc.sourceforge.net/),[multiQC](http://multiqc.info/docs/), [STAR](https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf), [htseq](http://www-huber.embl.de/HTSeq/doc/install.html#install) & in option: [hisat2](https://ccb.jhu.edu/software/hisat2/index.shtml), [GATK](https://software.broadinstitute.org/gatk/guide/quickstart), samtools|
 | [GATK-Alignment-nf](https://github.com/IARCbioinfo/GATK-Alignment-nf)   | Performs bwa alignment and pre-processing (realignment and recalibration) following GATK best practices (less performant than [alignment-nf](https://github.com/IARCbioinfo/alignment-nf) ) |bwa, picard, GATK|
 
 ### QC
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
 | [conpair-nf](https://github.com/IARCbioinfo/conpair-nf)   | Runs conpair (concordance and contamination estimator) |[conpair](https://github.com/nygenome/Conpair), [Python 2.7](www.python.org), [numpy 1.7.0 or higher](www.numpy.org), [scipy 0.14.0 or higher](www.scipy.org), [GATK 2.3 or higher](www.broadinstitute.org/gatk/download)|
-| [damage-estimator-nf](https://github.com/IARCbioinfo/damage-estimator-nf)   | Runs "Damage Estimator" |...|
+| [damage-estimator-nf](https://github.com/IARCbioinfo/damage-estimator-nf)   | Runs "Damage Estimator" |[Damage Estimator](https://github.com/Ettwiller/Damage-estimator), samtools, 
+R with GGPLOT2 package|
 | [bamsurgeon-nf](https://github.com/IARCbioinfo/bamsurgeon-nf)   | Runs bamsurgeon with step of variant simulation |[Python 2.7](www.python.org), [bamsurgeon](http://github.com/adamewing/bamsurgeon/), [R software](https://www.r-project.org/) (tested with R version 3.2.3)|
 
 ### Variant calling
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
-| [platypus-nf](https://github.com/IARCbioinfo/platypus-nf)   | Runs Platypus (germline variant caller) |...|
-| [GATK-Calling-GVCF-nf](https://github.com/IARCbioinfo/GATK-Calling-GVCF-nf)   | Runs variant calling in GVCF mode on bam files, joint genotyping and variant recalibration (SNPs and indels) following GATK best practices - still in development!!|...|
-| [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)   | Performs copy number variant calling from whole exome sequencing data using CODEX |R with package Codex, Rscript, |
-| [needlestack](https://github.com/IARCbioinfo/needlestack)   | Performs multi-sample somatic variant calling |...|
+| [platypus-nf](https://github.com/IARCbioinfo/platypus-nf)   | Runs Platypus (germline variant caller) |[Platypus](https://github.com/andyrimmer/Platypus)|
+| [GATK-Calling-GVCF-nf](https://github.com/IARCbioinfo/GATK-Calling-GVCF-nf)   | Runs variant calling in GVCF mode on bam files, joint genotyping and variant recalibration (SNPs and indels) following GATK best practices - still in development!!|[GATK](www.broadinstitute.org/gatk/download)|
+| [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)   | Performs copy number variant calling from whole exome sequencing data using CODEX |R with package Codex, Rscript |
+| [needlestack](https://github.com/IARCbioinfo/needlestack)   | Performs multi-sample somatic variant calling |[perl](https://www.perl.org),  [bedtools](http://bedtools.readthedocs.org/en/latest/), [samtools](http://www.htslib.org) and Rscript from [R](https://www.r-project.org) |
 | [mutect-nf](https://github.com/IARCbioinfo/mutect-nf)   | Runs Mutect on tumor-matched normal bam pairs |...|
-| [strelka-nf](https://github.com/IARCbioinfo/strelka-nf)   | Runs Strelka |...|
+| [strelka-nf](https://github.com/IARCbioinfo/strelka-nf)   | Runs Strelka |[Strelka](https://sites.google.com/site/strelkasomaticvariantcaller/home/strelka-workflow-installation)|
 
 ### Other
 | Name      | Description     |	Tools used	|
