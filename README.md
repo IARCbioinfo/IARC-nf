@@ -3,11 +3,12 @@
 ## Nextflow pipelines list
 
 ### Raw NGS data processing
-
-  | [alignment-nf](https://github.com/IARCbioinfo/alignment-nf)    | Nextflow pipeline to perform BAM realignment or fastq alignment, with/without local indel realignment and base quality score recalibration |
-  | [BQSR-nf](https://github.com/IARCbioinfo/BQSR-nf)   | ...... |
-  | [abra-nf](https://github.com/IARCbioinfo/abra-nf)   | ...... |
-  | [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)   | ...... |
+| Name      | Description     |
+|-----------|-----------------| 
+| [alignment-nf](https://github.com/IARCbioinfo/alignment-nf)    | Nextflow pipeline to perform BAM realignment or fastq alignment, with/without local indel realignment and base quality score recalibration |
+| [BQSR-nf](https://github.com/IARCbioinfo/BQSR-nf)   | ...... |
+| [abra-nf](https://github.com/IARCbioinfo/abra-nf)   | ...... |
+| [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)   | ...... |
 
 ### QC
 [conpair-nf](https://github.com/IARCbioinfo/conpair-nf)
