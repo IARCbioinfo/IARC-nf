@@ -31,7 +31,7 @@
 ### Other
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
-| [addreplacerg-nf](https://github.com/IARCbioinfo/addreplacerg-nf)   | Adds and replaces read group tags in BAM files |[samtools](http://www.htslib.org/|
+| [addreplacerg-nf](https://github.com/IARCbioinfo/addreplacerg-nf)   | Adds and replaces read group tags in BAM files |[samtools](http://samtools.sourceforge.net/)|
 
 ## Nextflow 
 
