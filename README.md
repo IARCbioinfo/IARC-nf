@@ -15,8 +15,7 @@
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
 | [conpair-nf](https://github.com/IARCbioinfo/conpair-nf)   | Runs conpair (concordance and contamination estimator) |[conpair](https://github.com/nygenome/Conpair), [Python 2.7](www.python.org), [numpy 1.7.0 or higher](www.numpy.org), [scipy 0.14.0 or higher](www.scipy.org), [GATK 2.3 or higher](www.broadinstitute.org/gatk/download)|
-| [damage-estimator-nf](https://github.com/IARCbioinfo/damage-estimator-nf)   | Runs "Damage Estimator" |[Damage Estimator](https://github.com/Ettwiller/Damage-estimator), samtools, 
-R with GGPLOT2 package|
+| [damage-estimator-nf](https://github.com/IARCbioinfo/damage-estimator-nf)   | Runs "Damage Estimator" |[Damage Estimator](https://github.com/Ettwiller/Damage-estimator), samtools, R with GGPLOT2 package|
 | [bamsurgeon-nf](https://github.com/IARCbioinfo/bamsurgeon-nf)   | Runs bamsurgeon with step of variant simulation |[Python 2.7](www.python.org), [bamsurgeon](http://github.com/adamewing/bamsurgeon/), [R software](https://www.r-project.org/) (tested with R version 3.2.3)|
 
 ### Variant calling
