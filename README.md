@@ -33,9 +33,9 @@
 |-----------|-----------------|-----------------|
 | [addreplacerg-nf](https://github.com/IARCbioinfo/addreplacerg-nf)   | Adds and replaces read group tags in BAM files |[samtools](http://samtools.sourceforge.net/)|
 
-## Nextflow 
+## Installation 
 
-### Installation : 
+### Nextflow
 
 1. Install [java](https://java.com/download/) JRE if you don't already have it (7 or higher).
 
@@ -48,10 +48,18 @@
 	```bash
 	sudo mv nextflow /usr/local/bin
 	```
-  
+
+### Docker
+
+To avoid having to installing all dependencies each time you use a pipeline, you can instead install [docker](https://www.docker.com) and let nextflow dealing with it. Installing docker is system specific (but quite easy in most cases), follow  [docker documentation](https://docs.docker.com/installation/) (docker CE is sufficient). Also follow the post-installation step to manage Docker as a non-root user ([here](https://docs.docker.com/engine/installation/linux/linux-postinstall/) for Linux).
+
+To run nextflow pipeline with Docker, simply add the `-with-docker` option in the `nextflow run` command.
+
 ### Configuration file
 
-### Pipelines updates :
+## Usage
+
+### Pipelines updates
 
 You can update the nextflow sofware and the pipeline itself simply using:
 ```bash
@@ -61,17 +69,9 @@ nextflow pull iarcbioinfo/pipeline_name
 
 You can also automatically update the pipeline when you run it by adding the option `-latest` in the `nextflow run` command. Doing so you will always run the latest version from Github.
 
-### Display help :
+### Display help
 
 ```bash
 nextflow run iarcbioinfo/pipeline_name --help
 ```
-
-## Docker
-
-Install [docker](https://www.docker.com).
-	
-This is very system specific (but quite easy in most cases), follow  [docker documentation](https://docs.docker.com/installation/). Also follow the optional configuration step called `Create a Docker group` in their documentation.
-
-To run nextflow pipeline with Docker, simply add the `-with-docker` option.
 
