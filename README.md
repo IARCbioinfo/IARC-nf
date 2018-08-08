@@ -1,4 +1,4 @@
-# IARC bioinformatics nextflow pipelines (last update : 8-8-2018)
+# IARC bioinformatics nextflow pipelines (updated on 08/08/2018)
 
 ## IARC pipelines list (mostly nextflow pipelines -nf)
 
