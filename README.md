@@ -77,8 +77,8 @@
 ### Coming soon...
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
-| [methylkey](https://github.com/IARCbioinfo/methylkey)   | NA |NA|
-| [variantflag](https://github.com/IARCbioinfo/variantflag)   | Merge and annotate variants from different callers |NA|
+| [methylkey](https://github.com/IARCbioinfo/methylkey)   |  ||
+| [variantflag](https://github.com/IARCbioinfo/variantflag)   | Merge and annotate variants from different callers ||
 
 ## Installation 
 
