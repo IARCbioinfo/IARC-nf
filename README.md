@@ -10,8 +10,8 @@
 | [GATK-Alignment-nf](https://github.com/IARCbioinfo/GATK-Alignment-nf)   | Performs bwa alignment and pre-processing (realignment and recalibration) following first version of GATK best practices (less performant than [alignment-nf](https://github.com/IARCbioinfo/alignment-nf) ) |[bwa](https://github.com/lh3/bwa), picard, [GATK](www.broadinstitute.org/gatk/download)|
 | [BQSR-nf](https://github.com/IARCbioinfo/BQSR-nf)   | Performs base quality score recalibration of bam files using GATK |[samtools](http://samtools.sourceforge.net/), [samblaster](https://github.com/GregoryFaust/samblaster), [sambamba](https://github.com/lomereiter/sambamba), [GATK](www.broadinstitute.org/gatk/download)|
 | [abra-nf](https://github.com/IARCbioinfo/abra-nf)   | Runs ABRA (Assembly Based ReAligner) |[ABRA](https://github.com/mozack/abra), [bedtools](http://bedtools.readthedocs.io/en/latest/), [bwa](http://bio-bwa.sourceforge.net), [sambamba](http://lomereiter.github.io/sambamba/), [samtools](http://www.htslib.org/) |
-|-----------------|-----------------------|-----------------------|
-| [marathon-wgs](https://github.com/IARCbioinfo/marathon-wgs)   | Pipeline to study intratumor heterogeneity with Canopy|[bwa](https://github.com/lh3/bwa), [platypus](https://github.com/andyrimmer/Platypus), [strelka2](https://github.com/Illumina/strelka), [vt](https://github.com/atks/vt), [annovar](http://annovar.openbioinformatics.org/en/latest/), R scripts, [Falcon](https://cran.r-project.org/web/packages/falcon/index.html), [Canopy](https://github.com/yuchaojiang/Canopy)|
+||||
+| [marathon-wgs](https://github.com/IARCbioinfo/marathon-wgs)   | Studies intratumor heterogeneity with Canopy|[bwa](https://github.com/lh3/bwa), [platypus](https://github.com/andyrimmer/Platypus), [strelka2](https://github.com/Illumina/strelka), [vt](https://github.com/atks/vt), [annovar](http://annovar.openbioinformatics.org/en/latest/), R scripts, [Falcon](https://cran.r-project.org/web/packages/falcon/index.html), [Canopy](https://github.com/yuchaojiang/Canopy)|
 
 ### RNA Seq
 | Name      | Description     |	Tools used	|
@@ -47,7 +47,7 @@
 | [TCGA_germline-nf](https://github.com/IARCbioinfo/TCGA_germline-nf) | Extract germline variants from TCGA data for annotation with annovar (vcf files) |R script|
 | [table_annovar-nf](https://github.com/IARCbioinfo/table_annovar-nf) | Annotate variants with annovar (vcf files) |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
 | [MutSpec](https://github.com/IARCbioinfo/mutspec)   | Suite of tools for analyzing and interpreting mutational signatures |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
-|-----------------|-----------------------|-----------------------|
+||||
 | [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)   | Performs copy number variant calling from whole exome sequencing data using CODEX |[R](https://www.r-project.org) with package Codex, Rscript |
 
 
@@ -58,7 +58,7 @@
 | [SBG-CGC_course2018](https://github.com/IARCbioinfo/SBG-CGC_course2018)   | Analyzing TCGA data in SBG-CGC |NA|
 | [template-nf](https://github.com/IARCbioinfo/template-nf)   | Empty template for nextflow pipelines |NA|
 | [LSF-Tricks](https://github.com/IARCbioinfo/LSF-tricks)   | Tips and tricks for LSF HPC scheduler |NA|
-|-----------------|-----------------------|-----------------------|
+||||
 | [scanMyWorkDir](https://github.com/IARCbioinfo/scanMyWorkDir)   | Non-destructive and informative scan of a nextflow work folder |NA|
 | [BAM-tricks](https://github.com/IARCbioinfo/bametrics-nf)   | Tips and tricks for BAM files |[samtools](http://samtools.sourceforge.net/), freebayes, [bedtools](http://bedtools.readthedocs.io/en/latest/), biobambam2, [Picard](http://broadinstitute.github.io/picard/), [rbamtools](https://cran.r-project.org/web/packages/rbamtools/index.html)|
 | [addreplacerg-nf](https://github.com/IARCbioinfo/addreplacerg-nf)   | Adds and replaces read group tags in BAM files |[samtools](http://samtools.sourceforge.net/)|
@@ -70,7 +70,7 @@
 | [integration_analysis_scripts](https://github.com/IARCbioinfo/integration_analysis_scripts)   | Performs unsupervised analyses (clustering) from transformed expression data (e.g., log fpkm) and methylation beta values |[R software](https://www.r-project.org/) + iClusterPlus, gplots and lattice R packages|
 | [mpileup2readcounts](https://github.com/IARCbioinfo/mpileup2readcounts)| Get the readcounts at a locus by piping samtools mpileup output - forked from [gatoravi](https://github.com/gatoravi/mpileup2readcounts) |[samtools](http://samtools.sourceforge.net/)|
 | [R-tricks](https://github.com/IARCbioinfo/R-tricks)| Tips and tricks for R |NA|
-| [awesome-TCGA](https://github.com/IARCbioinfo/awesome-TCGA | Curated list of resources to access TCGA data |NA|
+| [awesomeTCGA](https://github.com/IARCbioinfo/awesome-TCGA) | Curated list of resources to access TCGA data |NA|
 | [EGA-tricks](https://github.com/IARCbioinfo/EGA-tricks)| Tips and tricks to use the European Genome-Phenome Archive from the European Bioinformatics Institute |[EGA client](https://www.ebi.ac.uk/ega/sites/ebi.ac.uk.ega/files/documents/EGA_download_client_2.2.2.zip)|
 | [GDC-tricks](https://github.com/IARCbioinfo/GDC-tricks)| Tips and tricks to use the [GDC data portal](https://gdc-portal.nci.nih.gov/) |NA|
 
