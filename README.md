@@ -46,6 +46,7 @@
 | [vt-nf](https://github.com/IARCbioinfo/vt-nf)   | Decomposes and normalizes variant calls (vcf files) |[vt](https://github.com/atks/vt), samtools/htslib|
 | [TCGA_germline-nf](https://github.com/IARCbioinfo/TCGA_germline-nf) | Extract germline variants from TCGA data for annotation with annovar (vcf files) |R script|
 | [table_annovar-nf](https://github.com/IARCbioinfo/table_annovar-nf) | Annotate variants with annovar (vcf files) |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
+||||
 | [MutSpec](https://github.com/IARCbioinfo/mutspec)   | Suite of tools for analyzing and interpreting mutational signatures |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
 ||||
 | [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)   | Performs copy number variant calling from whole exome sequencing data using CODEX |[R](https://www.r-project.org) with package Codex, Rscript |
