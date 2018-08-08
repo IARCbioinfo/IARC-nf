@@ -11,7 +11,6 @@
 | [BQSR-nf](https://github.com/IARCbioinfo/BQSR-nf)   | Performs base quality score recalibration of bam files using GATK |[samtools](http://samtools.sourceforge.net/), [samblaster](https://github.com/GregoryFaust/samblaster), [sambamba](https://github.com/lomereiter/sambamba), [GATK](www.broadinstitute.org/gatk/download)|
 | [abra-nf](https://github.com/IARCbioinfo/abra-nf)   | Runs ABRA (Assembly Based ReAligner) |[ABRA](https://github.com/mozack/abra), [bedtools](http://bedtools.readthedocs.io/en/latest/), [bwa](http://bio-bwa.sourceforge.net), [sambamba](http://lomereiter.github.io/sambamba/), [samtools](http://www.htslib.org/) |
 |-----------|-----------------|-----------------|
-|-----------|-----------------|-----------------|
 | [marathon-wgs](https://github.com/IARCbioinfo/marathon-wgs)   | Pipeline to study intratumor heterogeneity with Canopy|[bwa](https://github.com/lh3/bwa), [platypus](https://github.com/andyrimmer/Platypus), [strelka2](https://github.com/Illumina/strelka), [vt](https://github.com/atks/vt), [annovar](http://annovar.openbioinformatics.org/en/latest/), R scripts, [Falcon](https://cran.r-project.org/web/packages/falcon/index.html), [Canopy](https://github.com/yuchaojiang/Canopy)|
 
 ### RNA Seq
@@ -50,7 +49,6 @@ TCGA_platypus-nf
 | [table_annovar-nf](https://github.com/IARCbioinfo/table_annovar-nf) | Annotate variants with annovar (vcf files) |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
 | [MutSpec](https://github.com/IARCbioinfo/mutspec)   | Suite of tools for analyzing and interpreting mutational signatures |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
 |-----------|-----------------|-----------------|
-|-----------|-----------------|-----------------|
 | [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)   | Performs copy number variant calling from whole exome sequencing data using CODEX |[R](https://www.r-project.org) with package Codex, Rscript |
 
 
@@ -61,7 +59,6 @@ TCGA_platypus-nf
 | [SBG-CGC_course2018](https://github.com/IARCbioinfo/SBG-CGC_course2018)   | Analyzing TCGA data in SBG-CGC |NA|
 | [template-nf](https://github.com/IARCbioinfo/template-nf)   | Empty template for nextflow pipelines |NA|
 | [LSF-Tricks](https://github.com/IARCbioinfo/LSF-tricks)   | Tips and tricks for LSF HPC scheduler |NA|
-|-----------|-----------------|-----------------|
 |-----------|-----------------|-----------------|
 | [scanMyWorkDir](https://github.com/IARCbioinfo/scanMyWorkDir)   | Non-destructive and informative scan of a nextflow work folder |NA|
 | [BAM-tricks](https://github.com/IARCbioinfo/bametrics-nf)   | Tips and tricks for BAM files |[samtools](http://samtools.sourceforge.net/), freebayes, [bedtools](http://bedtools.readthedocs.io/en/latest/), biobambam2, [Picard](http://broadinstitute.github.io/picard/), [rbamtools](https://cran.r-project.org/web/packages/rbamtools/index.html)|
