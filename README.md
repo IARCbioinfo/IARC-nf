@@ -42,7 +42,7 @@
 | [GVCF_pipeline-nf](https://github.com/IARCbioinfo/GVCF_pipeline-nf)   | Performs bam realignment and recalibration + variant calling in GVCF mode following GATK best practices|[bwa](https://github.com/lh3/bwa), [samblaster](https://github.com/GregoryFaust/samblaster), [sambamba](https://github.com/lomereiter/sambamba), [GATK](https://software.broadinstitute.org/gatk/download/)|
 | [GATK-Calling-GVCF-nf](https://github.com/IARCbioinfo/GATK-Calling-GVCF-nf) | Runs variant calling in GVCF mode on bam files, joint genotyping and variant recalibration (SNPs and indels) following GATK best practices - still in development!!|[GATK](www.broadinstitute.org/gatk/download)|
 | [platypus-nf](https://github.com/IARCbioinfo/platypus-nf)   | Runs Platypus (germline variant caller) |[Platypus](https://github.com/andyrimmer/Platypus)|
-| [TCGA_platypus-nf](https://github.com/IARCbioinfo/TCGA_platypus-nf)   | Runs Platypus (germline variant caller) |[vt](https://github.com/atks/vt),[VCFTools](https://github.com/vcftools/vcftools)|
+| [TCGA_platypus-nf](https://github.com/IARCbioinfo/TCGA_platypus-nf)   | Converts TCGA Platypus vcf in format for annotation with annovar |[vt](https://github.com/atks/vt),[VCFTools](https://github.com/vcftools/vcftools)|
 | [vt-nf](https://github.com/IARCbioinfo/vt-nf)   | Decomposes and normalizes variant calls (vcf files) |[vt](https://github.com/atks/vt), samtools/htslib|
 | [TCGA_germline-nf](https://github.com/IARCbioinfo/TCGA_germline-nf) | Extract germline variants from TCGA data for annotation with annovar (vcf files) |R script|
 | [table_annovar-nf](https://github.com/IARCbioinfo/table_annovar-nf) | Annotate variants with annovar (vcf files) |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
