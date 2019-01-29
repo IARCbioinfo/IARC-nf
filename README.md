@@ -1,4 +1,4 @@
-# IARC bioinformatics nextflow pipelines (updated on 08/08/2018)
+# IARC bioinformatics nextflow pipelines (updated on 29/01/2019)
 
 ## IARC pipelines list (mostly nextflow pipelines -nf)
 
@@ -22,9 +22,12 @@
 ### QC
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
+| [NGSCheckMate](https://github.com/IARCbioinfo/NGSCheckMate)   | Runs NGSCheckMate on BAM files to identify data files from a same indidual (i.e. check N/T pairs) |[NGSCheckMate](https://github.com/parklab/NGSCheckMate)|
 | [conpair-nf](https://github.com/IARCbioinfo/conpair-nf)   | Runs conpair (concordance and contamination estimator) |[conpair](https://github.com/nygenome/Conpair), [Python 2.7](www.python.org), [numpy 1.7.0 or higher](www.numpy.org), [scipy 0.14.0 or higher](www.scipy.org), [GATK 2.3 or higher](www.broadinstitute.org/gatk/download)|
 | [damage-estimator-nf](https://github.com/IARCbioinfo/damage-estimator-nf)   | Runs "Damage Estimator" |[Damage Estimator](https://github.com/Ettwiller/Damage-estimator), [samtools](http://samtools.sourceforge.net/), [R](https://www.r-project.org) with GGPLOT2 package|
 | [QC3](https://github.com/IARCbioinfo/QC3)   | Runs QC on DNA seq data (raw data, aligned data and variant calls - forked from [slzhao](https://github.com/slzhao/QC3) |[samtools](http://samtools.sourceforge.net/)|
+| [fastqc-nf](https://github.com/IARCbioinfo/fastqc-nf)   | Runs fastqc and multiqc on DNA seq data (fastq data) |[FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), [Multiqc](https://multiqc.info/)|
+| [qualimap-nf](https://github.com/IARCbioinfo/qualimap-nf)   | Performs quality control on bam files (WES, WGS and target alignment data) |[samtools](http://samtools.sourceforge.net/), [Qualimap](http://qualimap.bioinfo.cipf.es/), [Multiqc](https://multiqc.info/)|
 | [mpileup-nf](https://github.com/IARCbioinfo/mpileup-nf)   | Computes bam coverage with samtools mpileup (bed parallelization) |[samtools](http://samtools.sourceforge.net/),[annovar](http://annovar.openbioinformatics.org/en/latest/)|
 | [bamsurgeon-nf](https://github.com/IARCbioinfo/bamsurgeon-nf)   | Runs bamsurgeon (tool to add mutations to bam files) with step of variant simulation |[Python 2.7](www.python.org), [bamsurgeon](http://github.com/adamewing/bamsurgeon/), [R software](https://www.r-project.org/) (tested with R version 3.2.3)|
 
@@ -50,6 +53,8 @@
 | [MutSpec](https://github.com/IARCbioinfo/mutspec)   | Suite of tools for analyzing and interpreting mutational signatures |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
 |*************** |||
 | [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)   | Performs copy number variant calling from whole exome sequencing data using CODEX |[R](https://www.r-project.org) with package Codex, Rscript |
+| [facets-nf](https://github.com/IARCbioinfo/facets-nf)   | Performs fraction and copy number estimate from tumor/normal sequencing data using facets |[facets](https://github.com/mskcc/facets) , [R](https://www.r-project.org) |
+| [svaba-nf](https://github.com/IARCbioinfo/svaba-nf)   | Performs structural variant calling using SvABA |[SvABA](https://github.com/walaj/svaba) , [R](https://www.r-project.org) |
 
 
 ### Other tools/pipelines
@@ -58,6 +63,7 @@
 | [nextflow-course-2018](https://github.com/IARCbioinfo/nextflow-course-2018)   | Nextflow course |NA|
 | [SBG-CGC_course2018](https://github.com/IARCbioinfo/SBG-CGC_course2018)   | Analyzing TCGA data in SBG-CGC |NA|
 | [template-nf](https://github.com/IARCbioinfo/template-nf)   | Empty template for nextflow pipelines |NA|
+| [data_test](https://github.com/IARCbioinfo/data_test)   | Small data files to test IARC nextflow pipelines |NA|
 | [LSF-Tricks](https://github.com/IARCbioinfo/LSF-tricks)   | Tips and tricks for LSF HPC scheduler |NA|
 ||||
 | [scanMyWorkDir](https://github.com/IARCbioinfo/scanMyWorkDir)   | Non-destructive and informative scan of a nextflow work folder |NA|
@@ -80,6 +86,9 @@
 |-----------|-----------------|-----------------|
 | [methylkey](https://github.com/IARCbioinfo/methylkey)   |  ||
 | [variantflag](https://github.com/IARCbioinfo/variantflag)   | Merge and annotate variants from different callers ||
+| [ITH_nf](https://github.com/IARCbioinfo/ITH-nf)   | Perform Intra-Tumor Heterogeneity (ITH) analysis ||
+| [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   | Perform fusion-genes discovery from RNAseq data using STAR-Fusion ||
+| [PostAlignment-nf](https://github.com/IARCbioinfo/PostAlignment-nf)   | Perform post alignement on bam files ||
 
 ## Installation 
 
