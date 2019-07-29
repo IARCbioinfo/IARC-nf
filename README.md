@@ -1,4 +1,4 @@
-# IARC bioinformatics nextflow pipelines (updated on 29/01/2019)
+# IARC bioinformatics nextflow pipelines (updated on 29/07/2019)
 
 ## IARC pipelines list (mostly nextflow pipelines -nf)
 
@@ -81,14 +81,22 @@
 | [EGA-tricks](https://github.com/IARCbioinfo/EGA-tricks)| Tips and tricks to use the European Genome-Phenome Archive from the European Bioinformatics Institute |[EGA client](https://www.ebi.ac.uk/ega/sites/ebi.ac.uk.ega/files/documents/EGA_download_client_2.2.2.zip)|
 | [GDC-tricks](https://github.com/IARCbioinfo/GDC-tricks)| Tips and tricks to use the [GDC data portal](https://gdc-portal.nci.nih.gov/) |NA|
 
+### NEW !!
+| Name      | Description     |	Tools used	|
+|-----------|-----------------|-----------------|
+| [ITH_nf](https://github.com/IARCbioinfo/ITH-nf)   | Study intra-tumoral heterogeneity (ITH) through subclonailty reconstruction |[HATCHet](https://github.com/raphael-group/hatchet) , [DeCiFer](https://github.com/raphael-group/decifer), [ClonEvol](https://github.com/hdng/clonevol)|
+| [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   | Perform fusion-genes discovery from RNAseq data|[STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion/wiki)|
+| [PVAmpliconFinder](https://github.com/IARCbioinfo/PVAmpliconFinder)   | Identify and classify known and potentially new papilliomaviridae sequences from amplicon deep-sequencing with degenerated papillomavirus primers.|FastQC, MultiQC, Trim Galore!, VSEARCH, Blast, RaxML-EPA, PaPaRa, CAP3, KRONA)|
+| [Methylation_analysis_scripts](https://github.com/IARCbioinfo/Methylation_analysis_scripts)   | Perform Illumina EPIC 850K array pre-processing and QC from idat files|[R software](https://www.r-project.org/)|
+| [quantiseq-nf](https://github.com/IARCbioinfo/quantiseq-nf)   | Quantify immune cell content from RNA-seq data|quanTIseq|
+| [methylkey](https://github.com/IARCbioinfo/methylkey)   | Pipeline for 450k and 850k array analysis using Minfi, Methylumi, Comet, Bumphunter and DMRcate packages |[R software](https://www.r-project.org/)|
+| [mutspec_annot-nf](https://github.com/IARCbioinfo/mutspec_annot)   |  | Annovar|
+| [PostAlignment-nf](https://github.com/IARCbioinfo/PostAlignment-nf)   | Perform post alignment on bam files ||
+
 ### Coming soon...
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
-| [methylkey](https://github.com/IARCbioinfo/methylkey)   |  ||
 | [variantflag](https://github.com/IARCbioinfo/variantflag)   | Merge and annotate variants from different callers ||
-| [ITH_nf](https://github.com/IARCbioinfo/ITH-nf)   | Perform Intra-Tumor Heterogeneity (ITH) analysis ||
-| [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   | Perform fusion-genes discovery from RNAseq data using STAR-Fusion ||
-| [PostAlignment-nf](https://github.com/IARCbioinfo/PostAlignment-nf)   | Perform post alignement on bam files ||
 
 ## Installation 
 
