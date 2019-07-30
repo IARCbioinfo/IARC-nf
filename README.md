@@ -90,7 +90,6 @@
 | [Methylation_analysis_scripts](https://github.com/IARCbioinfo/Methylation_analysis_scripts)   | Perform Illumina EPIC 850K array pre-processing and QC from idat files|[R software](https://www.r-project.org/)|
 | [quantiseq-nf](https://github.com/IARCbioinfo/quantiseq-nf)   | Quantify immune cell content from RNA-seq data|quanTIseq|
 | [methylkey](https://github.com/IARCbioinfo/methylkey)   | Pipeline for 450k and 850k array analysis using Minfi, Methylumi, Comet, Bumphunter and DMRcate packages |[R software](https://www.r-project.org/)|
-| [mutspec_annot-nf](https://github.com/IARCbioinfo/mutspec_annot)   |  | Annovar|
 | [PostAlignment-nf](https://github.com/IARCbioinfo/PostAlignment-nf)   | Perform post alignment on bam files | [samtools](http://samtools.sourceforge.net/), [sambamba](https://github.com/lomereiter/sambamba), [bwa-postalt.js](https://github.com/lh3/bwa/tree/master/bwakit)|
 
 ### Coming soon...
