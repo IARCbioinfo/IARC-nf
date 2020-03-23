@@ -10,14 +10,19 @@
 | [GATK-Alignment-nf](https://github.com/IARCbioinfo/GATK-Alignment-nf)   | Performs bwa alignment and pre-processing (realignment and recalibration) following first version of GATK best practices (less performant than [alignment-nf](https://github.com/IARCbioinfo/alignment-nf) ) |[bwa](https://github.com/lh3/bwa), picard, [GATK](www.broadinstitute.org/gatk/download)|
 | [BQSR-nf](https://github.com/IARCbioinfo/BQSR-nf)   | Performs base quality score recalibration of bam files using GATK |[samtools](http://samtools.sourceforge.net/), [samblaster](https://github.com/GregoryFaust/samblaster), [sambamba](https://github.com/lomereiter/sambamba), [GATK](www.broadinstitute.org/gatk/download)|
 | [abra-nf](https://github.com/IARCbioinfo/abra-nf)   | Runs ABRA (Assembly Based ReAligner) |[ABRA](https://github.com/mozack/abra), [bedtools](http://bedtools.readthedocs.io/en/latest/), [bwa](http://bio-bwa.sourceforge.net), [sambamba](http://lomereiter.github.io/sambamba/), [samtools](http://www.htslib.org/) |
+| [PostAlignment-nf](https://github.com/IARCbioinfo/PostAlignment-nf)   | Perform post alignment on bam files | [samtools](http://samtools.sourceforge.net/), [sambamba](https://github.com/lomereiter/sambamba), [bwa-postalt.js](https://github.com/lh3/bwa/tree/master/bwakit)|
 |*************** |||
 | [marathon-wgs](https://github.com/IARCbioinfo/marathon-wgs)   | Studies intratumor heterogeneity with Canopy|[bwa](https://github.com/lh3/bwa), [platypus](https://github.com/andyrimmer/Platypus), [strelka2](https://github.com/Illumina/strelka), [vt](https://github.com/atks/vt), [annovar](http://annovar.openbioinformatics.org/en/latest/), R scripts, [Falcon](https://cran.r-project.org/web/packages/falcon/index.html), [Canopy](https://github.com/yuchaojiang/Canopy)|
+| [ITH-nf](https://github.com/IARCbioinfo/ITH-nf)   | Perform intra-tumoral heterogeneity (ITH) analysis |[Strelka2](https://github.com/Illumina/strelka) , [Platypus](https://www.well.ox.ac.uk/platypus), [Bcftools](https://samtools.github.io/bcftools/bcftools.html), [Tabix](http://www.htslib.org/doc/tabix.html), [Falcon](https://omictools.com/falcon-3-tool), [Canopy](https://github.com/yuchaojiang/Canopy)|
+| [ITH_pipeline](https://github.com/IARCbioinfo/ITH_pipeline)   | Study intra-tumoral heterogeneity (ITH) through subclonality reconstruction |[HATCHet](https://github.com/raphael-group/hatchet) , [DeCiFer](https://github.com/raphael-group/decifer), [ClonEvol](https://github.com/hdng/clonevol)|
 
 ### RNA Seq
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
 | [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)   | Performs RNAseq mapping, quality control, and reads counting - See also [RNAseq_analysis_scripts](https://github.com/IARCbioinfo/RNAseq_analysis_scripts) for post-processing  |[fastqc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/INSTALL.txt), [RESeQC](http://rseqc.sourceforge.net/), [multiQC](http://multiqc.info/docs/), [STAR](https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf), [htseq](http://www-huber.embl.de/HTSeq/doc/install.html#install) & in option: for reads adapter trimming: [cutadapt](http://cutadapt.readthedocs.io/en/stable/installation.html), Python version > 2.7, [trim_galore](https://github.com/FelixKrueger/TrimGalore), for alignment: [hisat2](https://ccb.jhu.edu/software/hisat2/index.shtml), for read trimming at splice junction: [GATK](www.broadinstitute.org/gatk/download), [samtools](http://samtools.sourceforge.net/)|
 | [RNAseq-transcript-nf](https://github.com/IARCbioinfo/RNAseq-transcript-nf)   | Performs transcript identification and quantification from a series of BAM files |[StringTie](https://github.com/gpertea/stringtie)|
+| [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   | Perform fusion-genes discovery from RNAseq data|[STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion/wiki)|
+| [quantiseq-nf](https://github.com/IARCbioinfo/quantiseq-nf)   | Quantify immune cell content from RNA-seq data|quanTIseq|
 
 ### QC
 | Name      | Description     |	Tools used	|
@@ -60,28 +65,23 @@
 ### Other tools/pipelines
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
-| [nextflow-course-2018](https://github.com/IARCbioinfo/nextflow-course-2018)   | Nextflow course |NA|
-| [SBG-CGC_course2018](https://github.com/IARCbioinfo/SBG-CGC_course2018)   | Analyzing TCGA data in SBG-CGC |NA|
 | [template-nf](https://github.com/IARCbioinfo/template-nf)   | Empty template for nextflow pipelines |NA|
 | [data_test](https://github.com/IARCbioinfo/data_test)   | Small data files to test IARC nextflow pipelines |NA|
-| [LSF-Tricks](https://github.com/IARCbioinfo/LSF-tricks)   | Tips and tricks for LSF HPC scheduler |NA|
 ||||
 | [scanMyWorkDir](https://github.com/IARCbioinfo/scanMyWorkDir)   | Non-destructive and informative scan of a nextflow work folder |NA|
-| [BAM-tricks](https://github.com/IARCbioinfo/bametrics-nf)   | Tips and tricks for BAM files |[samtools](http://samtools.sourceforge.net/), freebayes, [bedtools](http://bedtools.readthedocs.io/en/latest/), biobambam2, [Picard](http://broadinstitute.github.io/picard/), [rbamtools](https://cran.r-project.org/web/packages/rbamtools/index.html)|
 | [addreplacerg-nf](https://github.com/IARCbioinfo/addreplacerg-nf)   | Adds and replaces read group tags in BAM files |[samtools](http://samtools.sourceforge.net/)|
 | [bametrics-nf](https://github.com/IARCbioinfo/BAM-tricks)   | Computes average metrics from reads that overlap a given set of positions |NA|
 | [Gviz_multiAlignments](https://github.com/IARCbioinfo/Gviz_multiAlignments)   | Generates multiple BAM alignments views using Gviz bioconductor package|[Gviz](https://bioconductor.org/packages/release/bioc/html/Gviz.html)||
 | [nf_coverage_demo](https://github.com/IARCbioinfo/nf_coverage_demo)   | Plots mean coverage over a series of BAM files |[bedtools](http://bedtools.readthedocs.io/en/latest/), R script|
-| [VCF-tricks](https://github.com/IARCbioinfo/VCF-tricks) | Tips and tricks for VCF files |[samtools](http://samtools.sourceforge.net/),[bcftools](https://github.com/samtools/bcftools), [vcflib](https://github.com/vcflib/vcflib), [vcftools](https://github.com/vcftools/vcftools), R scripts|
 | [LiftOver-nf](https://github.com/IARCbioinfo/LiftOver-nf) | Converts BED/VCF between hg19 and hg38 |[picard](https://broadinstitute.github.io/picard/)|
 | [PVAmpliconFinder](https://github.com/IARCbioinfo/PVAmpliconFinder)   | Identify and classify known and potentially new papilliomaviridae sequences from amplicon deep-sequencing with degenerated papillomavirus primers.|Python and Perl + FastQC, MultiQC, Trim Galore, VSEARCH, Blast, RaxML-EPA, PaPaRa, CAP3, KRONA)|
 | [integration_analysis_scripts](https://github.com/IARCbioinfo/integration_analysis_scripts)   | Performs unsupervised analyses (clustering) from transformed expression data (e.g., log fpkm) and methylation beta values |[R software](https://www.r-project.org/) + iClusterPlus, gplots and lattice R packages|
 | [mpileup2readcounts](https://github.com/IARCbioinfo/mpileup2readcounts)| Get the readcounts at a locus by piping samtools mpileup output - forked from [gatoravi](https://github.com/gatoravi/mpileup2readcounts) |[samtools](http://samtools.sourceforge.net/)|
-| [Methylation_analysis_scripts](https://github.com/IARCbioinfo/Methylation_analysis_scripts)   | Perform Illumina EPIC 850K array pre-processing and QC from idat files|[R software](https://www.r-project.org/)|
-| [R-tricks](https://github.com/IARCbioinfo/R-tricks)| Tips and tricks for R |NA|
-| [awesomeTCGA](https://github.com/IARCbioinfo/awesome-TCGA) | Curated list of resources to access TCGA data |NA|
-| [EGA-tricks](https://github.com/IARCbioinfo/EGA-tricks)| Tips and tricks to use the European Genome-Phenome Archive from the European Bioinformatics Institute |[EGA client](https://www.ebi.ac.uk/ega/sites/ebi.ac.uk.ega/files/documents/EGA_download_client_2.2.2.zip)|
-| [GDC-tricks](https://github.com/IARCbioinfo/GDC-tricks)| Tips and tricks to use the [GDC data portal](https://gdc-portal.nci.nih.gov/) |NA|
+| [Methylation_analysis_scripts](https://github.com/IARCbioinfo/Methylation_analysis_scripts)   | Perform Illumina EPIC 850K array pre-processing and QC from idat files|[R software](https://www.r-project.org| 
+| [methylkey](https://github.com/IARCbioinfo/methylkey)   | Pipeline for 450k and 850k array analysis (bisulfite data analysis using Minfi, Methylumi, Comet, Bumphunter and DMRcate packages)|[R software](https://www.r-project.org/)|
+| [DRMetrics](https://github.com/IARCbioinfo/DRMetrics)   | Evaluate the quality of projections obtained after using dimensionality reduction techniques|[R software](https://www.r-project.org/)|
+| [acnviewer-singularity](https://github.com/IARCbioinfo/acnviewer-singularity)   | Build a singularity image of aCNViewer (tool for visualization of absolute copy number and copy neutral variations) (|[Singularity](https://sylabs.io/singularity/)|
+| [polysolver-singularity](https://github.com/IARCbioinfo/polysolver-singularity)   | Build a singularity image of Polysolver (tool for HLA typing based on whole exome seq) (|[Singularity](https://sylabs.io/singularity/)|
 
 ### NEW !!
 | Name      | Description     |	Tools used	|
@@ -89,13 +89,24 @@
 | [MinION_pipes](https://github.com/IARCbioinfo/MinION_pipes)   | Analyze MinION sequencing data for the reconstruction of viral genomes |Guppy V3.1.5+, Porechop V0.2.4, Nanofilt V2.2.0, Filtlong V0.2.0, SPAdes V3.10.1, CAP3 02/10/15, BLAST V2.9.0+, MUSCLE V3.8.1551, Nanopolish V0.11.0, Minimap2 V2.15, Samtools version 1.9|
 | [DraftPolisher](https://github.com/IARCbioinfo/DraftPolisher)   | Fast polishing of draft sequences (draft genome assembly) |MUSCLE, Python3|
 
-| [ITH_nf](https://github.com/IARCbioinfo/ITH-nf)   | Study intra-tumoral heterogeneity (ITH) through subclonality reconstruction |[HATCHet](https://github.com/raphael-group/hatchet) , [DeCiFer](https://github.com/raphael-group/decifer), [ClonEvol](https://github.com/hdng/clonevol)|
-| [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   | Perform fusion-genes discovery from RNAseq data|[STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion/wiki)|
-| [quantiseq-nf](https://github.com/IARCbioinfo/quantiseq-nf)   | Quantify immune cell content from RNA-seq data|quanTIseq|
-| [methylkey](https://github.com/IARCbioinfo/methylkey)   | Pipeline for 450k and 850k array analysis using Minfi, Methylumi, Comet, Bumphunter and DMRcate packages |[R software](https://www.r-project.org/)|
-| [PostAlignment-nf](https://github.com/IARCbioinfo/PostAlignment-nf)   | Perform post alignment on bam files | [samtools](http://samtools.sourceforge.net/), [sambamba](https://github.com/lomereiter/sambamba), [bwa-postalt.js](https://github.com/lh3/bwa/tree/master/bwakit)|
+### Courses
+| Name      | Description     |	Tools used	|
+|-----------|-----------------|-----------------|
+| [nextflow-course-2018](https://github.com/IARCbioinfo/nextflow-course-2018)   | Nextflow course |NA|
+| [SBG-CGC_course2018](https://github.com/IARCbioinfo/SBG-CGC_course2018)   | Analyzing TCGA data in SBG-CGC |NA|
 
-### Coming soon...
+### Tricks
+| Name      | Description     |	Tools used	|
+|-----------|-----------------|-----------------|
+| [BAM-tricks](https://github.com/IARCbioinfo/bametrics-nf)   | Tips and tricks for BAM files |[samtools](http://samtools.sourceforge.net/), freebayes, [bedtools](http://bedtools.readthedocs.io/en/latest/), biobambam2, [Picard](http://broadinstitute.github.io/picard/), [rbamtools](https://cran.r-project.org/web/packages/rbamtools/index.html)|
+| [VCF-tricks](https://github.com/IARCbioinfo/VCF-tricks) | Tips and tricks for VCF files |[samtools](http://samtools.sourceforge.net/),[bcftools](https://github.com/samtools/bcftools), [vcflib](https://github.com/vcflib/vcflib), [vcftools](https://github.com/vcftools/vcftools), R scripts|
+| [R-tricks](https://github.com/IARCbioinfo/R-tricks)| Tips and tricks for R |NA|
+| [EGA-tricks](https://github.com/IARCbioinfo/EGA-tricks)| Tips and tricks to use the European Genome-Phenome Archive from the European Bioinformatics Institute |[EGA client](https://www.ebi.ac.uk/ega/sites/ebi.ac.uk.ega/files/documents/EGA_download_client_2.2.2.zip)|
+| [GDC-tricks](https://github.com/IARCbioinfo/GDC-tricks)| Tips and tricks to use the [GDC data portal](https://gdc-portal.nci.nih.gov/) |NA|
+| [awesomeTCGA](https://github.com/IARCbioinfo/awesome-TCGA) | Curated list of resources to access TCGA data |NA|
+| [LSF-Tricks](https://github.com/IARCbioinfo/LSF-tricks)   | Tips and tricks for LSF HPC scheduler |NA|
+
+### Coming soon... (only dev branches yet)
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
 | [Nextflow_DSL2](https://github.com/IARCbioinfo/Nextflow_DSL2)   | Repository with modules for nextflow DSL2 |NA|
