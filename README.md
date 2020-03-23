@@ -22,7 +22,7 @@
 | [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)   | Performs RNAseq mapping, quality control, and reads counting - See also [RNAseq_analysis_scripts](https://github.com/IARCbioinfo/RNAseq_analysis_scripts) for post-processing  |[fastqc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/INSTALL.txt), [RESeQC](http://rseqc.sourceforge.net/), [multiQC](http://multiqc.info/docs/), [STAR](https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf), [htseq](http://www-huber.embl.de/HTSeq/doc/install.html#install), [cutadapt](http://cutadapt.readthedocs.io/en/stable/installation.html), Python version > 2.7, [trim_galore](https://github.com/FelixKrueger/TrimGalore), [hisat2](https://ccb.jhu.edu/software/hisat2/index.shtml), [GATK](www.broadinstitute.org/gatk/download), [samtools](http://samtools.sourceforge.net/)|
 | [RNAseq-transcript-nf](https://github.com/IARCbioinfo/RNAseq-transcript-nf)   | Performs transcript identification and quantification from a series of BAM files |[StringTie](https://github.com/gpertea/stringtie)|
 | [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   | Perform fusion-genes discovery from RNAseq data|[STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion/wiki)|
-| [quantiseq-nf](https://github.com/IARCbioinfo/quantiseq-nf)   | Quantify immune cell content from RNA-seq data|quanTIseq|
+| [quantiseq-nf](https://github.com/IARCbioinfo/quantiseq-nf)   | Quantify immune cell content from RNA-seq data|[quanTIseq](https://icbi.i-med.ac.at/software/quantiseq/doc/) |
 
 ### QC
 | Name      | Description     |	Tools used	|
