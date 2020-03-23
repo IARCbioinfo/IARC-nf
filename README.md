@@ -1,4 +1,4 @@
-# IARC bioinformatics nextflow pipelines (updated on 29/07/2019)
+# IARC bioinformatics nextflow pipelines (updated on 23/03/2020)
 
 ## IARC pipelines list (mostly nextflow pipelines -nf)
 
@@ -16,7 +16,7 @@
 ### RNA Seq
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
-| [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)   | Performs RNAseq mapping, quality control, and reads counting - See also [RNAseq_analysis_scripts](https://github.com/IARCbioinfo/RNAseq_analysis_scripts) for post-processing  |[fastqc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/INSTALL.txt), [cutadapt](http://cutadapt.readthedocs.io/en/stable/installation.html), Python version > 2.7, [trim_galore](https://github.com/FelixKrueger/TrimGalore), [RESeQC](http://rseqc.sourceforge.net/), [multiQC](http://multiqc.info/docs/), [STAR](https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf), [htseq](http://www-huber.embl.de/HTSeq/doc/install.html#install) & in option: [hisat2](https://ccb.jhu.edu/software/hisat2/index.shtml), [GATK](www.broadinstitute.org/gatk/download), [samtools](http://samtools.sourceforge.net/)|
+| [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)   | Performs RNAseq mapping, quality control, and reads counting - See also [RNAseq_analysis_scripts](https://github.com/IARCbioinfo/RNAseq_analysis_scripts) for post-processing  |[fastqc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/INSTALL.txt), [RESeQC](http://rseqc.sourceforge.net/), [multiQC](http://multiqc.info/docs/), [STAR](https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf), [htseq](http://www-huber.embl.de/HTSeq/doc/install.html#install) & in option: for reads adapter trimming: [cutadapt](http://cutadapt.readthedocs.io/en/stable/installation.html), Python version > 2.7, [trim_galore](https://github.com/FelixKrueger/TrimGalore), for alignment: [hisat2](https://ccb.jhu.edu/software/hisat2/index.shtml), for read trimming at splice junction: [GATK](www.broadinstitute.org/gatk/download), [samtools](http://samtools.sourceforge.net/)|
 | [RNAseq-transcript-nf](https://github.com/IARCbioinfo/RNAseq-transcript-nf)   | Performs transcript identification and quantification from a series of BAM files |[StringTie](https://github.com/gpertea/stringtie)|
 
 ### QC
@@ -30,7 +30,6 @@
 | [qualimap-nf](https://github.com/IARCbioinfo/qualimap-nf)   | Performs quality control on bam files (WES, WGS and target alignment data) |[samtools](http://samtools.sourceforge.net/), [Qualimap](http://qualimap.bioinfo.cipf.es/), [Multiqc](https://multiqc.info/)|
 | [mpileup-nf](https://github.com/IARCbioinfo/mpileup-nf)   | Computes bam coverage with samtools mpileup (bed parallelization) |[samtools](http://samtools.sourceforge.net/),[annovar](http://annovar.openbioinformatics.org/en/latest/)|
 | [bamsurgeon-nf](https://github.com/IARCbioinfo/bamsurgeon-nf)   | Runs bamsurgeon (tool to add mutations to bam files) with step of variant simulation |[Python 2.7](www.python.org), [bamsurgeon](http://github.com/adamewing/bamsurgeon/), [R software](https://www.r-project.org/) (tested with R version 3.2.3)|
-
 
 ### Variant calling
 | Name      | Description     |	Tools used	|
@@ -74,8 +73,10 @@
 | [nf_coverage_demo](https://github.com/IARCbioinfo/nf_coverage_demo)   | Plots mean coverage over a series of BAM files |[bedtools](http://bedtools.readthedocs.io/en/latest/), R script|
 | [VCF-tricks](https://github.com/IARCbioinfo/VCF-tricks) | Tips and tricks for VCF files |[samtools](http://samtools.sourceforge.net/),[bcftools](https://github.com/samtools/bcftools), [vcflib](https://github.com/vcflib/vcflib), [vcftools](https://github.com/vcftools/vcftools), R scripts|
 | [LiftOver-nf](https://github.com/IARCbioinfo/LiftOver-nf) | Converts BED/VCF between hg19 and hg38 |[picard](https://broadinstitute.github.io/picard/)|
+| [PVAmpliconFinder](https://github.com/IARCbioinfo/PVAmpliconFinder)   | Identify and classify known and potentially new papilliomaviridae sequences from amplicon deep-sequencing with degenerated papillomavirus primers.|Python and Perl + FastQC, MultiQC, Trim Galore, VSEARCH, Blast, RaxML-EPA, PaPaRa, CAP3, KRONA)|
 | [integration_analysis_scripts](https://github.com/IARCbioinfo/integration_analysis_scripts)   | Performs unsupervised analyses (clustering) from transformed expression data (e.g., log fpkm) and methylation beta values |[R software](https://www.r-project.org/) + iClusterPlus, gplots and lattice R packages|
 | [mpileup2readcounts](https://github.com/IARCbioinfo/mpileup2readcounts)| Get the readcounts at a locus by piping samtools mpileup output - forked from [gatoravi](https://github.com/gatoravi/mpileup2readcounts) |[samtools](http://samtools.sourceforge.net/)|
+| [Methylation_analysis_scripts](https://github.com/IARCbioinfo/Methylation_analysis_scripts)   | Perform Illumina EPIC 850K array pre-processing and QC from idat files|[R software](https://www.r-project.org/)|
 | [R-tricks](https://github.com/IARCbioinfo/R-tricks)| Tips and tricks for R |NA|
 | [awesomeTCGA](https://github.com/IARCbioinfo/awesome-TCGA) | Curated list of resources to access TCGA data |NA|
 | [EGA-tricks](https://github.com/IARCbioinfo/EGA-tricks)| Tips and tricks to use the European Genome-Phenome Archive from the European Bioinformatics Institute |[EGA client](https://www.ebi.ac.uk/ega/sites/ebi.ac.uk.ega/files/documents/EGA_download_client_2.2.2.zip)|
@@ -84,10 +85,11 @@
 ### NEW !!
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
-| [ITH_nf](https://github.com/IARCbioinfo/ITH-nf)   | Study intra-tumoral heterogeneity (ITH) through subclonailty reconstruction |[HATCHet](https://github.com/raphael-group/hatchet) , [DeCiFer](https://github.com/raphael-group/decifer), [ClonEvol](https://github.com/hdng/clonevol)|
+| [MinION_pipes](https://github.com/IARCbioinfo/MinION_pipes)   | Analyze MinION sequencing data for the reconstruction of viral genomes |Guppy V3.1.5+, Porechop V0.2.4, Nanofilt V2.2.0, Filtlong V0.2.0, SPAdes V3.10.1, CAP3 02/10/15, BLAST V2.9.0+, MUSCLE V3.8.1551, Nanopolish V0.11.0, Minimap2 V2.15, Samtools version 1.9|
+| [DraftPolisher](https://github.com/IARCbioinfo/DraftPolisher)   | Fast polishing of draft sequences (draft genome assembly) |MUSCLE, Python3|
+
+| [ITH_nf](https://github.com/IARCbioinfo/ITH-nf)   | Study intra-tumoral heterogeneity (ITH) through subclonality reconstruction |[HATCHet](https://github.com/raphael-group/hatchet) , [DeCiFer](https://github.com/raphael-group/decifer), [ClonEvol](https://github.com/hdng/clonevol)|
 | [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   | Perform fusion-genes discovery from RNAseq data|[STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion/wiki)|
-| [PVAmpliconFinder](https://github.com/IARCbioinfo/PVAmpliconFinder)   | Identify and classify known and potentially new papilliomaviridae sequences from amplicon deep-sequencing with degenerated papillomavirus primers.|FastQC, MultiQC, Trim Galore!, VSEARCH, Blast, RaxML-EPA, PaPaRa, CAP3, KRONA)|
-| [Methylation_analysis_scripts](https://github.com/IARCbioinfo/Methylation_analysis_scripts)   | Perform Illumina EPIC 850K array pre-processing and QC from idat files|[R software](https://www.r-project.org/)|
 | [quantiseq-nf](https://github.com/IARCbioinfo/quantiseq-nf)   | Quantify immune cell content from RNA-seq data|quanTIseq|
 | [methylkey](https://github.com/IARCbioinfo/methylkey)   | Pipeline for 450k and 850k array analysis using Minfi, Methylumi, Comet, Bumphunter and DMRcate packages |[R software](https://www.r-project.org/)|
 | [PostAlignment-nf](https://github.com/IARCbioinfo/PostAlignment-nf)   | Perform post alignment on bam files | [samtools](http://samtools.sourceforge.net/), [sambamba](https://github.com/lomereiter/sambamba), [bwa-postalt.js](https://github.com/lh3/bwa/tree/master/bwakit)|
@@ -95,6 +97,7 @@
 ### Coming soon...
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
+| [Nextflow_DSL2](https://github.com/IARCbioinfo/Nextflow_DSL2)   | Repository with modules for nextflow DSL2 |NA|
 | [variantflag](https://github.com/IARCbioinfo/variantflag)   | Merge and annotate variants from different callers ||
 
 ## Installation 
