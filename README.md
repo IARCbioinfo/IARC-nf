@@ -78,7 +78,6 @@
 | [integration_analysis_scripts](https://github.com/IARCbioinfo/integration_analysis_scripts)   | Performs unsupervised analyses (clustering) from transformed expression data (e.g., log fpkm) and methylation beta values |[R software](https://www.r-project.org/) + iClusterPlus, gplots and lattice R packages|
 | [mpileup2readcounts](https://github.com/IARCbioinfo/mpileup2readcounts)| Get the readcounts at a locus by piping samtools mpileup output - forked from [gatoravi](https://github.com/gatoravi/mpileup2readcounts) |[samtools](http://samtools.sourceforge.net/)|
 | [Methylation_analysis_scripts](https://github.com/IARCbioinfo/Methylation_analysis_scripts)   | Perform Illumina EPIC 850K array pre-processing and QC from idat files|[R software](https://www.r-project.org| 
-| [methylkey](https://github.com/IARCbioinfo/methylkey)   | Pipeline for 450k and 850k array analysis (bisulfite data analysis using Minfi, Methylumi, Comet, Bumphunter and DMRcate packages)|[R software](https://www.r-project.org/)|
 | [DRMetrics](https://github.com/IARCbioinfo/DRMetrics)   | Evaluate the quality of projections obtained after using dimensionality reduction techniques|[R software](https://www.r-project.org/)|
 | [acnviewer-singularity](https://github.com/IARCbioinfo/acnviewer-singularity)   | Build a singularity image of aCNViewer (tool for visualization of absolute copy number and copy neutral variations) (|[Singularity](https://sylabs.io/singularity/)|
 | [polysolver-singularity](https://github.com/IARCbioinfo/polysolver-singularity)   | Build a singularity image of Polysolver (tool for HLA typing based on whole exome seq) (|[Singularity](https://sylabs.io/singularity/)|
@@ -110,6 +109,7 @@
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
 | [Nextflow_DSL2](https://github.com/IARCbioinfo/Nextflow_DSL2)   | Repository with modules for nextflow DSL2 |NA|
+| [methylkey](https://github.com/IARCbioinfo/methylkey)   | Pipeline for 450k and 850k array analysis (bisulfite data analysis using Minfi, Methylumi, Comet, Bumphunter and DMRcate packages)|[R software](https://www.r-project.org/)|
 | [variantflag](https://github.com/IARCbioinfo/variantflag)   | Merge and annotate variants from different callers ||
 
 ## Installation 
