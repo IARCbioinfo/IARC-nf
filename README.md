@@ -70,7 +70,7 @@
 ||||
 | [scanMyWorkDir](https://github.com/IARCbioinfo/scanMyWorkDir)   | Non-destructive and informative scan of a nextflow work folder |NA|
 | [addreplacerg-nf](https://github.com/IARCbioinfo/addreplacerg-nf)   | Adds and replaces read group tags in BAM files |[samtools](http://samtools.sourceforge.net/)|
-| [bametrics-nf](https://github.com/IARCbioinfo/BAM-tricks)   | Computes average metrics from reads that overlap a given set of positions |NA|
+| [bametrics-nf](https://github.com/IARCbioinfo/bametrics-nf)   | Computes average metrics from reads that overlap a given set of positions |NA|
 | [Gviz_multiAlignments](https://github.com/IARCbioinfo/Gviz_multiAlignments)   | Generates multiple BAM alignments views using Gviz bioconductor package|[Gviz](https://bioconductor.org/packages/release/bioc/html/Gviz.html)||
 | [nf_coverage_demo](https://github.com/IARCbioinfo/nf_coverage_demo)   | Plots mean coverage over a series of BAM files |[bedtools](http://bedtools.readthedocs.io/en/latest/), [R software](https://www.r-project.org/)|
 | [LiftOver-nf](https://github.com/IARCbioinfo/LiftOver-nf) | Converts BED/VCF between hg19 and hg38 |[picard](https://broadinstitute.github.io/picard/)|
@@ -97,7 +97,7 @@
 ### Tricks
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
-| [BAM-tricks](https://github.com/IARCbioinfo/bametrics-nf)   | Tips and tricks for BAM files |[samtools](http://samtools.sourceforge.net/), freebayes, [bedtools](http://bedtools.readthedocs.io/en/latest/), biobambam2, [Picard](http://broadinstitute.github.io/picard/), [rbamtools](https://cran.r-project.org/web/packages/rbamtools/index.html)|
+| [BAM-tricks](https://github.com/IARCbioinfo/BAM-tricks)   | Tips and tricks for BAM files |[samtools](http://samtools.sourceforge.net/), freebayes, [bedtools](http://bedtools.readthedocs.io/en/latest/), biobambam2, [Picard](http://broadinstitute.github.io/picard/), [rbamtools](https://cran.r-project.org/web/packages/rbamtools/index.html)|
 | [VCF-tricks](https://github.com/IARCbioinfo/VCF-tricks) | Tips and tricks for VCF files |[samtools](http://samtools.sourceforge.net/),[bcftools](https://github.com/samtools/bcftools), [vcflib](https://github.com/vcflib/vcflib), [vcftools](https://github.com/vcftools/vcftools), R scripts|
 | [R-tricks](https://github.com/IARCbioinfo/R-tricks)| Tips and tricks for R |NA|
 | [EGA-tricks](https://github.com/IARCbioinfo/EGA-tricks)| Tips and tricks to use the European Genome-Phenome Archive from the European Bioinformatics Institute |[EGA client](https://www.ebi.ac.uk/ega/sites/ebi.ac.uk.ega/files/documents/EGA_download_client_2.2.2.zip)|
