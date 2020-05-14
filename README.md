@@ -139,7 +139,9 @@ To run nextflow pipeline with Docker, simply add the `-with-docker` option in th
 ### Singularity
 
 To avoid having to installing all dependencies each time you use a pipeline, you can also install [singularity](https://www.docker.com) and let nextflow dealing with it. 
+
 See documentation [here](https://sylabs.io/guides/3.5/user-guide/).
+
 In case you want to use the same singularity container - with the exactly same versions of pipeline and tools - on several data over time you may want to pull the container and archive it somewhere :
 ```bash
 singularity pull shub://IARCbioinfo/pipeline-nf:v2.2
