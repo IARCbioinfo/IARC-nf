@@ -1,6 +1,8 @@
-# IARC bioinformatics nextflow pipelines (updated on 23/03/2020)
+# IARC bioinformatics nextflow pipelines (updated on 14/05/2020)
 
-## IARC pipelines list (mostly nextflow pipelines -nf)
+This page lists all the pipelines (mostly nextflow pipelines which are suffixed with -nf) and how to use them (at the bottom of the page)
+
+## IARC pipelines list
 
 ### Raw NGS data processing
 | Name      | Description     |	Tools used	|
@@ -134,9 +136,31 @@ To avoid having to installing all dependencies each time you use a pipeline, you
 
 To run nextflow pipeline with Docker, simply add the `-with-docker` option in the `nextflow run` command.
 
+### Singularity
+
+To avoid having to installing all dependencies each time you use a pipeline, you can also install [singularity](https://www.docker.com) and let nextflow dealing with it. 
+See documentation [here](https://sylabs.io/guides/3.5/user-guide/).
+In case you want to use the same singularity container - with the exactly same versions of pipeline and tools - on several data over time you may want to pull the container and archive it somewhere :
+```bash
+singularity pullshub://IARCbioinfo/RNAseq-nf:v2.2
+```
+This will create a singularity container file: RNAseq-nf_v2.2.sif that you can then use by specifying it in the nextflow command (see usage)
+
 ### Configuration file
 
 ## Usage
+
+```bash
+nextflow run iarcbioinfo/pipeline_name -r X --input_folder xxx --output_folder xxx -params-file xxx.yml -w /scratch/work
+```
+OR USING SINGULARITY
+```bash
+nextflow run iarcbioinfo/pipeline_name -r X -profile singularity --input_folder xxx --output_folder xxx -params-file xxx.yml -w /scratch/work
+```
+OR USING SINGULARITY WITH SPECIFIC CONTAINER
+```bash
+nextflow run iarcbioinfo/pipeline_name -r X -with-singularity XXX.sif --input_folder xxx --output_folder xxx -params-file xxx.yml -w /scratch/work
+```
 
 ### Pipelines updates
 
