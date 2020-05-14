@@ -142,9 +142,9 @@ To avoid having to installing all dependencies each time you use a pipeline, you
 See documentation [here](https://sylabs.io/guides/3.5/user-guide/).
 In case you want to use the same singularity container - with the exactly same versions of pipeline and tools - on several data over time you may want to pull the container and archive it somewhere :
 ```bash
-singularity pullshub://IARCbioinfo/RNAseq-nf:v2.2
+singularity pull shub://IARCbioinfo/pipeline-nf:v2.2
 ```
-This will create a singularity container file: RNAseq-nf_v2.2.sif that you can then use by specifying it in the nextflow command (see usage)
+This will create a singularity container file: pipeline-nf_v2.2.sif that you can then use by specifying it in the nextflow command (see usage)
 
 ### Configuration file
 
