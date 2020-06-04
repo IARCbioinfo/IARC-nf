@@ -54,7 +54,7 @@ This page lists all the pipelines (mostly nextflow pipelines which are suffixed 
 | [TCGA_platypus-nf](https://github.com/IARCbioinfo/TCGA_platypus-nf)   | Converts TCGA Platypus vcf in format for annotation with annovar |[vt](https://github.com/atks/vt),[VCFTools](https://github.com/vcftools/vcftools)|
 | [vcf_normalization-nf](https://github.com/IARCbioinfo/vcf_normalization-nf)   | Decomposes and normalizes variant calls (vcf files) |[bcftools](https://github.com/samtools/bcftools),[samtools/htslib](http://www.htslib.org/)|
 | [TCGA_germline-nf](https://github.com/IARCbioinfo/TCGA_germline-nf) | Extract germline variants from TCGA data for annotation with annovar (vcf files) |[R software](https://www.r-project.org/)|
-| [mutspec_annot](https://github.com/IARCbioinfo/mutspec_annot) | Filter and annotate batch of vcf files (annovar + strand + context) |[annovar](http://annovar.openbioinformatics.org/en/latest/), [R](https://www.r-project.org)|
+| [gama_annot-nf](https://github.com/IARCbioinfo/gama_annot-nf) | Filter and annotate batch of vcf files (annovar + strand + context) |[annovar](http://annovar.openbioinformatics.org/en/latest/), [R](https://www.r-project.org)|
 | [table_annovar-nf](https://github.com/IARCbioinfo/table_annovar-nf) | Annotate variants with annovar (vcf files) |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
 |*************** |||
 | [MutSpec](https://github.com/IARCbioinfo/mutspec)   | Suite of tools for analyzing and interpreting mutational signatures |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
