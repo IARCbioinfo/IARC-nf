@@ -9,7 +9,6 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 |-----------|--------------|-----------|-----------------|----------------------|
 | [alignment-nf](https://github.com/IARCbioinfo/alignment-nf)    |v1.2 - July 2020|Yes| Performs BAM realignment or fastq alignment, with/without local indel realignment and base quality score recalibration |[bwa](https://github.com/lh3/bwa), [samblaster](https://github.com/GregoryFaust/samblaster), [sambamba](https://github.com/lomereiter/sambamba), [samtools](http://samtools.sourceforge.net/), [AdapterRemoval](https://github.com/MikkelSchubert/adapterremoval), [GATK](www.broadinstitute.org/gatk/download), [k8 javascript execution shell](https://sourceforge.net/projects/bio-bwa/files/bwakit/), [bwa-postalt.js](https://github.com/lh3/bwa/tree/master/bwakit) |
 | [gatk4-DataPreProcessing-nf](https://github.com/IARCbioinfo/gatk4-DataPreProcessing-nf)   |Nov 2018|?| Performs bwa alignment and pre-processing (mark duplicates and recalibration) following GATK4 best practices - compatible with hg38 |[bwa](https://github.com/lh3/bwa), [picard](https://broadinstitute.github.io/picard/), [GATK4](https://software.broadinstitute.org/gatk/download/), [sambamba](https://github.com/lomereiter/sambamba), [qualimap](http://qualimap.bioinfo.cipf.es/)|
-| [GATK-Alignment-nf](https://github.com/IARCbioinfo/GATK-Alignment-nf)   |June 2017|No| Performs bwa alignment and pre-processing (realignment and recalibration) following first version of GATK best practices (less performant than [alignment-nf](https://github.com/IARCbioinfo/alignment-nf) ) |[bwa](https://github.com/lh3/bwa), [picard](https://broadinstitute.github.io/picard/), [GATK](www.broadinstitute.org/gatk/download)|
 | [BQSR-nf](https://github.com/IARCbioinfo/BQSR-nf)   |v1.1 - Apr 2020|Yes| Performs base quality score recalibration of bam files using GATK |[samtools](http://samtools.sourceforge.net/), [samblaster](https://github.com/GregoryFaust/samblaster), [sambamba](https://github.com/lomereiter/sambamba), [GATK](www.broadinstitute.org/gatk/download)|
 | [abra-nf](https://github.com/IARCbioinfo/abra-nf)   |v3.0 - Apr 2020|Yes| Runs ABRA (Assembly Based ReAligner) |[ABRA](https://github.com/mozack/abra), [bedtools](http://bedtools.readthedocs.io/en/latest/), [bwa](http://bio-bwa.sourceforge.net), [sambamba](http://lomereiter.github.io/sambamba/), [samtools](http://www.htslib.org/) |
 | [PostAlignment-nf](https://github.com/IARCbioinfo/PostAlignment-nf)   |Aug 2018|?| Perform post alignment on bam files | [samtools](http://samtools.sourceforge.net/), [sambamba](https://github.com/lomereiter/sambamba), [bwa-postalt.js](https://github.com/lh3/bwa/tree/master/bwakit)|
@@ -116,6 +115,12 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 | [variantflag](https://github.com/IARCbioinfo/variantflag)   | Merge and annotate variants from different callers ||
 | [PRSice](https://github.com/IARCbioinfo/PRSice-nf)   | Pipeline to compute polygenic risk scores ||
 | [EPIDRIVER2020](https://github.com/IARCbioinfo/EPIDRIVER2020)   | Scripts for EPIDRIVER Project ||
+
+### Outdated
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [GATK-Alignment-nf](https://github.com/IARCbioinfo/GATK-Alignment-nf)   |June 2017|No| Performs bwa alignment and pre-processing (realignment and recalibration) following first version of GATK best practices (less performant than [alignment-nf](https://github.com/IARCbioinfo/alignment-nf) ) |[bwa](https://github.com/lh3/bwa), [picard](https://broadinstitute.github.io/picard/), [GATK](www.broadinstitute.org/gatk/download)|
 
 ## Installation 
 
