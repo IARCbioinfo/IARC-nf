@@ -25,6 +25,8 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 | [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   |v1.1 - Aug 2020|Yes| Perform fusion-genes discovery from RNAseq data|[STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion/wiki)|
 | [quantiseq-nf](https://github.com/IARCbioinfo/quantiseq-nf)   |v1.1 - July 2020|Yes| Quantify immune cell content from RNA-seq data|[quanTIseq](https://icbi.i-med.ac.at/software/quantiseq/doc/) |
 
+![workflow](Pipelines-rnaseq.jpg)
+
 ### QC
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
