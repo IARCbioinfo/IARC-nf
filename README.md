@@ -157,6 +157,7 @@ In case you want to use the same singularity container - with the exactly same v
 singularity pull shub://IARCbioinfo/pipeline-nf:v2.2
 ```
 where "pipeline-nf" should be replaced by the name of the pipeline you want to use (example: RNAseq-nf) and 2.2 by the version of the pipeline you want to use (example: 2.4) This will create a singularity container file: pipeline-nf_v2.2.sif (example: RNAseq-nf_v2.4.sif) that you can then use by specifying it in the nextflow command (see usage)
+
 => example:
 ```bash
 singularity pull shub://IARCbioinfo/RNAseq-nf:v2.4
