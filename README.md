@@ -59,7 +59,7 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 |****************** |*********** |*********** |************************* |************************ |
 | [MutSpec](https://github.com/IARCbioinfo/mutspec)   |v2.0 - May 2017|?| Suite of tools for analyzing and interpreting mutational signatures |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
 |****************** |*********** |*********** |************************* |************************ |
-| [purple-nf](https://github.com/IARCbioinfo/purple-nf)   |v1.0 - May 2021|Yes| <span style="color:red">NEW pipeline: </span>Performs copy number calling from tumor/normal or tumor-only sequencing data using PURPLE |[PURPLE](https://github.com/hartwigmedical/hmftools/tree/master/purple)|
+| [purple-nf](https://github.com/IARCbioinfo/purple-nf)   |v1.0 - May 2021|Yes| $\color{red}{\text{NEW pipeline:}}$ Performs copy number calling from tumor/normal or tumor-only sequencing data using PURPLE |[PURPLE](https://github.com/hartwigmedical/hmftools/tree/master/purple)|
 | [facets-nf](https://github.com/IARCbioinfo/facets-nf)   |v2.0 - Oct 2020|Yes| Performs fraction and copy number estimate from tumor/normal sequencing data using facets |[facets](https://github.com/mskcc/facets) , [R](https://www.r-project.org) |
 | [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)   |Mar 2017|?| Performs copy number variant calling from whole exome sequencing data using CODEX |[R](https://www.r-project.org) with package Codex, Rscript |
 | [svaba-nf](https://github.com/IARCbioinfo/svaba-nf)   |v1.0 - August 2020|Yes| Performs structural variant calling using SvABA |[SvABA](https://github.com/walaj/svaba) , [R](https://www.r-project.org) |
