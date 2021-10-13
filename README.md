@@ -21,7 +21,8 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 |-----------|--------------|-----------|-----------------|----------------------|
 | [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)   |v2.4 - Dec 2020|:heavy_check_mark: Yes| Performs RNAseq mapping, quality control, and reads counting - See also [RNAseq_analysis_scripts](https://github.com/IARCbioinfo/RNAseq_analysis_scripts) for post-processing  |[fastqc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/INSTALL.txt), [RESeQC](http://rseqc.sourceforge.net/), [multiQC](http://multiqc.info/docs/), [STAR](https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf), [htseq](http://www-huber.embl.de/HTSeq/doc/install.html#install), [cutadapt](http://cutadapt.readthedocs.io/en/stable/installation.html), Python version > 2.7, [trim_galore](https://github.com/FelixKrueger/TrimGalore), [hisat2](https://ccb.jhu.edu/software/hisat2/index.shtml), [GATK](www.broadinstitute.org/gatk/download), [samtools](http://samtools.sourceforge.net/)|
 | [RNAseq-transcript-nf](https://github.com/IARCbioinfo/RNAseq-transcript-nf)   |v2.2 - June 2020|:heavy_check_mark: Yes| Performs transcript identification and quantification from a series of BAM files |[StringTie](https://github.com/gpertea/stringtie)|
-| [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   |v1.1 - Aug 2020|:heavy_check_mark: Yes| Perform fusion-genes discovery from RNAseq data|[STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion/wiki)|
+| [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   |v1.1 - Aug 2020|:heavy_check_mark: Yes| Perform fusion-genes discovery from RNAseq data using STAR-Fusion|[STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion/wiki)|
+| [nf-gene-fusions](https://github.com/IARCbioinfo/nf-gene-fusions)   |v1 - Oct 2020|:heavy_check_mark: Yes| Perform fusion-genes discovery from RNAseq data using Arriba|[Arriba](https://github.com/suhrig/arriba)|
 | [quantiseq-nf](https://github.com/IARCbioinfo/quantiseq-nf)   |v1.1 - July 2020|:heavy_check_mark: Yes| Quantify immune cell content from RNA-seq data|[quanTIseq](https://icbi.i-med.ac.at/software/quantiseq/doc/) |
 
 ![workflow](Pipelines-rnaseq.jpg)
@@ -71,7 +72,7 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 | [template-nf](https://github.com/IARCbioinfo/template-nf)   |May 2020|:heavy_check_mark: Yes | Empty template for nextflow pipelines |NA|
 | [data_test](https://github.com/IARCbioinfo/data_test)   |Aug 2020|:heavy_check_mark: Yes| Small data files to test IARC nextflow pipelines |NA|
 ||||
-| [scanMyWorkDir](https://github.com/IARCbioinfo/scanMyWorkDir)   |May 2018|?| Non-destructive and informative scan of a nextflow work folder |NA|
+| [bam2cram](https://github.com/IARCbioinfo/bam2cram)   |v1.0 - Nov 2020|:heavy_check_mark: Yes|🔴 NEW pipeline: convert bam files to cram files|[samtools](http://samtools.sourceforge.net/)|
 | [nf-hla-neo](https://github.com/IARCbioinfo/nf-hla-neo)   |v1.1 - June 2021|:heavy_check_mark: Yes|🔴 NEW pipeline: predict neoantigens from WGS of T/N pairs |[xHLA](https://github.com/humanlongevity/HLA), [VEP](https://github.com/Ensembl/ensembl-vep), [pVACtools](https://github.com/griffithlab/pVACtools)|
 | [PRSice](https://github.com/IARCbioinfo/PRSice-nf)   |Nov 2020|| Pipeline to compute polygenic risk scores|[PRSice-2](https://www.prsice.info/)|
 | [methylkey](https://github.com/IARCbioinfo/methylkey)   | May 2021 |:heavy_check_mark: Yes|Pipeline for 450k and 850k array analysis (bisulfite data analysis using Minfi, Methylumi, Comet, Bumphunter and DMRcate packages)|[R software](https://www.r-project.org/)|
@@ -91,6 +92,7 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 | [DRMetrics](https://github.com/IARCbioinfo/DRMetrics)   |Oct 2020|:heavy_check_mark: Yes| Evaluate the quality of projections obtained after using dimensionality reduction techniques|[R software](https://www.r-project.org/)|
 | [acnviewer-singularity](https://github.com/IARCbioinfo/acnviewer-singularity)   |Jul 2019|?| Build a singularity image of aCNViewer (tool for visualization of absolute copy number and copy neutral variations) (|[Singularity](https://sylabs.io/singularity/)|
 | [polysolver-singularity](https://github.com/IARCbioinfo/polysolver-singularity)   |Dec 2019|?| Build a singularity image of Polysolver (tool for HLA typing based on whole exome seq)|[Singularity](https://sylabs.io/singularity/)|
+| [scanMyWorkDir](https://github.com/IARCbioinfo/scanMyWorkDir)   |May 2018|?| Non-destructive and informative scan of a nextflow work folder |NA|
 
 ### Courses
 | Name      | Description     |	Tools used	|
