@@ -1,4 +1,4 @@
-# IARC bioinformatics nextflow pipelines (updated on 13/10/2021)
+# IARC bioinformatics nextflow pipelines (updated on 28/12/2021)
 
 This page lists all the pipelines developed at IARC (mostly nextflow pipelines which are suffixed with -nf) and explains how to use them (at the bottom of the page)
 
@@ -22,7 +22,7 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 | [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)   |v2.4 - Dec 2020|:heavy_check_mark: Yes| Performs RNAseq mapping, quality control, and reads counting - See also [RNAseq_analysis_scripts](https://github.com/IARCbioinfo/RNAseq_analysis_scripts) for post-processing  |[fastqc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/INSTALL.txt), [RESeQC](http://rseqc.sourceforge.net/), [multiQC](http://multiqc.info/docs/), [STAR](https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf), [htseq](http://www-huber.embl.de/HTSeq/doc/install.html#install), [cutadapt](http://cutadapt.readthedocs.io/en/stable/installation.html), Python version > 2.7, [trim_galore](https://github.com/FelixKrueger/TrimGalore), [hisat2](https://ccb.jhu.edu/software/hisat2/index.shtml), [GATK](www.broadinstitute.org/gatk/download), [samtools](http://samtools.sourceforge.net/)|
 | [RNAseq-transcript-nf](https://github.com/IARCbioinfo/RNAseq-transcript-nf)   |v2.2 - June 2020|:heavy_check_mark: Yes| Performs transcript identification and quantification from a series of BAM files |[StringTie](https://github.com/gpertea/stringtie)|
 | [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   |v1.1 - Aug 2020|:heavy_check_mark: Yes| Perform fusion-genes discovery from RNAseq data using STAR-Fusion|[STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion/wiki)|
-| [nf-gene-fusions](https://github.com/IARCbioinfo/nf-gene-fusions)   |v1 - Oct 2020|:heavy_check_mark: Yes| Perform fusion-genes discovery from RNAseq data using Arriba|[Arriba](https://github.com/suhrig/arriba)|
+| [nf-gene-fusions](https://github.com/IARCbioinfo/nf-gene-fusions)   |v1 - Oct 2020 - updated Nov 2021|:heavy_check_mark: Yes| Perform fusion-genes discovery from RNAseq data using Arriba|[Arriba](https://github.com/suhrig/arriba)|
 | [quantiseq-nf](https://github.com/IARCbioinfo/quantiseq-nf)   |v1.1 - July 2020|:heavy_check_mark: Yes| Quantify immune cell content from RNA-seq data|[quanTIseq](https://icbi.i-med.ac.at/software/quantiseq/doc/) |
 
 ![workflow](Pipelines-rnaseq.jpg)
@@ -56,15 +56,16 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 | [TCGA_germline-nf](https://github.com/IARCbioinfo/TCGA_germline-nf) |May 2017|?| Extract germline variants from TCGA data for annotation with annovar (vcf files) |[R software](https://www.r-project.org/)|
 | [gama_annot-nf](https://github.com/IARCbioinfo/gama_annot-nf) |Aug 2020|:heavy_check_mark: Yes| Filter and annotate batch of vcf files (annovar + strand + context) |[annovar](http://annovar.openbioinformatics.org/en/latest/), [R](https://www.r-project.org)|
 | [table_annovar-nf](https://github.com/IARCbioinfo/table_annovar-nf) |v1.1.1 - Feb 2021|:heavy_check_mark: Yes| Annotate variants with annovar (vcf files) |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
+| [RF-mut-f](https://github.com/IARCbioinfo/RF-mut-f) |Nov 2021|:heavy_check_mark: Yes| 🔴 NEW pipeline: Random forest implementation to filter germline mutations from tumor-only samples |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
 |****************** |*********** |*********** |************************* |************************ |
 | [MutSig](https://github.com/IARCbioinfo/MutSig)   |Oct 2021|:heavy_check_mark: Yes| 🔴 NEW pipeline: Performs mutational signatures analysis of WGS data using SigProfilerExtractor |[SigProfilerExtractor](https://github.com/AlexandrovLab/SigProfilerExtractor)|
 | [MutSpec](https://github.com/IARCbioinfo/mutspec)   |v2.0 - May 2017|?| Suite of tools for analyzing and interpreting mutational signatures |[annovar](http://annovar.openbioinformatics.org/en/latest/)|
 |****************** |*********** |*********** |************************* |************************ |
-| [purple-nf](https://github.com/IARCbioinfo/purple-nf)   |v1.0 - May 2021|:heavy_check_mark: Yes|🔴 NEW pipeline: Performs copy number calling from tumor/normal or tumor-only sequencing data using PURPLE |[PURPLE](https://github.com/hartwigmedical/hmftools/tree/master/purple)|
+| [purple-nf](https://github.com/IARCbioinfo/purple-nf)   |v1.1 - Nov 2021|:heavy_check_mark: Yes|🔴 NEW pipeline: Performs copy number calling from tumor/normal or tumor-only sequencing data using PURPLE |[PURPLE](https://github.com/hartwigmedical/hmftools/tree/master/purple)|
 | [facets-nf](https://github.com/IARCbioinfo/facets-nf)   |v2.0 - Oct 2020|:heavy_check_mark: Yes| Performs fraction and copy number estimate from tumor/normal sequencing data using facets |[facets](https://github.com/mskcc/facets) , [R](https://www.r-project.org) |
 | [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)   |Mar 2017|?| Performs copy number variant calling from whole exome sequencing data using CODEX |[R](https://www.r-project.org) with package Codex, Rscript |
 | [svaba-nf](https://github.com/IARCbioinfo/svaba-nf)   |v1.0 - August 2020|:heavy_check_mark: Yes| Performs structural variant calling using SvABA |[SvABA](https://github.com/walaj/svaba) , [R](https://www.r-project.org) |
-
+| [sv_somatic_cns](https://github.com/IARCbioinfo/sv_somatic_cns)   |v1.0 - Nov 2021|:heavy_check_mark: Yes| Pipeline using multiple SV callers for consensus structural variant calling from tumor/normal sequencing data |[Delly](https://github.com/dellytools/delly), [SvABA](https://github.com/walaj/svaba), [Manta](https://github.com/Illumina/manta), [SURVIVOR](https://github.com/fritzsedlazeck/SURVIVOR), [bcftools](https://github.com/samtools/bcftools), [Samtools](https://github.com/samtools/samtools) |
 
 ### Other tools/pipelines
 | Name      |Latest version|Maintained | Description     |	Tools used	|
@@ -88,7 +89,7 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 | [PVAmpliconFinder](https://github.com/IARCbioinfo/PVAmpliconFinder)   |Aug 2020|:heavy_check_mark: Yes| Identify and classify known and potentially new papilliomaviridae sequences from amplicon deep-sequencing with degenerated papillomavirus primers.|Python and Perl + FastQC, MultiQC, Trim Galore, VSEARCH, Blast, RaxML-EPA, PaPaRa, CAP3, KRONA)|
 | [integration_analysis_scripts](https://github.com/IARCbioinfo/integration_analysis_scripts)   |Mar 2020|:heavy_check_mark: Yes| Performs unsupervised analyses (clustering) from transformed expression data (e.g., log fpkm) and methylation beta values |[R software](https://www.r-project.org/) with iClusterPlus, gplots and lattice R packages|
 | [mpileup2readcounts](https://github.com/IARCbioinfo/mpileup2readcounts)|Apr 2018|?| Get the readcounts at a locus by piping samtools mpileup output - forked from [gatoravi](https://github.com/gatoravi/mpileup2readcounts) |[samtools](http://samtools.sourceforge.net/)|
-| [Methylation_analysis_scripts](https://github.com/IARCbioinfo/Methylation_analysis_scripts)   |v1.0 - June 2020|:heavy_check_mark: Yes| Perform Illumina EPIC 850K array pre-processing and QC from idat files|[R software](https://www.r-project.org)| 
+| [Methylation_analysis_scripts](https://github.com/IARCbioinfo/Methylation_analysis_scripts)   |v1.0 - June 2020 - updated Nov 2021|:heavy_check_mark: Yes| Perform Illumina EPIC 850K array pre-processing and QC from idat files|[R software](https://www.r-project.org)| 
 | [DRMetrics](https://github.com/IARCbioinfo/DRMetrics)   |Oct 2020|:heavy_check_mark: Yes| Evaluate the quality of projections obtained after using dimensionality reduction techniques|[R software](https://www.r-project.org/)|
 | [acnviewer-singularity](https://github.com/IARCbioinfo/acnviewer-singularity)   |Jul 2019|?| Build a singularity image of aCNViewer (tool for visualization of absolute copy number and copy neutral variations) (|[Singularity](https://sylabs.io/singularity/)|
 | [polysolver-singularity](https://github.com/IARCbioinfo/polysolver-singularity)   |Dec 2019|?| Build a singularity image of Polysolver (tool for HLA typing based on whole exome seq)|[Singularity](https://sylabs.io/singularity/)|
@@ -99,7 +100,7 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 |-----------|-----------------|-----------------|
 | [nextflow-course-2018](https://github.com/IARCbioinfo/nextflow-course-2018)   | Nextflow course |NA|
 | [SBG-CGC_course2018](https://github.com/IARCbioinfo/SBG-CGC_course2018)   | Analyzing TCGA data in SBG-CGC |NA|
-| [Medical-genomics-course2020](https://github.com/IARCbioinfo/medical_genomics_course)   | Medical Genomics course held at the INSA Lyon - Fall 2020|NA|
+| [Medical Genomics Course](https://github.com/IARCbioinfo/medical_genomics_course)   | Medical Genomics course held at the INSA Lyon - updated Fall 2021|NA|
 | [intro-cancer-genomics](https://github.com/IARCbioinfo/intro-cancer-genomics)   | Introduction to cancer genomics |NA|
 
 ### Tricks
