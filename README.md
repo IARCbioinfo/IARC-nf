@@ -1,4 +1,4 @@
-# IARC bioinformatics nextflow pipelines (updated on 28/12/2021)
+# IARC bioinformatics nextflow pipelines (updated on 03/05/2022)
 
 This page lists all the pipelines developed at IARC (mostly nextflow pipelines which are suffixed with -nf) and explains how to use them (at the bottom of the page)
 
