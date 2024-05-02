@@ -3,7 +3,7 @@
 This page lists all the pipelines developed at IARC (mostly nextflow pipelines which are suffixed with -nf) and explains how to use them (at the bottom of the page)
 
 ## IARC pipelines list
-
+[TOC]
 ### Raw NGS data processing
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
@@ -32,7 +32,6 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 |-----------|--------------|-----------|-----------------|----------------------|
 | [SComatic-nf](https://github.com/IARCbioinfo/SComatic-nf)   |April 2024|:heavy_check_mark: Yes| Performs variant calling from single-cell RNAseq data | [SComatic](https://github.com/cortes-ciriano-lab/SComatic), [annovar](https://annovar.openbioinformatics.org/en/latest/) | 
 | [numbat-nf](https://github.com/IARCbioinfo/numbat-nf)   |April 2024|:heavy_check_mark: Yes| Performs variant calling from single-cell RNAseq data | [numbat](https://kharchenkolab.github.io/numbat/articles/numbat.html), [SigProfilerExtractor](https://github.com/AlexandrovLab/SigProfilerExtractor) |
-
 
 
 ### QC
