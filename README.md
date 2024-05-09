@@ -20,25 +20,25 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 
 [2. Courses and data notes](#head2)
 
-[3.Tips & Tricks](#head3)
+[3. Tips & Tricks](#head3)
 
 [4. Coming soon... (only dev branches yet)](#head4)
 
-[5. Outdated and unmaintained pipelines and tools](#head5)
+[5. Nextflow, Docker and Singularity installation and use](#head6)
 
-[6. Nextflow, Docker and Singularity installation and use](#head6)
+ * [5a. Nextflow](#head5a)
 
- * [6a. Nextflow](#head6a)
+ * [5b. Docker](#head5b)
 
- * [6b. Docker](#head6b)
+ * [5c. Singularity](#head5c)
 
- * [6c. Singularity](#head6c)
+ * [5d. Usage](#head5d)
 
- * [6d. Usage](#head6d)
+ * [5e. Updates](#head5e)
 
- * [6e. Updates](#head6e)
+ * [5f. Help](#head5f)
 
- * [6f. Help](#head6f)
+[6. Outdated and unmaintained pipelines and tools](#head5)
 
 ## <a name="head1"></a>1. IARC pipelines/tools list
 
@@ -171,15 +171,9 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [variantflag](https://github.com/IARCbioinfo/variantflag)   | Merge and annotate variants from different callers ||
 | [EPIDRIVER2020](https://github.com/IARCbioinfo/EPIDRIVER2020)   | Scripts for EPIDRIVER Project ||
 
-## <a name="head5">5. Outdated and unmaintained pipelines and tools
+## <a name="head5">5. Nextflow, Docker and Singularity installation and use
 
-| Name      |Latest version|Maintained | Description     |	Tools used	|
-|-----------|--------------|-----------|-----------------|----------------------|
-| [GATK-Alignment-nf](https://github.com/IARCbioinfo/GATK-Alignment-nf)   |June 2017|No| Performs bwa alignment and pre-processing (realignment and recalibration) following first version of GATK best practices (less performant than [alignment-nf](https://github.com/IARCbioinfo/alignment-nf) ) |[bwa](https://github.com/lh3/bwa), [picard](https://broadinstitute.github.io/picard/), [GATK](www.broadinstitute.org/gatk/download)|
-
-## <a name="head6">6. Nextflow, Docker and Singularity installation and use
-
-### <a name="head6a">6a. Nextflow
+### <a name="head5a">5a. Nextflow
 
 1. Install [java](https://java.com/download/) JRE if you don't already have it (7 or higher).
 
@@ -193,13 +187,13 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 	sudo mv nextflow /usr/local/bin
 	```
 
-### <a name="head6b">6b. Docker
+### <a name="head5b">5b. Docker
 
 To avoid having to installing all dependencies each time you use a pipeline, you can instead install [docker](https://www.docker.com) and let nextflow dealing with it. Installing docker is system specific (but quite easy in most cases), follow  [docker documentation](https://docs.docker.com/installation/) (docker CE is sufficient). Also follow the post-installation step to manage Docker as a non-root user ([here](https://docs.docker.com/engine/installation/linux/linux-postinstall/) for Linux), otherwise you will need to change the `sudo` option in nextflow `docker` config scope as described in the nextflow documentation [here](https://www.nextflow.io/docs/latest/config.html#scope-docker).
 
 To run nextflow pipeline with Docker, simply add the `-with-docker` option in the `nextflow run` command.
 
-### <a name="head6c">6c. Singularity
+### <a name="head5c">5c. Singularity
 
 To avoid having to installing all dependencies each time you use a pipeline, you can also install [singularity](https://www.docker.com) and let nextflow dealing with it. 
 
@@ -216,7 +210,7 @@ where "pipeline-nf" should be replaced by the name of the pipeline you want to u
 singularity pull shub://IARCbioinfo/RNAseq-nf:v2.4
 ```
 
-### <a name="head6d">6d. Usage
+### <a name="head5d">5d. Usage
 
 ```bash
 nextflow run iarcbioinfo/pipeline_name -r X --input_folder xxx --output_folder xxx -params-file xxx.yml -w /scratch/work
@@ -230,7 +224,7 @@ OR USING SINGULARITY WITH SPECIFIC CONTAINER
 nextflow run iarcbioinfo/pipeline_name -r X -with-singularity XXX.sif --input_folder xxx --output_folder xxx -params-file xxx.yml -w /scratch/work
 ```
 
-### <a name="head6e">6e. Updates
+### <a name="head5e">5e. Updates
 
 You can update the nextflow sofware and the pipeline itself simply using:
 ```bash
@@ -240,9 +234,13 @@ nextflow pull iarcbioinfo/pipeline_name
 
 You can also automatically update the pipeline when you run it by adding the option `-latest` in the `nextflow run` command. Doing so you will always run the latest version from Github.
 
-### <a name="head6f">6f. Help
+### <a name="head5f">5f. Help
 
 ```bash
 nextflow run iarcbioinfo/pipeline_name --help
 ```
+## <a name="head6">6. Outdated and unmaintained pipelines and tools
 
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [GATK-Alignment-nf](https://github.com/IARCbioinfo/GATK-Alignment-nf)   |June 2017|No| Performs bwa alignment and pre-processing (realignment and recalibration) following first version of GATK best practices (less performant than [alignment-nf](https://github.com/IARCbioinfo/alignment-nf) ) |[bwa](https://github.com/lh3/bwa), [picard](https://broadinstitute.github.io/picard/), [GATK](www.broadinstitute.org/gatk/download)|
