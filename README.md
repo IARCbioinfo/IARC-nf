@@ -6,12 +6,39 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 
 [1. IARC pipelines/tools list](#head1)
 
-[1a. Raw NGS data processing](#head1a)
+> [1a. Raw NGS data processing](#head1a)
 
-[1b. RNA Seq](#head1b)
+> [1b. RNA Seq](#head1b)
 
-[1c. Single-cell RNA seq](#head1c)
+> [1c. Single-cell RNA seq](#head1c)
 
+> [1d. QC](#head1d)
+
+> [1e. Variant calling](#head1e)
+
+> [1f. Other tools/pipelines](#head1f)
+
+[2. Courses and data notes](#head2)
+
+[3.Tips & Tricks](#head3)
+
+[4. Coming soon... (only dev branches yet)](#head4)
+
+[5. Outdated and unmaintained pipelines and tools](#head5)
+
+[6. Nextflow, Docker and Singularity installation and use](#head6)
+
+> [6a. Nextflow](#head6a)
+
+> [6b. Docker](#head6b)
+
+> [6c. Singularity](#head6c)
+
+> [6d. Usage](#head6d)
+
+> [6e. Updates](#head6e)
+
+> [6f. Help](#head6f)
 
 ## <a name="head1"></a>1. IARC pipelines/tools list
 
@@ -45,7 +72,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [numbat-nf](https://github.com/IARCbioinfo/numbat-nf)   |April 2024|:heavy_check_mark: Yes| Performs variant calling from single-cell RNAseq data | [numbat](https://kharchenkolab.github.io/numbat/articles/numbat.html), [SigProfilerExtractor](https://github.com/AlexandrovLab/SigProfilerExtractor) |
 
 
-### QC
+### <a name="head1d">1d. QC
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [NGSCheckMate](https://github.com/IARCbioinfo/NGSCheckMate)   |v1.1a - July 2021|:heavy_check_mark: Yes| Runs NGSCheckMate on BAM files to identify data files from a same indidual (i.e. check N/T pairs) |[NGSCheckMate](https://github.com/parklab/NGSCheckMate)|
@@ -57,7 +84,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [mpileup-nf](https://github.com/IARCbioinfo/mpileup-nf)   |Jan 2018|?| Computes bam coverage with samtools mpileup (bed parallelization) |[samtools](http://samtools.sourceforge.net/),[annovar](http://annovar.openbioinformatics.org/en/latest/)|
 | [bamsurgeon-nf](https://github.com/IARCbioinfo/bamsurgeon-nf)   |Mar 2019|?| Runs bamsurgeon (tool to add mutations to bam files) with step of variant simulation |[Python 2.7](www.python.org), [bamsurgeon](http://github.com/adamewing/bamsurgeon/), [R software](https://www.r-project.org/) (tested with R version 3.2.3)|
 
-### Variant calling
+### <a name="head1e">1e. Variant calling
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [needlestack](https://github.com/IARCbioinfo/needlestack)   |v1.1 - May 2019|:heavy_check_mark: Yes| Performs multi-sample somatic variant calling |[perl](https://www.perl.org),  [bedtools](http://bedtools.readthedocs.org/en/latest/), [samtools](http://samtools.sourceforge.net/) and [R software](https://www.r-project.org/) |
@@ -86,7 +113,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [sv_somatic_cns-nf](https://github.com/IARCbioinfo/sv_somatic_cns-nf)   |v1.0 - Nov 2021|:heavy_check_mark: Yes| Pipeline using multiple SV callers for consensus structural variant calling from tumor/normal sequencing data |[Delly](https://github.com/dellytools/delly), [SvABA](https://github.com/walaj/svaba), [Manta](https://github.com/Illumina/manta), [SURVIVOR](https://github.com/fritzsedlazeck/SURVIVOR), [bcftools](https://github.com/samtools/bcftools), [Samtools](https://github.com/samtools/samtools) |
 | [ssvht](https://github.com/IARCbioinfo/ssvht)   |v1 - Oct 2022|:heavy_check_mark: Yes| 🔴 NEW set of scripts to assist the calling of somatic structural variants from short reads using a random forest classifier ||
 
-### Other tools/pipelines
+### <a name="head1f">1f. Other tools/pipelines
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [template-nf](https://github.com/IARCbioinfo/template-nf)   |May 2020|:heavy_check_mark: Yes | Empty template for nextflow pipelines |NA|
@@ -115,7 +142,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [polysolver-singularity](https://github.com/IARCbioinfo/polysolver-singularity)   |Dec 2019|?| Build a singularity image of Polysolver (tool for HLA typing based on whole exome seq)|[Singularity](https://sylabs.io/singularity/)|
 | [scanMyWorkDir](https://github.com/IARCbioinfo/scanMyWorkDir)   |May 2018|?| Non-destructive and informative scan of a nextflow work folder |NA|
 
-### Courses and data notes
+## <a name="head2">2. Courses and data notes
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
 | [nextflow-course-2018](https://github.com/IARCbioinfo/nextflow-course-2018)   | Nextflow course |NA|
@@ -124,7 +151,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [intro-cancer-genomics](https://github.com/IARCbioinfo/intro-cancer-genomics)   | Introduction to cancer genomics |NA|
 | [mesomics_data_note](https://github.com/IARCbioinfo/mesomics_data_note)   | Repository with code and datasets used in the mesomics data note manuscript |NA|
 
-### Tricks
+## <a name="head3">3.Tips & Tricks
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [BAM-tricks](https://github.com/IARCbioinfo/BAM-tricks)   ||| Tips and tricks for BAM files |[samtools](http://samtools.sourceforge.net/), freebayes, [bedtools](http://bedtools.readthedocs.io/en/latest/), biobambam2, [Picard](http://broadinstitute.github.io/picard/), [rbamtools](https://cran.r-project.org/web/packages/rbamtools/index.html)|
@@ -135,7 +162,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [awesomeTCGA](https://github.com/IARCbioinfo/awesome-TCGA) ||| Curated list of resources to access TCGA data |NA|
 | [LSF-Tricks](https://github.com/IARCbioinfo/LSF-tricks)   ||| Tips and tricks for LSF HPC scheduler |NA|
 
-### Coming soon... (only dev branches yet)
+## <a name="head4">4. Coming soon... (only dev branches yet)
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|----------------------|
 | [DPclust-nf](https://github.com/IARCbioinfo/DPclust-nf)   | Method for subclonal reconstruction using SNVs and/or CNAs from whole genome or whole exome sequencing data|[dpclust](https://github.com/Wedge-lab/dpclust) , [R](https://www.r-project.org) |
@@ -144,15 +171,15 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [variantflag](https://github.com/IARCbioinfo/variantflag)   | Merge and annotate variants from different callers ||
 | [EPIDRIVER2020](https://github.com/IARCbioinfo/EPIDRIVER2020)   | Scripts for EPIDRIVER Project ||
 
-### Outdated
+## <a name="head5">5. Outdated and unmaintained pipelines and tools
 
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [GATK-Alignment-nf](https://github.com/IARCbioinfo/GATK-Alignment-nf)   |June 2017|No| Performs bwa alignment and pre-processing (realignment and recalibration) following first version of GATK best practices (less performant than [alignment-nf](https://github.com/IARCbioinfo/alignment-nf) ) |[bwa](https://github.com/lh3/bwa), [picard](https://broadinstitute.github.io/picard/), [GATK](www.broadinstitute.org/gatk/download)|
 
-## Installation 
+## <a name="head6">6. Nextflow, Docker and Singularity installation and use
 
-### Nextflow
+### <a name="head6a">6a. Nextflow
 
 1. Install [java](https://java.com/download/) JRE if you don't already have it (7 or higher).
 
@@ -166,13 +193,13 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 	sudo mv nextflow /usr/local/bin
 	```
 
-### Docker
+### <a name="head6b">6b. Docker
 
 To avoid having to installing all dependencies each time you use a pipeline, you can instead install [docker](https://www.docker.com) and let nextflow dealing with it. Installing docker is system specific (but quite easy in most cases), follow  [docker documentation](https://docs.docker.com/installation/) (docker CE is sufficient). Also follow the post-installation step to manage Docker as a non-root user ([here](https://docs.docker.com/engine/installation/linux/linux-postinstall/) for Linux), otherwise you will need to change the `sudo` option in nextflow `docker` config scope as described in the nextflow documentation [here](https://www.nextflow.io/docs/latest/config.html#scope-docker).
 
 To run nextflow pipeline with Docker, simply add the `-with-docker` option in the `nextflow run` command.
 
-### Singularity
+### <a name="head6c">6c. Singularity
 
 To avoid having to installing all dependencies each time you use a pipeline, you can also install [singularity](https://www.docker.com) and let nextflow dealing with it. 
 
@@ -189,9 +216,7 @@ where "pipeline-nf" should be replaced by the name of the pipeline you want to u
 singularity pull shub://IARCbioinfo/RNAseq-nf:v2.4
 ```
 
-### Configuration file
-
-## Usage
+### <a name="head6d">6d. Usage
 
 ```bash
 nextflow run iarcbioinfo/pipeline_name -r X --input_folder xxx --output_folder xxx -params-file xxx.yml -w /scratch/work
@@ -205,7 +230,7 @@ OR USING SINGULARITY WITH SPECIFIC CONTAINER
 nextflow run iarcbioinfo/pipeline_name -r X -with-singularity XXX.sif --input_folder xxx --output_folder xxx -params-file xxx.yml -w /scratch/work
 ```
 
-### Pipelines updates
+### <a name="head6e">6e. Updates
 
 You can update the nextflow sofware and the pipeline itself simply using:
 ```bash
@@ -215,7 +240,7 @@ nextflow pull iarcbioinfo/pipeline_name
 
 You can also automatically update the pipeline when you run it by adding the option `-latest` in the `nextflow run` command. Doing so you will always run the latest version from Github.
 
-### Display help
+### <a name="head6f">6f. Help
 
 ```bash
 nextflow run iarcbioinfo/pipeline_name --help
