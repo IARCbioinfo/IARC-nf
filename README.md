@@ -6,17 +6,17 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 
 [1. IARC pipelines/tools list](#head1)
 
-> [1a. Raw NGS data processing](#head1a)
+ * [1a. Raw NGS data processing](#head1a)
 
-> [1b. RNA Seq](#head1b)
+ * [1b. RNA Seq](#head1b)
 
-> [1c. Single-cell RNA seq](#head1c)
+ * [1c. Single-cell RNA seq](#head1c)
 
-> [1d. QC](#head1d)
+ * [1d. QC](#head1d)
 
-> [1e. Variant calling](#head1e)
+ * [1e. Variant calling](#head1e)
 
-> [1f. Other tools/pipelines](#head1f)
+ * [1f. Other tools/pipelines](#head1f)
 
 [2. Courses and data notes](#head2)
 
@@ -28,17 +28,17 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 
 [6. Nextflow, Docker and Singularity installation and use](#head6)
 
-> [6a. Nextflow](#head6a)
+ * [6a. Nextflow](#head6a)
 
-> [6b. Docker](#head6b)
+ * [6b. Docker](#head6b)
 
-> [6c. Singularity](#head6c)
+ * [6c. Singularity](#head6c)
 
-> [6d. Usage](#head6d)
+ * [6d. Usage](#head6d)
 
-> [6e. Updates](#head6e)
+ * [6e. Updates](#head6e)
 
-> [6f. Help](#head6f)
+ * [6f. Help](#head6f)
 
 ## <a name="head1"></a>1. IARC pipelines/tools list
 
