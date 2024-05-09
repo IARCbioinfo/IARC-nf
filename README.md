@@ -1,10 +1,21 @@
-# IARC bioinformatics nextflow pipelines (updated on 25/04/2024)
+# IARC bioinformatics pipelines and tools (updated on 09/05/2024)
 
-This page lists all the pipelines developed at IARC (mostly nextflow pipelines which are suffixed with -nf) and explains how to use them (at the bottom of the page)
+This page lists all the pipelines and tools developed at IARC (mostly nextflow pipelines which are suffixed with -nf). It includes also some useful ressources like courses or data notes and tips/tricks. Finally at the bottom of the page you will also find explanations on how to use nextflow pipelines.
 
-## IARC pipelines list
-[TOC]
-### Raw NGS data processing
+<ins>Table of Content:</ins>
+
+[1. IARC pipelines/tools list](#head1)
+
+[1a. Raw NGS data processing](#head1a)
+
+[1b. RNA Seq](#head1b)
+
+[1c. Single-cell RNA seq](#head1c)
+
+
+## <a name="head1"></a>1. IARC pipelines/tools list
+
+### <a name="head1a"></a>1a. Raw NGS data processing
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [alignment-nf](https://github.com/IARCbioinfo/alignment-nf)    |v1.3 - March 2021|:heavy_check_mark: Yes| Performs BAM realignment or fastq alignment, with/without local indel realignment and base quality score recalibration |[bwa](https://github.com/lh3/bwa), [samblaster](https://github.com/GregoryFaust/samblaster), [sambamba](https://github.com/lomereiter/sambamba), [samtools](http://samtools.sourceforge.net/), [AdapterRemoval](https://github.com/MikkelSchubert/adapterremoval), [GATK](www.broadinstitute.org/gatk/download), [k8 javascript execution shell](https://sourceforge.net/projects/bio-bwa/files/bwakit/), [bwa-postalt.js](https://github.com/lh3/bwa/tree/master/bwakit) |
@@ -16,7 +27,7 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 | [marathon-wgs](https://github.com/IARCbioinfo/marathon-wgs)   |June 2018|?| Studies intratumor heterogeneity with Canopy|[bwa](https://github.com/lh3/bwa), [platypus](https://github.com/andyrimmer/Platypus), [strelka2](https://github.com/Illumina/strelka), [vt](https://github.com/atks/vt), [annovar](http://annovar.openbioinformatics.org/en/latest/), [R](https://www.r-project.org), [Falcon](https://cran.r-project.org/web/packages/falcon/index.html), [Canopy](https://github.com/yuchaojiang/Canopy)|
 | [ITH-nf](https://github.com/IARCbioinfo/ITH-nf)   |Sept 2018|?| Perform intra-tumoral heterogeneity (ITH) analysis |[Strelka2](https://github.com/Illumina/strelka) , [Platypus](https://www.well.ox.ac.uk/platypus), [Bcftools](https://samtools.github.io/bcftools/bcftools.html), [Tabix](http://www.htslib.org/doc/tabix.html), [Falcon](https://omictools.com/falcon-3-tool), [Canopy](https://github.com/yuchaojiang/Canopy)|
 
-### RNA Seq
+### <a name="head1b">1b. RNA Seq
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [RNAseq-nf](https://github.com/IARCbioinfo/RNAseq-nf)   |v2.4 - Dec 2020|:heavy_check_mark: Yes| Performs RNAseq mapping, quality control, and reads counting - See also [RNAseq_analysis_scripts](https://github.com/IARCbioinfo/RNAseq_analysis_scripts) for post-processing  |[fastqc](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/INSTALL.txt), [RESeQC](http://rseqc.sourceforge.net/), [multiQC](http://multiqc.info/docs/), [STAR](https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf), [htseq](http://www-huber.embl.de/HTSeq/doc/install.html#install), [cutadapt](http://cutadapt.readthedocs.io/en/stable/installation.html), Python version > 2.7, [trim_galore](https://github.com/FelixKrueger/TrimGalore), [hisat2](https://ccb.jhu.edu/software/hisat2/index.shtml), [GATK](www.broadinstitute.org/gatk/download), [samtools](http://samtools.sourceforge.net/)|
@@ -27,7 +38,7 @@ This page lists all the pipelines developed at IARC (mostly nextflow pipelines w
 
 ![workflow](Pipelines-rnaseq.jpg)
 
-### Single-cell RNA seq
+### <a name="head1c">1c. Single-cell RNA seq
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [SComatic-nf](https://github.com/IARCbioinfo/SComatic-nf)   |April 2024|:heavy_check_mark: Yes| Performs variant calling from single-cell RNAseq data | [SComatic](https://github.com/cortes-ciriano-lab/SComatic), [annovar](https://annovar.openbioinformatics.org/en/latest/) | 
