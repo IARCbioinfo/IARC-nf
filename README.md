@@ -24,7 +24,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 
 [4. Coming soon... (only dev branches yet)](#head4)
 
-[5. Nextflow, Docker and Singularity installation and use](#head6)
+[5. Nextflow, Docker and Singularity installation and use](#head5)
 
  * [5a. Nextflow](#head5a)
 
@@ -38,7 +38,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 
  * [5f. Help](#head5f)
 
-[6. Outdated and unmaintained pipelines and tools](#head5)
+[6. Outdated and unmaintained pipelines and tools](#head6)
 
 ## <a name="head1"></a>1. IARC pipelines/tools list
 
