@@ -37,8 +37,11 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
  * [5e. Updates](#head5e)
 
  * [5f. Help](#head5f)
+[6. Deep learning pipelines and tools for digital pathology](#head6)
+ * [6a. Whole slide images (WSI) pre-processing](#head6a)
 
-[6. Outdated and unmaintained pipelines and tools](#head6)
+ * [6b. RNA Seq](#head6b)
+[7. Outdated and unmaintained pipelines and tools](#head7)
 
 ## <a name="head1"></a>1. IARC pipelines/tools list
 
@@ -239,7 +242,13 @@ You can also automatically update the pipeline when you run it by adding the opt
 ```bash
 nextflow run iarcbioinfo/pipeline_name --help
 ```
-## <a name="head6">6. Outdated and unmaintained pipelines and tools
+## <a name="head6">6. Deep learning pipelines and tools for digital pathology
+### <a name="head6a">6a.  Whole slide images (WSI) pre-processing
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [WSIPreprocessing](https://github.com/IARCbioinfo/WSIPreprocessing)   |December 2023|:heavy_check_mark: Yes| Preprocessing pipeline for WSIs (Tiling, color normalization) | 
+
+## <a name="head7">7. Outdated and unmaintained pipelines and tools
 
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
