@@ -47,6 +47,8 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
  * [6c. Supervised learning on immunohistochemistry slides](#head6c)
 
  * [6d. Self-suprevised feature extractor for WSIs](#head6d)
+ * 
+ * [6e. Additional tools](#head6e)
    
 [7. Outdated and unmaintained pipelines and tools](#head7)
 
@@ -274,6 +276,12 @@ nextflow run iarcbioinfo/pipeline_name --help
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [LNENBarlowTwins](https://github.com/IARCbioinfo/LNENBarlowTwins)   |December 2023|:heavy_check_mark: Yes| Extractions of HE tiles features with Barlow Twins a self-supervised deep learning model. | Python, Pytorch |
+
+### <a name="head6e">6e. Additional tools
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [SpatialPCAForWSIs](https://github.com/IARCbioinfo/SpatialPCAForWSIs)   |December 2023|:heavy_check_mark: Yes| Spatially aware principal component analysis to obtain a low-dimensional representation of the tiles encoding vectors. | R |
 
 ## <a name="head7">7. Outdated and unmaintained pipelines and tools
 
