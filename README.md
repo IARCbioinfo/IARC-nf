@@ -17,6 +17,18 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
  * [1e. Variant calling](#head1e)
 
  * [1f. Other tools/pipelines](#head1f)
+   
+ * [1g. Deep learning pipelines and tools for digital pathology](#head1g)
+
+	 * [1g1. Whole slide images (WSI) pre-processing](#head1g1)
+	
+	 * [1g2. Tumor segmentation](#head1g2)
+	   
+	 * [1g3. Supervised learning on immunohistochemistry slides](#head1g3)
+	
+	 * [1g4. Self-suprevised feature extractor for WSIs](#head1g4)
+	   
+	 * [1g5. Additional tools](#head1g5)
 
 [2. Courses and data notes](#head2)
 
@@ -37,18 +49,6 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
  * [5e. Updates](#head5e)
 
  * [5f. Help](#head5f)
-   
-[6. Deep learning pipelines and tools for digital pathology](#head6)
-
- * [6a. Whole slide images (WSI) pre-processing](#head6a)
-
- * [6b. Tumor segmentation](#head6b)
-   
- * [6c. Supervised learning on immunohistochemistry slides](#head6c)
-
- * [6d. Self-suprevised feature extractor for WSIs](#head6d)
-   
- * [6e. Additional tools](#head6e)
    
 [7. Outdated and unmaintained pipelines and tools](#head7)
 
@@ -154,6 +154,39 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [polysolver-singularity](https://github.com/IARCbioinfo/polysolver-singularity)   |Dec 2019|?| Build a singularity image of Polysolver (tool for HLA typing based on whole exome seq)|[Singularity](https://sylabs.io/singularity/)|
 | [scanMyWorkDir](https://github.com/IARCbioinfo/scanMyWorkDir)   |May 2018|?| Non-destructive and informative scan of a nextflow work folder |NA|
 
+### <a name="head1g">1g. Deep learning pipelines and tools for digital pathology
+
+#### <a name="head1g1">1g1.  Whole slide images (WSI) pre-processing
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [WSIPreprocessing](https://github.com/IARCbioinfo/WSIPreprocessing)   |December 2023|:heavy_check_mark: Yes| Preprocessing pipeline for WSIs (Tiling, color normalization) | Python, openslide |
+
+### <a name="head1g2">1g2. Tumor segmentation with CFlow AD
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [TumorSegmentationCFlowAD](https://github.com/IARCbioinfo/TumorSegmentationCFlowAD)   |December 2023|:heavy_check_mark: Yes| Tumour segmentation with an anomaly detection model | Python, PyTorch |
+
+### <a name="head1g3">1g3. Supervised learning on immunohistochemistry slides
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [PathonetLNEN](https://github.com/IARCbioinfo/PathonetLNEN)   |December 2023|:heavy_check_mark: Yes| Detection and classification of cells as positive or negative for an immunomarker developed for PHH3 and Ki-67 in lung carcinoma. | Python, TensorFlow |
+
+### <a name="head1g4">1g4. Self-suprevised feature extractor for WSIs
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [LNENBarlowTwins](https://github.com/IARCbioinfo/LNENBarlowTwins)   |December 2023|:heavy_check_mark: Yes| Extractions of HE tiles features with Barlow Twins a self-supervised deep learning model. | Python, Pytorch |
+
+### <a name="head1g5">1g5. Additional tools
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [SpatialPCAForWSIs](https://github.com/IARCbioinfo/SpatialPCAForWSIs)   |December 2023|:heavy_check_mark: Yes| Spatially aware principal component analysis to obtain a low-dimensional representation of the tiles encoding vectors. | R |
+
+
 ## <a name="head2">2. Courses and data notes
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
@@ -251,37 +284,6 @@ You can also automatically update the pipeline when you run it by adding the opt
 ```bash
 nextflow run iarcbioinfo/pipeline_name --help
 ```
-## <a name="head6">6. Deep learning pipelines and tools for digital pathology
-
-### <a name="head6a">6a.  Whole slide images (WSI) pre-processing
-
-| Name      |Latest version|Maintained | Description     |	Tools used	|
-|-----------|--------------|-----------|-----------------|----------------------|
-| [WSIPreprocessing](https://github.com/IARCbioinfo/WSIPreprocessing)   |December 2023|:heavy_check_mark: Yes| Preprocessing pipeline for WSIs (Tiling, color normalization) | Python, openslide |
-
-### <a name="head6b">6b. Tumor segmentation with CFlow AD
-
-| Name      |Latest version|Maintained | Description     |	Tools used	|
-|-----------|--------------|-----------|-----------------|----------------------|
-| [TumorSegmentationCFlowAD](https://github.com/IARCbioinfo/TumorSegmentationCFlowAD)   |December 2023|:heavy_check_mark: Yes| Tumour segmentation with an anomaly detection model | Python, PyTorch |
-
-### <a name="head6c">6c. Supervised learning on immunohistochemistry slides
-
-| Name      |Latest version|Maintained | Description     |	Tools used	|
-|-----------|--------------|-----------|-----------------|----------------------|
-| [PathonetLNEN](https://github.com/IARCbioinfo/PathonetLNEN)   |December 2023|:heavy_check_mark: Yes| Detection and classification of cells as positive or negative for an immunomarker developed for PHH3 and Ki-67 in lung carcinoma. | Python, TensorFlow |
-
-### <a name="head6d">6d. Self-suprevised feature extractor for WSIs
-
-| Name      |Latest version|Maintained | Description     |	Tools used	|
-|-----------|--------------|-----------|-----------------|----------------------|
-| [LNENBarlowTwins](https://github.com/IARCbioinfo/LNENBarlowTwins)   |December 2023|:heavy_check_mark: Yes| Extractions of HE tiles features with Barlow Twins a self-supervised deep learning model. | Python, Pytorch |
-
-### <a name="head6e">6e. Additional tools
-
-| Name      |Latest version|Maintained | Description     |	Tools used	|
-|-----------|--------------|-----------|-----------------|----------------------|
-| [SpatialPCAForWSIs](https://github.com/IARCbioinfo/SpatialPCAForWSIs)   |December 2023|:heavy_check_mark: Yes| Spatially aware principal component analysis to obtain a low-dimensional representation of the tiles encoding vectors. | R |
 
 ## <a name="head7">7. Outdated and unmaintained pipelines and tools
 
