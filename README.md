@@ -42,7 +42,11 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 
  * [6a. Whole slide images (WSI) pre-processing](#head6a)
 
- * [6b. TEST](#head6b)
+ * [6b. Tumor segmentation](#head6b)
+   
+ * [6c. Supervised learning on immunohistochemistry slides](#head6c)
+
+ * [6d. Self-suprevised feature extractor for WSIs](#head6d)
    
 [7. Outdated and unmaintained pipelines and tools](#head7)
 
@@ -251,9 +255,25 @@ nextflow run iarcbioinfo/pipeline_name --help
 
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
-| [WSIPreprocessing](https://github.com/IARCbioinfo/WSIPreprocessing)   |December 2023|:heavy_check_mark: Yes| Preprocessing pipeline for WSIs (Tiling, color normalization) | 
+| [WSIPreprocessing](https://github.com/IARCbioinfo/WSIPreprocessing)   |December 2023|:heavy_check_mark: Yes| Preprocessing pipeline for WSIs (Tiling, color normalization) | Python, openslide |
 
-### <a name="head6b">6b.  TEST
+### <a name="head6b">6b. Tumor segmentation with CFlow AD
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [TumorSegmentationCFlowAD](https://github.com/IARCbioinfo/TumorSegmentationCFlowAD)   |December 2023|:heavy_check_mark: Yes| Tumour segmentation with an anomaly detection model | Python, PyTorch |
+
+### <a name="head6c">6c. Supervised learning on immunohistochemistry slides
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [PathonetLNEN](https://github.com/IARCbioinfo/PathonetLNEN)   |December 2023|:heavy_check_mark: Yes| Detection and classification of cells as positive or negative for an immunomarker developed for PHH3 and Ki-67 in lung carcinoma. | Python, TensorFlow |
+
+### <a name="head6d">6d. Self-suprevised feature extractor for WSIs
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [LNENBarlowTwins](https://github.com/IARCbioinfo/LNENBarlowTwins)   |December 2023|:heavy_check_mark: Yes| Extractions of HE tiles features with Barlow Twins a self-supervised deep learning model. | Python, Pytorch |
 
 ## <a name="head7">7. Outdated and unmaintained pipelines and tools
 
