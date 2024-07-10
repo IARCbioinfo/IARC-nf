@@ -50,7 +50,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 
  * [5f. Help](#head5f)
    
-[7. Outdated and unmaintained pipelines and tools](#head7)
+[6. Outdated and unmaintained pipelines and tools](#head6)
 
 ## <a name="head1"></a>1. IARC pipelines/tools list
 
@@ -285,7 +285,7 @@ You can also automatically update the pipeline when you run it by adding the opt
 nextflow run iarcbioinfo/pipeline_name --help
 ```
 
-## <a name="head7">7. Outdated and unmaintained pipelines and tools
+## <a name="head6">6. Outdated and unmaintained pipelines and tools
 
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
