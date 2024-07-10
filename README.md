@@ -47,7 +47,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
  * [6c. Supervised learning on immunohistochemistry slides](#head6c)
 
  * [6d. Self-suprevised feature extractor for WSIs](#head6d)
- * 
+   
  * [6e. Additional tools](#head6e)
    
 [7. Outdated and unmaintained pipelines and tools](#head7)
