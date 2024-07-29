@@ -135,25 +135,25 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 |-----------|--------------|-----------|-----------------|----------------------|
 | [WSIPreprocessing](https://github.com/IARCbioinfo/WSIPreprocessing)   |December 2023|:heavy_check_mark: Yes| Preprocessing pipeline for WSIs (Tiling, color normalization) | Python, openslide |
 
-### <a name="head1f2">1f2. Tumor segmentation with CFlow AD
+#### <a name="head1f2">1f2. Tumor segmentation with CFlow AD
 
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [TumorSegmentationCFlowAD](https://github.com/IARCbioinfo/TumorSegmentationCFlowAD)   |December 2023|:heavy_check_mark: Yes| Tumour segmentation with an anomaly detection model | Python, PyTorch |
 
-### <a name="head1f3">1f3. Supervised learning on immunohistochemistry slides
+#### <a name="head1f3">1f3. Supervised learning on immunohistochemistry slides
 
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [PathonetLNEN](https://github.com/IARCbioinfo/PathonetLNEN)   |December 2023|:heavy_check_mark: Yes| Detection and classification of cells as positive or negative for an immunomarker developed for PHH3 and Ki-67 in lung carcinoma. | Python, TensorFlow |
 
-### <a name="head1f4">1f4. Self-suprevised feature extractor for WSIs
+#### <a name="head1f4">1f4. Self-suprevised feature extractor for WSIs
 
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [LNENBarlowTwins](https://github.com/IARCbioinfo/LNENBarlowTwins)   |December 2023|:heavy_check_mark: Yes| Extractions of HE tiles features with Barlow Twins a self-supervised deep learning model. | Python, Pytorch |
 
-### <a name="head1f5">1f5. Additional tools
+#### <a name="head1f5">1f5. Additional tools
 
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
