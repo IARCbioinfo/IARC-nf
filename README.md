@@ -1,4 +1,4 @@
-# IARC bioinformatics pipelines and tools (updated on 09/05/2024)
+# IARC bioinformatics pipelines and tools (updated on 29/07/2024)
 
 This page lists all the pipelines and tools developed at IARC (mostly nextflow pipelines which are suffixed with -nf). It includes also some useful ressources like courses or data notes and tips/tricks. Finally at the bottom of the page you will also find explanations on how to use nextflow pipelines.
 
@@ -15,20 +15,22 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
  * [1d. QC](#head1d)
 
  * [1e. Variant calling](#head1e)
+ 
+ * [1f. Deep learning pipelines and tools for digital pathology](#head1f)
 
- * [1f. Other tools/pipelines](#head1f)
+	 * [1f1. Whole slide images (WSI) pre-processing](#head1f1)
+	
+	 * [1f2. Tumor segmentation](#head1f2)
+	   
+	 * [1f3. Supervised learning on immunohistochemistry slides](#head1f3)
+	
+	 * [1f4. Self-suprevised feature extractor for WSIs](#head1f4)
+	   
+	 * [1f5. Additional tools](#head1f5)
+
+ * [1g. Other tools/pipelines](#head1g)
    
- * [1g. Deep learning pipelines and tools for digital pathology](#head1g)
 
-	 * [1g1. Whole slide images (WSI) pre-processing](#head1g1)
-	
-	 * [1g2. Tumor segmentation](#head1g2)
-	   
-	 * [1g3. Supervised learning on immunohistochemistry slides](#head1g3)
-	
-	 * [1g4. Self-suprevised feature extractor for WSIs](#head1g4)
-	   
-	 * [1g5. Additional tools](#head1g5)
 
 [2. Courses and data notes](#head2)
 
@@ -125,7 +127,41 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [sv_somatic_cns-nf](https://github.com/IARCbioinfo/sv_somatic_cns-nf)   |v1.0 - Nov 2021|:heavy_check_mark: Yes| Pipeline using multiple SV callers for consensus structural variant calling from tumor/normal sequencing data |[Delly](https://github.com/dellytools/delly), [SvABA](https://github.com/walaj/svaba), [Manta](https://github.com/Illumina/manta), [SURVIVOR](https://github.com/fritzsedlazeck/SURVIVOR), [bcftools](https://github.com/samtools/bcftools), [Samtools](https://github.com/samtools/samtools) |
 | [ssvht](https://github.com/IARCbioinfo/ssvht)   |v1 - Oct 2022|:heavy_check_mark: Yes| 🔴 NEW set of scripts to assist the calling of somatic structural variants from short reads using a random forest classifier ||
 
-### <a name="head1f">1f. Other tools/pipelines
+### <a name="head1f">1f. Deep learning pipelines and tools for digital pathology
+
+#### <a name="head1f1">1f1.  Whole slide images (WSI) pre-processing
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [WSIPreprocessing](https://github.com/IARCbioinfo/WSIPreprocessing)   |December 2023|:heavy_check_mark: Yes| Preprocessing pipeline for WSIs (Tiling, color normalization) | Python, openslide |
+
+### <a name="head1f2">1f2. Tumor segmentation with CFlow AD
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [TumorSegmentationCFlowAD](https://github.com/IARCbioinfo/TumorSegmentationCFlowAD)   |December 2023|:heavy_check_mark: Yes| Tumour segmentation with an anomaly detection model | Python, PyTorch |
+
+### <a name="head1f3">1f3. Supervised learning on immunohistochemistry slides
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [PathonetLNEN](https://github.com/IARCbioinfo/PathonetLNEN)   |December 2023|:heavy_check_mark: Yes| Detection and classification of cells as positive or negative for an immunomarker developed for PHH3 and Ki-67 in lung carcinoma. | Python, TensorFlow |
+
+### <a name="head1f4">1f4. Self-suprevised feature extractor for WSIs
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [LNENBarlowTwins](https://github.com/IARCbioinfo/LNENBarlowTwins)   |December 2023|:heavy_check_mark: Yes| Extractions of HE tiles features with Barlow Twins a self-supervised deep learning model. | Python, Pytorch |
+
+### <a name="head1f5">1f5. Additional tools
+
+| Name      |Latest version|Maintained | Description     |	Tools used	|
+|-----------|--------------|-----------|-----------------|----------------------|
+| [SpatialPCAForWSIs](https://github.com/IARCbioinfo/SpatialPCAForWSIs)   |December 2023|:heavy_check_mark: Yes| Spatially aware principal component analysis to obtain a low-dimensional representation of the tiles encoding vectors. | R |
+
+
+
+### <a name="head1g">1g. Other tools/pipelines
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [template-nf](https://github.com/IARCbioinfo/template-nf)   |May 2020|:heavy_check_mark: Yes | Empty template for nextflow pipelines |NA|
@@ -153,39 +189,6 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [acnviewer-singularity](https://github.com/IARCbioinfo/acnviewer-singularity)   |Jul 2019|?| Build a singularity image of aCNViewer (tool for visualization of absolute copy number and copy neutral variations) (|[Singularity](https://sylabs.io/singularity/)|
 | [polysolver-singularity](https://github.com/IARCbioinfo/polysolver-singularity)   |Dec 2019|?| Build a singularity image of Polysolver (tool for HLA typing based on whole exome seq)|[Singularity](https://sylabs.io/singularity/)|
 | [scanMyWorkDir](https://github.com/IARCbioinfo/scanMyWorkDir)   |May 2018|?| Non-destructive and informative scan of a nextflow work folder |NA|
-
-### <a name="head1g">1g. Deep learning pipelines and tools for digital pathology
-
-#### <a name="head1g1">1g1.  Whole slide images (WSI) pre-processing
-
-| Name      |Latest version|Maintained | Description     |	Tools used	|
-|-----------|--------------|-----------|-----------------|----------------------|
-| [WSIPreprocessing](https://github.com/IARCbioinfo/WSIPreprocessing)   |December 2023|:heavy_check_mark: Yes| Preprocessing pipeline for WSIs (Tiling, color normalization) | Python, openslide |
-
-### <a name="head1g2">1g2. Tumor segmentation with CFlow AD
-
-| Name      |Latest version|Maintained | Description     |	Tools used	|
-|-----------|--------------|-----------|-----------------|----------------------|
-| [TumorSegmentationCFlowAD](https://github.com/IARCbioinfo/TumorSegmentationCFlowAD)   |December 2023|:heavy_check_mark: Yes| Tumour segmentation with an anomaly detection model | Python, PyTorch |
-
-### <a name="head1g3">1g3. Supervised learning on immunohistochemistry slides
-
-| Name      |Latest version|Maintained | Description     |	Tools used	|
-|-----------|--------------|-----------|-----------------|----------------------|
-| [PathonetLNEN](https://github.com/IARCbioinfo/PathonetLNEN)   |December 2023|:heavy_check_mark: Yes| Detection and classification of cells as positive or negative for an immunomarker developed for PHH3 and Ki-67 in lung carcinoma. | Python, TensorFlow |
-
-### <a name="head1g4">1g4. Self-suprevised feature extractor for WSIs
-
-| Name      |Latest version|Maintained | Description     |	Tools used	|
-|-----------|--------------|-----------|-----------------|----------------------|
-| [LNENBarlowTwins](https://github.com/IARCbioinfo/LNENBarlowTwins)   |December 2023|:heavy_check_mark: Yes| Extractions of HE tiles features with Barlow Twins a self-supervised deep learning model. | Python, Pytorch |
-
-### <a name="head1g5">1g5. Additional tools
-
-| Name      |Latest version|Maintained | Description     |	Tools used	|
-|-----------|--------------|-----------|-----------------|----------------------|
-| [SpatialPCAForWSIs](https://github.com/IARCbioinfo/SpatialPCAForWSIs)   |December 2023|:heavy_check_mark: Yes| Spatially aware principal component analysis to obtain a low-dimensional representation of the tiles encoding vectors. | R |
-
 
 ## <a name="head2">2. Courses and data notes
 | Name      | Description     |	Tools used	|
