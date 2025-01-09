@@ -1,4 +1,4 @@
-# IARC bioinformatics pipelines and tools (updated on 29/07/2024)
+# IARC bioinformatics pipelines and tools (updated on 9/01/2025)
 
 This page lists all the pipelines and tools developed at IARC (mostly nextflow pipelines which are suffixed with -nf). It includes also some useful ressources like courses or data notes and tips/tricks. Finally at the bottom of the page you will also find explanations on how to use nextflow pipelines.
 
@@ -170,8 +170,9 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [bam2cram-nf](https://github.com/IARCbioinfo/bam2cram-nf)   |v1.0 - Nov 2020|:heavy_check_mark: Yes|Pipeline to convert bam files to cram files|[samtools](http://samtools.sourceforge.net/)|
 | [hla-neo-nf](https://github.com/IARCbioinfo/hla-neo-nf)   |v1.1 - June 2021|:heavy_check_mark: Yes|Pipeline to predict neoantigens from WGS of T/N pairs |[xHLA](https://github.com/humanlongevity/HLA), [VEP](https://github.com/Ensembl/ensembl-vep), [pVACtools](https://github.com/griffithlab/pVACtools)|
 | [PRSice](https://github.com/IARCbioinfo/PRSice-nf)   |Nov 2020|| Pipeline to compute polygenic risk scores|[PRSice-2](https://www.prsice.info/)|
-| [methylkey](https://github.com/IARCbioinfo/methylkey)   | May 2021 |:heavy_check_mark: Yes|Pipeline for 450k and 850k array analysis (bisulfite data analysis using Minfi, Methylumi, Comet, Bumphunter and DMRcate packages)|[R software](https://www.r-project.org/)|
-| [wsearch-nf](https://github.com/IARCbioinfo/wsearch-nf)   | July 2022 |:heavy_check_mark: Yes|🔴 NEW pipeline: Microbiome analysis with usearch, vsearch and phyloseq||
+| [methylkey](https://github.com/IARCbioinfo/methylkey)   | Nov 2024 |:heavy_check_mark: Yes|Pipeline for 450k and 850k array analysis (bisulfite data analysis using Minfi, Methylumi, Comet, Bumphunter and DMRcate packages)|[R software](https://www.r-project.org/)|
+| [bam2peaks](https://github.com/IARCbioinfo/bam2peaks-nf)   | Oct 2024 |:heavy_check_mark: Yes|🔴 NEW Pipeline designed for peak calling using MACS and IDR, coupled with QC generation using deeptools|[MACS](https://github.com/macs3-project/MACS), [IDR](https://github.com/nboley/idr),[Deeptools](https://github.com/deeptools/deepTools)|
+| [wsearch-nf](https://github.com/IARCbioinfo/wsearch-nf)   | July 2022 |:heavy_check_mark: Yes|Microbiome analysis with usearch, vsearch and phyloseq||
 | [AmpliconArchitect-nf](https://github.com/IARCbioinfo/ampliconarchitect-nf)   |v1.0 - Oct 2021 |:heavy_check_mark: Yes| Discovers ecDNA in cancer genomes using AmpliconArchitect |[AmpliconArchitect](https://github.com/virajbdeshpande/AmpliconArchitect)|
 | [addreplacerg-nf](https://github.com/IARCbioinfo/addreplacerg-nf)   |Jan 2017|?| Adds and replaces read group tags in BAM files |[samtools](http://samtools.sourceforge.net/)|
 | [bametrics-nf](https://github.com/IARCbioinfo/bametrics-nf)   |Mar 2017|?| Computes average metrics from reads that overlap a given set of positions |NA|
@@ -195,7 +196,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 |-----------|-----------------|-----------------|
 | [nextflow-course-2018](https://github.com/IARCbioinfo/nextflow-course-2018)   | Nextflow course |NA|
 | [SBG-CGC_course2018](https://github.com/IARCbioinfo/SBG-CGC_course2018)   | Analyzing TCGA data in SBG-CGC |NA|
-| [Medical Genomics Course](https://github.com/IARCbioinfo/medical_genomics_course)   | Medical Genomics course held at the INSA Lyon - updated Fall 2022|NA|
+| [Medical Genomics Course](https://github.com/IARCbioinfo/medical_genomics_course)   | Medical Genomics course held at the INSA Lyon - updated Fall 2024|NA|
 | [intro-cancer-genomics](https://github.com/IARCbioinfo/intro-cancer-genomics)   | Introduction to cancer genomics |NA|
 | [mesomics_data_note](https://github.com/IARCbioinfo/mesomics_data_note)   | Repository with code and datasets used in the mesomics data note manuscript |NA|
 
