@@ -168,6 +168,8 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [data_test](https://github.com/IARCbioinfo/data_test)   |Aug 2020|:heavy_check_mark: Yes| Small data files to test IARC nextflow pipelines |NA|
 ||||
 | [bam2cram-nf](https://github.com/IARCbioinfo/bam2cram-nf)   |v1.0 - Nov 2020|:heavy_check_mark: Yes|Pipeline to convert bam files to cram files|[samtools](http://samtools.sourceforge.net/)|
+| [DPclust-nf](https://github.com/IARCbioinfo/DPclust-nf)   | |:heavy_check_mark: Yes|Method for subclonal reconstruction using SNVs and/or CNAs from whole genome or whole exome sequencing data|[dpclust](https://github.com/Wedge-lab/dpclust) , [R](https://www.r-project.org) |
+| [ITH_pipeline](https://github.com/IARCbioinfo/ITH_pipeline)   | |:heavy_check_mark: Yes|Study intra-tumoral heterogeneity (ITH) through subclonality reconstruction |[HATCHet](https://github.com/raphael-group/hatchet) , [DeCiFer](https://github.com/raphael-group/decifer), [ClonEvol](https://github.com/hdng/clonevol)|
 | [hla-neo-nf](https://github.com/IARCbioinfo/hla-neo-nf)   |v1.1 - June 2021|:heavy_check_mark: Yes|Pipeline to predict neoantigens from WGS of T/N pairs |[xHLA](https://github.com/humanlongevity/HLA), [VEP](https://github.com/Ensembl/ensembl-vep), [pVACtools](https://github.com/griffithlab/pVACtools)|
 | [PRSice](https://github.com/IARCbioinfo/PRSice-nf)   |Nov 2020|| Pipeline to compute polygenic risk scores|[PRSice-2](https://www.prsice.info/)|
 | [methylkey](https://github.com/IARCbioinfo/methylkey)   | Nov 2024 |:heavy_check_mark: Yes|Pipeline for 450k and 850k array analysis (bisulfite data analysis using Minfi, Methylumi, Comet, Bumphunter and DMRcate packages)|[R software](https://www.r-project.org/)|
@@ -211,14 +213,10 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [awesomeTCGA](https://github.com/IARCbioinfo/awesome-TCGA) ||| Curated list of resources to access TCGA data |NA|
 | [LSF-Tricks](https://github.com/IARCbioinfo/LSF-tricks)   ||| Tips and tricks for LSF HPC scheduler |NA|
 
-## <a name="head4">4. Coming soon... (only dev branches yet)
+## <a name="head4">4. Coming soon
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|----------------------|
-| [DPclust-nf](https://github.com/IARCbioinfo/DPclust-nf)   | Method for subclonal reconstruction using SNVs and/or CNAs from whole genome or whole exome sequencing data|[dpclust](https://github.com/Wedge-lab/dpclust) , [R](https://www.r-project.org) |
-| [ITH_pipeline](https://github.com/IARCbioinfo/ITH_pipeline)   | Study intra-tumoral heterogeneity (ITH) through subclonality reconstruction |[HATCHet](https://github.com/raphael-group/hatchet) , [DeCiFer](https://github.com/raphael-group/decifer), [ClonEvol](https://github.com/hdng/clonevol)|
 | [Nextflow_DSL2](https://github.com/IARCbioinfo/Nextflow_DSL2)   | Repository with modules for nextflow DSL2 |NA|
-| [variantflag](https://github.com/IARCbioinfo/variantflag)   | Merge and annotate variants from different callers ||
-| [EPIDRIVER2020](https://github.com/IARCbioinfo/EPIDRIVER2020)   | Scripts for EPIDRIVER Project ||
 
 ## <a name="head5">5. Nextflow, Docker and Singularity installation and use
 
