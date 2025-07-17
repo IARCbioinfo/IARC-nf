@@ -214,9 +214,8 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [LSF-Tricks](https://github.com/IARCbioinfo/LSF-tricks)   ||| Tips and tricks for LSF HPC scheduler |NA|
 
 [comment]: <> (## <a name="head4">4. Coming soon)
-[comment]: <> (| Name      | Description     |	Tools used	|)
-[comment]: <> (|-----------|-----------------|----------------------|)
-[comment]: <> (| [Nextflow_DSL2](https://github.com/IARCbioinfo/Nextflow_DSL2)   | Repository with modules for nextflow DSL2 |NA|)
+[comment]: <> (| Name      | Description     |	Tools used	| )
+[comment]: <> (|-----------|-----------------|----------------------| - cf Nextflow_DSL2 link: https://github.com/IARCbioinfo/Nextflow_DSL2 - Rwith modules for nextflow DSL2 |NA|)  
 
 ## <a name="head5">4. Nextflow, Docker and Singularity installation and use
 
