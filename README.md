@@ -1,6 +1,6 @@
-# IARC bioinformatics pipelines and tools (updated on 9/01/2025)
+# IARC bioinformatics pipelines, tools and other resources (updated on 17/07/2025)
 
-This page lists all the pipelines and tools developed at IARC (mostly nextflow pipelines which are suffixed with -nf). It includes also some useful ressources like courses or data notes and tips/tricks. Finally at the bottom of the page you will also find explanations on how to use nextflow pipelines.
+This page lists all the pipelines and tools developed at IARC (mostly nextflow pipelines which are suffixed with -nf). It includes also some useful ressources like courses, data notes, manuscripts code/datasets and tips/tricks. Finally at the bottom of the page you will also find explanations on how to use nextflow pipelines.
 
 <ins>Table of Content:</ins>
 
@@ -32,27 +32,27 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
    
 
 
-[2. Courses and data notes](#head2)
+[2. Courses, data notes and manuscripts code/datasets](#head2)
 
 [3. Tips & Tricks](#head3)
 
-[4. Coming soon... (only dev branches yet)](#head4)
+[//]: # ([4. Coming soon... (only dev branches yet)](#head4))
 
-[5. Nextflow, Docker and Singularity installation and use](#head5)
+[4. Nextflow, Docker and Singularity installation and use](#head5)
 
- * [5a. Nextflow](#head5a)
+ * [4a. Nextflow](#head5a)
 
- * [5b. Docker](#head5b)
+ * [4b. Docker](#head5b)
 
- * [5c. Singularity](#head5c)
+ * [4c. Singularity](#head5c)
 
- * [5d. Usage](#head5d)
+ * [4d. Usage](#head5d)
 
- * [5e. Updates](#head5e)
+ * [4e. Updates](#head5e)
 
- * [5f. Help](#head5f)
+ * [4f. Help](#head5f)
    
-[6. Outdated and unmaintained pipelines and tools](#head6)
+[5. Outdated and unmaintained pipelines and tools](#head6)
 
 ## <a name="head1"></a>1. IARC pipelines/tools list
 
@@ -213,10 +213,10 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [awesomeTCGA](https://github.com/IARCbioinfo/awesome-TCGA) ||| Curated list of resources to access TCGA data |NA|
 | [LSF-Tricks](https://github.com/IARCbioinfo/LSF-tricks)   ||| Tips and tricks for LSF HPC scheduler |NA|
 
-## <a name="head4">4. Coming soon
-| Name      | Description     |	Tools used	|
-|-----------|-----------------|----------------------|
-| [Nextflow_DSL2](https://github.com/IARCbioinfo/Nextflow_DSL2)   | Repository with modules for nextflow DSL2 |NA|
+[comment]: <> (## <a name="head4">4. Coming soon)
+[comment]: <> (| Name      | Description     |	Tools used	|)
+[comment]: <> (|-----------|-----------------|----------------------|)
+[comment]: <> (| [Nextflow_DSL2](https://github.com/IARCbioinfo/Nextflow_DSL2)   | Repository with modules for nextflow DSL2 |NA|)
 
 ## <a name="head5">5. Nextflow, Docker and Singularity installation and use
 
