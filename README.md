@@ -76,6 +76,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   |v1.1 - Aug 2020|:heavy_check_mark: Yes| Perform fusion-genes discovery from RNAseq data using STAR-Fusion|[STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion/wiki)|
 | [gene-fusions-nf](https://github.com/IARCbioinfo/gene-fusions-nf)   |v1 - Oct 2020 - updated Nov 2021|:heavy_check_mark: Yes| Perform fusion-genes discovery from RNAseq data using Arriba|[Arriba](https://github.com/suhrig/arriba)|
 | [quantiseq-nf](https://github.com/IARCbioinfo/quantiseq-nf)   |v1.1 - July 2020|:heavy_check_mark: Yes| Quantify immune cell content from RNA-seq data|[quanTIseq](https://icbi.i-med.ac.at/software/quantiseq/doc/) |
+| [RNAsplicing-nf](https://github.com/IARCbioinfo/RNAsplicing-nf)   |v1.0 - April 2025|:heavy_check_mark: Yes| 🔴 NEW : Perform RNA splicing analyses using SUPPA2|trimgalore, salmon and [SUPPA2](https://github.com/comprna/SUPPA/wiki/SUPPA2-tutorial) |
 
 ![workflow](Pipelines-rnaseq.jpg)
 
@@ -106,6 +107,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [strelka2-nf](https://github.com/IARCbioinfo/strelka2-nf)   |v1.2a - Dec 2020|:heavy_check_mark: Yes| Runs Strelka 2 (germline and somatic variant caller)|[Strelka2](https://github.com/Illumina/strelka)|
 | [strelka-nf](https://github.com/IARCbioinfo/strelka-nf)   |Jun 2017|No| Runs Strelka (germline and somatic variant caller)|[Strelka](https://sites.google.com/site/strelkasomaticvariantcaller/home/strelka-workflow-installation)|
 | [mutect-nf](https://github.com/IARCbioinfo/mutect-nf)   |v2.3 - July 2021|:heavy_check_mark: Yes| Runs Mutect on tumor-matched normal bam pairs |[Mutect](https://github.com/broadinstitute/mutect) and its dependencies (Java 1.7 and Maven 3.0+), [bedtools](http://bedtools.readthedocs.io/en/latest/content/installation.html)|
+| [dupcaller-nf](https://github.com/IARCbioinfo/dupcaller-nf)   |v1.0 - July 2025|:heavy_check_mark: Yes| 🔴 NEW : Dupcaller pipeline for somatic variant calling with Nextflow |[Mutect](https://github.com/broadinstitute/mutect) and its dependencies (Java 1.7 and Maven 3.0+)|
 | [gatk4-HaplotypeCaller-nf](https://github.com/IARCbioinfo/gatk4-HaplotypeCaller-nf)   |Dec 2019|?| Runs variant calling in GVCF mode on bam files following GATK best practices|[GATK](https://software.broadinstitute.org/gatk/download/)|
 | [gatk4-GenotypeGVCFs-nf](https://github.com/IARCbioinfo/gatk4-GenotypeGVCFs-nf)   |Apr 2019|?| Runs joint genotyping on gvcf files following GATK best practices|[GATK](https://software.broadinstitute.org/gatk/download/)|
 | [GVCF_pipeline-nf](https://github.com/IARCbioinfo/GVCF_pipeline-nf)   |Nov 2016|?| Performs bam realignment and recalibration + variant calling in GVCF mode following GATK best practices|[bwa](https://github.com/lh3/bwa), [samblaster](https://github.com/GregoryFaust/samblaster), [sambamba](https://github.com/lomereiter/sambamba), [GATK](https://software.broadinstitute.org/gatk/download/)|
@@ -193,7 +195,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [polysolver-singularity](https://github.com/IARCbioinfo/polysolver-singularity)   |Dec 2019|?| Build a singularity image of Polysolver (tool for HLA typing based on whole exome seq)|[Singularity](https://sylabs.io/singularity/)|
 | [scanMyWorkDir](https://github.com/IARCbioinfo/scanMyWorkDir)   |May 2018|?| Non-destructive and informative scan of a nextflow work folder |NA|
 
-## <a name="head2">2. Courses and data notes
+## <a name="head2">2. Courses, data notes and manuscripts code/datasets
 | Name      | Description     |	Tools used	|
 |-----------|-----------------|-----------------|
 | [nextflow-course-2018](https://github.com/IARCbioinfo/nextflow-course-2018)   | Nextflow course |NA|
@@ -201,6 +203,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [Medical Genomics Course](https://github.com/IARCbioinfo/medical_genomics_course)   | Medical Genomics course held at the INSA Lyon - updated Fall 2024|NA|
 | [intro-cancer-genomics](https://github.com/IARCbioinfo/intro-cancer-genomics)   | Introduction to cancer genomics |NA|
 | [mesomics_data_note](https://github.com/IARCbioinfo/mesomics_data_note)   | Repository with code and datasets used in the mesomics data note manuscript |NA|
+| [MS_lungNENomics](https://github.com/IARCbioinfo/MS_lungNENomics)   | Repository with scripts from the lungNENomics manuscript Sexton-Oates et al. 2025 |NA|
 
 ## <a name="head3">3.Tips & Tricks
 | Name      |Latest version|Maintained | Description     |	Tools used	|
