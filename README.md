@@ -36,7 +36,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 
 [3. Tips & Tricks](#head3)
 
-[comment]: <> ([4. Coming soon... (only dev branches yet)](#head4))
+[comment]: <> (4. Coming soon - only dev branches yet - link to head4)
 
 [4. Nextflow, Docker and Singularity installation and use](#head5)
 
