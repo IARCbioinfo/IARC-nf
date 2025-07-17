@@ -36,7 +36,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 
 [3. Tips & Tricks](#head3)
 
-[//]: # ([4. Coming soon... (only dev branches yet)](#head4))
+[comment]: <> ([4. Coming soon... (only dev branches yet)](#head4))
 
 [4. Nextflow, Docker and Singularity installation and use](#head5)
 
@@ -218,9 +218,9 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 [comment]: <> (|-----------|-----------------|----------------------|)
 [comment]: <> (| [Nextflow_DSL2](https://github.com/IARCbioinfo/Nextflow_DSL2)   | Repository with modules for nextflow DSL2 |NA|)
 
-## <a name="head5">5. Nextflow, Docker and Singularity installation and use
+## <a name="head5">4. Nextflow, Docker and Singularity installation and use
 
-### <a name="head5a">5a. Nextflow
+### <a name="head5a">4a. Nextflow
 
 1. Install [java](https://java.com/download/) JRE if you don't already have it (7 or higher).
 
@@ -234,13 +234,13 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 	sudo mv nextflow /usr/local/bin
 	```
 
-### <a name="head5b">5b. Docker
+### <a name="head5b">4b. Docker
 
 To avoid having to installing all dependencies each time you use a pipeline, you can instead install [docker](https://www.docker.com) and let nextflow dealing with it. Installing docker is system specific (but quite easy in most cases), follow  [docker documentation](https://docs.docker.com/installation/) (docker CE is sufficient). Also follow the post-installation step to manage Docker as a non-root user ([here](https://docs.docker.com/engine/installation/linux/linux-postinstall/) for Linux), otherwise you will need to change the `sudo` option in nextflow `docker` config scope as described in the nextflow documentation [here](https://www.nextflow.io/docs/latest/config.html#scope-docker).
 
 To run nextflow pipeline with Docker, simply add the `-with-docker` option in the `nextflow run` command.
 
-### <a name="head5c">5c. Singularity
+### <a name="head5c">4c. Singularity
 
 To avoid having to installing all dependencies each time you use a pipeline, you can also install [singularity](https://www.docker.com) and let nextflow dealing with it. 
 
@@ -257,7 +257,7 @@ where "pipeline-nf" should be replaced by the name of the pipeline you want to u
 singularity pull shub://IARCbioinfo/RNAseq-nf:v2.4
 ```
 
-### <a name="head5d">5d. Usage
+### <a name="head5d">4d. Usage
 
 ```bash
 nextflow run iarcbioinfo/pipeline_name -r X --input_folder xxx --output_folder xxx -params-file xxx.yml -w /scratch/work
@@ -271,7 +271,7 @@ OR USING SINGULARITY WITH SPECIFIC CONTAINER
 nextflow run iarcbioinfo/pipeline_name -r X -with-singularity XXX.sif --input_folder xxx --output_folder xxx -params-file xxx.yml -w /scratch/work
 ```
 
-### <a name="head5e">5e. Updates
+### <a name="head5e">4e. Updates
 
 You can update the nextflow sofware and the pipeline itself simply using:
 ```bash
@@ -281,13 +281,13 @@ nextflow pull iarcbioinfo/pipeline_name
 
 You can also automatically update the pipeline when you run it by adding the option `-latest` in the `nextflow run` command. Doing so you will always run the latest version from Github.
 
-### <a name="head5f">5f. Help
+### <a name="head5f">4f. Help
 
 ```bash
 nextflow run iarcbioinfo/pipeline_name --help
 ```
 
-## <a name="head6">6. Outdated and unmaintained pipelines and tools
+## <a name="head6">5. Outdated and unmaintained pipelines and tools
 
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
