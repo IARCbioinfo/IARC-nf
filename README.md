@@ -76,7 +76,8 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   |v1.1 - Aug 2020|:heavy_check_mark: Yes| Perform fusion-genes discovery from RNAseq data using STAR-Fusion|[STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion/wiki)|
 | [gene-fusions-nf](https://github.com/IARCbioinfo/gene-fusions-nf)   |v1 - Oct 2020 - updated Nov 2021|:heavy_check_mark: Yes| Perform fusion-genes discovery from RNAseq data using Arriba|[Arriba](https://github.com/suhrig/arriba)|
 | [quantiseq-nf](https://github.com/IARCbioinfo/quantiseq-nf)   |v1.1 - July 2020|:heavy_check_mark: Yes| Quantify immune cell content from RNA-seq data|[quanTIseq](https://icbi.i-med.ac.at/software/quantiseq/doc/) |
-| [RNAsplicing-nf](https://github.com/IARCbioinfo/RNAsplicing-nf)   |v1.0 - April 2025|:heavy_check_mark: Yes| 🔴 NEW : Perform RNA splicing analyses using SUPPA2|trimgalore, salmon and [SUPPA2](https://github.com/comprna/SUPPA/wiki/SUPPA2-tutorial) |
+| [RNAsplicing-nf](https://github.com/IARCbioinfo/RNAsplicing-nf)   |v1.0 - April 2025|:heavy_check_mark: Yes| 🔴 NEW : Perform RNA splicing analyses using SUPPA2|trimgalore, salmon and [SUPPA2](https://github.com/comprna/SUPPA/wiki/SUPPA2-tutorial) |[SUPPA2](https://github.com/comprna/SUPPA/wiki/SUPPA2-tutorial)|
+| [TCR-BCR-nf](https://github.com/IARCbioinfo/TCR-BCR-nf)   |v1.0 - 2024|:heavy_check_mark: Yes| Genotype Tcell and Bcell receptors from bulk or single-cell RNA-seq data using [TRUST4](https://github.com/liulab-dfci/TRUST4) | [TRUST4](https://github.com/liulab-dfci/TRUST4)
 
 ![workflow](Pipelines-rnaseq.jpg)
 
@@ -204,6 +205,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [SBG-CGC_course2018](https://github.com/IARCbioinfo/SBG-CGC_course2018)   | Analyzing TCGA data in SBG-CGC |
 | [Medical Genomics Course](https://github.com/IARCbioinfo/medical_genomics_course)   | Medical Genomics course held at the INSA Lyon - updated Fall 2024 |
 | [intro-cancer-genomics](https://github.com/IARCbioinfo/intro-cancer-genomics)   | Introduction to cancer genomics |
+|****************** |*********** |*********** |************************* |************************ |
 | [mesomics_data_note](https://github.com/IARCbioinfo/mesomics_data_note)   | Repository with code and datasets used in the [mesomics data note manuscript: Di Genova et al.](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giac128/7007909?login=true) |
 | [MESOMICS_data](https://github.com/IARCbioinfo/MESOMICS_data)   | Repository with data and processing scripts associated with the MESOMICS project and [main analysis paper: Mangiante et al.](https://www.nature.com/articles/s41588-023-01321-1) |
 | [MS_panNEN_organoids](https://github.com/IARCbioinfo/MS_panNEN_organoids)   | Repository with data and scripts used to produce the genomic Figures in the [panNEN organoids manuscript Dayton et al.](https://www.sciencedirect.com/science/article/pii/S1535610823003987) and associated data note: [Alcala et al.](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giae008/7623700?login=true) |
