@@ -76,8 +76,8 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [RNAseq-fusion-nf](https://github.com/IARCbioinfo/RNAseq-fusion-nf)   |v1.1 - Aug 2020|:heavy_check_mark: Yes| Perform fusion-genes discovery from RNAseq data using STAR-Fusion|[STAR-Fusion](https://github.com/STAR-Fusion/STAR-Fusion/wiki)|
 | [gene-fusions-nf](https://github.com/IARCbioinfo/gene-fusions-nf)   |v1 - Oct 2020 - updated Nov 2021|:heavy_check_mark: Yes| Perform fusion-genes discovery from RNAseq data using Arriba|[Arriba](https://github.com/suhrig/arriba)|
 | [quantiseq-nf](https://github.com/IARCbioinfo/quantiseq-nf)   |v1.1 - July 2020|:heavy_check_mark: Yes| Quantify immune cell content from RNA-seq data|[quanTIseq](https://icbi.i-med.ac.at/software/quantiseq/doc/) |
-| [RNAsplicing-nf](https://github.com/IARCbioinfo/RNAsplicing-nf)   |v1.0 - April 2025|:heavy_check_mark: Yes| 🔴 NEW : Perform RNA splicing analyses using SUPPA2|trimgalore, salmon and [SUPPA2](https://github.com/comprna/SUPPA/wiki/SUPPA2-tutorial) |[SUPPA2](https://github.com/comprna/SUPPA/wiki/SUPPA2-tutorial)|
-| [TCR-BCR-nf](https://github.com/IARCbioinfo/TCR-BCR-nf)   |v1.0 - 2024|:heavy_check_mark: Yes| Genotype Tcell and Bcell receptors from bulk or single-cell RNA-seq data using [TRUST4](https://github.com/liulab-dfci/TRUST4) | [TRUST4](https://github.com/liulab-dfci/TRUST4)
+| [RNAsplicing-nf](https://github.com/IARCbioinfo/RNAsplicing-nf)   |v1.0 - April 2025|:heavy_check_mark: Yes| 🔴 NEW : Perform RNA splicing analyses using SUPPA2|trimgalore, salmon and [SUPPA2](https://github.com/comprna/SUPPA/wiki/SUPPA2-tutorial) |(https://github.com/comprna/SUPPA/wiki/SUPPA2-tutorial)|
+| [TCR-BCR-nf](https://github.com/IARCbioinfo/TCR-BCR-nf)   |v1.0 - 2024|:heavy_check_mark: Yes| Genotype Tcell and Bcell receptors from bulk or single-cell RNA-seq data using [TRUST4](https://github.com/liulab-dfci/TRUST4) |[TRUST4](https://github.com/liulab-dfci/TRUST4)
 
 ![workflow](Pipelines-rnaseq.jpg)
 
