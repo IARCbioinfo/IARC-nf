@@ -206,9 +206,12 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [intro-cancer-genomics](https://github.com/IARCbioinfo/intro-cancer-genomics)   | Introduction to cancer genomics |
 | [mesomics_data_note](https://github.com/IARCbioinfo/mesomics_data_note)   | Repository with code and datasets used in the [mesomics data note manuscript: Di Genova et al.](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giac128/7007909?login=true) |
 | [MESOMICS_data](https://github.com/IARCbioinfo/MESOMICS_data)   | Repository with data and processing scripts associated with the MESOMICS project and [main analysis paper: Mangiante et al.](https://www.nature.com/articles/s41588-023-01321-1) |
-| [MS_lungNENomics](https://github.com/IARCbioinfo/MS_lungNENomics)   | Repository with scripts from the lungNENomics manuscript Sexton-Oates et al. 2025 |
-| [MS_SVA](https://github.com/IARCbioinfo/MS_SVA)   | with code used to produce the figures from [Morrison et al.](https://www.medrxiv.org/content/10.1101/2023.11.23.23298821v1) |
+| [MS_panNEN_organoids](https://github.com/IARCbioinfo/MS_panNEN_organoids)   | Repository with data and scripts used to produce the genomic Figures in the [panNEN organoids manuscript Dayton et al.](https://www.sciencedirect.com/science/article/pii/S1535610823003987) and associated data note: [Alcala et al.](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giae008/7623700?login=true) |
+| [ESMOOpen_LungNENomicsCohort](https://github.com/IARCbioinfo/ESMOOpen_LungNENomicsCohort)   | Repository presenting the analyses performed in the [manuscript from Mathian et al. regarding histopathological classification of LNEN tumors](https://pubmed.ncbi.nlm.nih.gov/38878324/)  |
 | [MS-EPIC-RareCancers](https://github.com/IARCbioinfo/MS-EPIC-RareCancers)   | Repository with scripts used in EPIC rare cancer project manuscript from [Fernandez-Cuesta, Voegele et al.](https://www.esmorarecancers.org/article/S3050-4619(25)00013-9/fulltext) |
+| [MS_SVA](https://github.com/IARCbioinfo/MS_SVA)   | with code used to produce the figures from [Morrison et al.](https://www.medrxiv.org/content/10.1101/2023.11.23.23298821v1) |
+| [MS_lungNENomics](https://github.com/IARCbioinfo/MS_lungNENomics)   | Repository with scripts from the lungNENomics manuscript Sexton-Oates et al. 2025 |
+
 
 ## <a name="head3">3.Tips & Tricks
 | Name      |Latest version|Maintained | Description     |	Tools used	|
