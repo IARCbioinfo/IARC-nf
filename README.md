@@ -83,6 +83,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 ### <a name="head1c">1c. Single-cell RNA seq
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
+| [singlecell_scripts](https://github.com/IARCbioinfo/singlecell_scripts)   |January 2025|:heavy_check_mark: Yes| 🔴 NEW : Python notebook for single-cell analyses following ['Single-cell best practices guide'](https://www.nature.com/articles/s41576-023-00586-w) | Python |
 | [SComatic-nf](https://github.com/IARCbioinfo/SComatic-nf)   |April 2024|:heavy_check_mark: Yes| Performs variant calling from single-cell RNAseq data | [SComatic](https://github.com/cortes-ciriano-lab/SComatic), [annovar](https://annovar.openbioinformatics.org/en/latest/) | 
 | [numbat-nf](https://github.com/IARCbioinfo/numbat-nf)   |April 2024|:heavy_check_mark: Yes| Performs variant calling from single-cell RNAseq data | [numbat](https://kharchenkolab.github.io/numbat/articles/numbat.html), [SigProfilerExtractor](https://github.com/AlexandrovLab/SigProfilerExtractor) |
 
@@ -196,16 +197,16 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [scanMyWorkDir](https://github.com/IARCbioinfo/scanMyWorkDir)   |May 2018|?| Non-destructive and informative scan of a nextflow work folder |NA|
 
 ## <a name="head2">2. Courses, data notes and manuscripts code/datasets
-| Name      | Description     |	Tools used	|
-|-----------|-----------------|-----------------|
-| [nextflow-course-2018](https://github.com/IARCbioinfo/nextflow-course-2018)   | Nextflow course |NA|
-| [SBG-CGC_course2018](https://github.com/IARCbioinfo/SBG-CGC_course2018)   | Analyzing TCGA data in SBG-CGC |NA|
-| [Medical Genomics Course](https://github.com/IARCbioinfo/medical_genomics_course)   | Medical Genomics course held at the INSA Lyon - updated Fall 2024|NA|
-| [intro-cancer-genomics](https://github.com/IARCbioinfo/intro-cancer-genomics)   | Introduction to cancer genomics |NA|
-| [mesomics_data_note](https://github.com/IARCbioinfo/mesomics_data_note)   | Repository with code and datasets used in the [mesomics data note manuscript: Di Genova et al.](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giac128/7007909?login=true) |NA|
-| [MESOMICS_data](https://github.com/IARCbioinfo/MESOMICS_data)   | Repository with data and processing scripts associated with the MESOMICS project and [main analysis paper: Mangiante et al.](https://www.nature.com/articles/s41588-023-01321-1)|NA|
-| [MS_lungNENomics](https://github.com/IARCbioinfo/MS_lungNENomics)   | Repository with scripts from the lungNENomics manuscript Sexton-Oates et al. 2025 |NA|
-| [MS_SVA](https://github.com/IARCbioinfo/MS_SVA)   | with code used to produce the figures from [Morrison et al.](https://www.medrxiv.org/content/10.1101/2023.11.23.23298821v1) |NA|
+| Name      | Description     |
+|-----------|-----------------|
+| [nextflow-course-2018](https://github.com/IARCbioinfo/nextflow-course-2018)   | Nextflow course |
+| [SBG-CGC_course2018](https://github.com/IARCbioinfo/SBG-CGC_course2018)   | Analyzing TCGA data in SBG-CGC |
+| [Medical Genomics Course](https://github.com/IARCbioinfo/medical_genomics_course)   | Medical Genomics course held at the INSA Lyon - updated Fall 2024 |
+| [intro-cancer-genomics](https://github.com/IARCbioinfo/intro-cancer-genomics)   | Introduction to cancer genomics |
+| [mesomics_data_note](https://github.com/IARCbioinfo/mesomics_data_note)   | Repository with code and datasets used in the [mesomics data note manuscript: Di Genova et al.](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giac128/7007909?login=true) |
+| [MESOMICS_data](https://github.com/IARCbioinfo/MESOMICS_data)   | Repository with data and processing scripts associated with the MESOMICS project and [main analysis paper: Mangiante et al.](https://www.nature.com/articles/s41588-023-01321-1) |
+| [MS_lungNENomics](https://github.com/IARCbioinfo/MS_lungNENomics)   | Repository with scripts from the lungNENomics manuscript Sexton-Oates et al. 2025 |
+| [MS_SVA](https://github.com/IARCbioinfo/MS_SVA)   | with code used to produce the figures from [Morrison et al.](https://www.medrxiv.org/content/10.1101/2023.11.23.23298821v1) |
 
 ## <a name="head3">3.Tips & Tricks
 | Name      |Latest version|Maintained | Description     |	Tools used	|
