@@ -50,11 +50,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [alignment-nf](https://github.com/IARCbioinfo/alignment-nf)    |v1.3 - March 2021|:heavy_check_mark: Yes| Performs BAM realignment or fastq alignment, with/without local indel realignment and base quality score recalibration |[bwa](https://github.com/lh3/bwa), [samblaster](https://github.com/GregoryFaust/samblaster), [sambamba](https://github.com/lomereiter/sambamba), [samtools](http://samtools.sourceforge.net/), [AdapterRemoval](https://github.com/MikkelSchubert/adapterremoval), [GATK](www.broadinstitute.org/gatk/download), [k8 javascript execution shell](https://sourceforge.net/projects/bio-bwa/files/bwakit/), [bwa-postalt.js](https://github.com/lh3/bwa/tree/master/bwakit) |
 | [BQSR-nf](https://github.com/IARCbioinfo/BQSR-nf)   |v1.1 - Apr 2020|:heavy_check_mark: Yes| Performs base quality score recalibration of bam files using GATK |[samtools](http://samtools.sourceforge.net/), [samblaster](https://github.com/GregoryFaust/samblaster), [sambamba](https://github.com/lomereiter/sambamba), [GATK](www.broadinstitute.org/gatk/download)|
 | [abra-nf](https://github.com/IARCbioinfo/abra-nf)   |v3.0 - Apr 2020|:heavy_check_mark: Yes| Runs ABRA (Assembly Based ReAligner) |[ABRA](https://github.com/mozack/abra), [bedtools](http://bedtools.readthedocs.io/en/latest/), [bwa](http://bio-bwa.sourceforge.net), [sambamba](http://lomereiter.github.io/sambamba/), [samtools](http://www.htslib.org/) |
-| [gatk4-DataPreProcessing-nf](https://github.com/IARCbioinfo/gatk4-DataPreProcessing-nf)   |Nov 2018|?| Performs bwa alignment and pre-processing (mark duplicates and recalibration) following GATK4 best practices - compatible with hg38 |[bwa](https://github.com/lh3/bwa), [picard](https://broadinstitute.github.io/picard/), [GATK4](https://software.broadinstitute.org/gatk/download/), [sambamba](https://github.com/lomereiter/sambamba), [qualimap](http://qualimap.bioinfo.cipf.es/)|
 | [PostAlignment-nf](https://github.com/IARCbioinfo/PostAlignment-nf)   |Aug 2018|?| Perform post alignment on bam files | [samtools](http://samtools.sourceforge.net/), [sambamba](https://github.com/lomereiter/sambamba), [bwa-postalt.js](https://github.com/lh3/bwa/tree/master/bwakit)|
-|****************** |*********** |*********** |************************* |************************ |
-| [marathon-wgs](https://github.com/IARCbioinfo/marathon-wgs)   |June 2018|?| Studies intratumor heterogeneity with Canopy|[bwa](https://github.com/lh3/bwa), [platypus](https://github.com/andyrimmer/Platypus), [strelka2](https://github.com/Illumina/strelka), [vt](https://github.com/atks/vt), [annovar](http://annovar.openbioinformatics.org/en/latest/), [R](https://www.r-project.org), [Falcon](https://cran.r-project.org/web/packages/falcon/index.html), [Canopy](https://github.com/yuchaojiang/Canopy)|
-| [ITH-nf](https://github.com/IARCbioinfo/ITH-nf)   |Sept 2018|?| Perform intra-tumoral heterogeneity (ITH) analysis |[Strelka2](https://github.com/Illumina/strelka) , [Platypus](https://www.well.ox.ac.uk/platypus), [Bcftools](https://samtools.github.io/bcftools/bcftools.html), [Tabix](http://www.htslib.org/doc/tabix.html), [Falcon](https://omictools.com/falcon-3-tool), [Canopy](https://github.com/yuchaojiang/Canopy)|
 
 ### <a name="head1b">1b. RNA Seq
 | Name      |Latest version|Maintained | Description     |	Tools used	|
@@ -76,30 +72,23 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [SComatic-nf](https://github.com/IARCbioinfo/SComatic-nf)   |April 2024|:heavy_check_mark: Yes| Performs variant calling from single-cell RNAseq data | [SComatic](https://github.com/cortes-ciriano-lab/SComatic), [annovar](https://annovar.openbioinformatics.org/en/latest/) | 
 | [numbat-nf](https://github.com/IARCbioinfo/numbat-nf)   |April 2024|:heavy_check_mark: Yes| Performs variant calling from single-cell RNAseq data | [numbat](https://kharchenkolab.github.io/numbat/articles/numbat.html), [SigProfilerExtractor](https://github.com/AlexandrovLab/SigProfilerExtractor) |
 
-
 ### <a name="head1d">1d. QC
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [NGSCheckMate](https://github.com/IARCbioinfo/NGSCheckMate)   |v1.1a - July 2021|:heavy_check_mark: Yes| Runs NGSCheckMate on BAM files to identify data files from a same indidual (i.e. check N/T pairs) |[NGSCheckMate](https://github.com/parklab/NGSCheckMate)|
-| [conpair-nf](https://github.com/IARCbioinfo/conpair-nf)   |June 2018|?| Runs conpair (concordance and contamination estimator) |[conpair](https://github.com/nygenome/Conpair), [Python 2.7](www.python.org), [numpy 1.7.0 or higher](www.numpy.org), [scipy 0.14.0 or higher](www.scipy.org), [GATK 2.3 or higher](www.broadinstitute.org/gatk/download)|
-| [damage-estimator-nf](https://github.com/IARCbioinfo/damage-estimator-nf)   |June 2017|?| Runs "Damage Estimator" |[Damage Estimator](https://github.com/Ettwiller/Damage-estimator), [samtools](http://samtools.sourceforge.net/), [R](https://www.r-project.org) with GGPLOT2 package|
+
 | [QC3](https://github.com/IARCbioinfo/QC3)   |May 2016|No| Runs QC on DNA seq data (raw data, aligned data and variant calls - forked from [slzhao](https://github.com/slzhao/QC3) |[samtools](http://samtools.sourceforge.net/)|
 | [fastqc-nf](https://github.com/IARCbioinfo/fastqc-nf)   |v1.1 - July 2020|:heavy_check_mark: Yes| Runs fastqc and multiqc on DNA seq data (fastq data) |[FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), [Multiqc](https://multiqc.info/)|
 | [qualimap-nf](https://github.com/IARCbioinfo/qualimap-nf)   |v1.1 - Nov 2019|:heavy_check_mark: Yes| Performs quality control on bam files (WES, WGS and target alignment data) |[samtools](http://samtools.sourceforge.net/), [Qualimap](http://qualimap.bioinfo.cipf.es/), [Multiqc](https://multiqc.info/)|
 | [mpileup-nf](https://github.com/IARCbioinfo/mpileup-nf)   |Jan 2018|?| Computes bam coverage with samtools mpileup (bed parallelization) |[samtools](http://samtools.sourceforge.net/),[annovar](http://annovar.openbioinformatics.org/en/latest/)|
-| [bamsurgeon-nf](https://github.com/IARCbioinfo/bamsurgeon-nf)   |Mar 2019|?| Runs bamsurgeon (tool to add mutations to bam files) with step of variant simulation |[Python 2.7](www.python.org), [bamsurgeon](http://github.com/adamewing/bamsurgeon/), [R software](https://www.r-project.org/) (tested with R version 3.2.3)|
 
 ### <a name="head1e">1e. Variant calling
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [needlestack](https://github.com/IARCbioinfo/needlestack)   |v1.1 - May 2019|:heavy_check_mark: Yes| Performs multi-sample somatic variant calling |[perl](https://www.perl.org),  [bedtools](http://bedtools.readthedocs.org/en/latest/), [samtools](http://samtools.sourceforge.net/) and [R software](https://www.r-project.org/) |
-| [target-seq](https://github.com/IARCbioinfo/target-seq)   |Aug 2019|?| Whole pipeline to perform multi-sample somatic variant calling using Needlestack on targeted sequencing data|[abra2](https://github.com/IARCbioinfo/abra-nf),[QC3](https://github.com/slzhao/QC3) ,[needlestack](https://github.com/IARCbioinfo/needlestack), [annovar](http://annovar.openbioinformatics.org/en/latest/) and [R software](https://www.r-project.org/) |
 | [strelka2-nf](https://github.com/IARCbioinfo/strelka2-nf)   |v1.2a - Dec 2020|:heavy_check_mark: Yes| Runs Strelka 2 (germline and somatic variant caller)|[Strelka2](https://github.com/Illumina/strelka)|
-| [strelka-nf](https://github.com/IARCbioinfo/strelka-nf)   |Jun 2017|No| Runs Strelka (germline and somatic variant caller)|[Strelka](https://sites.google.com/site/strelkasomaticvariantcaller/home/strelka-workflow-installation)|
 | [mutect-nf](https://github.com/IARCbioinfo/mutect-nf)   |v2.3 - July 2021|:heavy_check_mark: Yes| Runs Mutect on tumor-matched normal bam pairs |[Mutect](https://github.com/broadinstitute/mutect) and its dependencies (Java 1.7 and Maven 3.0+), [bedtools](http://bedtools.readthedocs.io/en/latest/content/installation.html)|
 | [dupcaller-nf](https://github.com/IARCbioinfo/dupcaller-nf)   |v1.0 - July 2025|:heavy_check_mark: Yes| 🔴 NEW : Dupcaller pipeline for somatic variant calling with Nextflow |[Mutect](https://github.com/broadinstitute/mutect) and its dependencies (Java 1.7 and Maven 3.0+)|
-| [gatk4-HaplotypeCaller-nf](https://github.com/IARCbioinfo/gatk4-HaplotypeCaller-nf)   |Dec 2019|?| Runs variant calling in GVCF mode on bam files following GATK best practices|[GATK](https://software.broadinstitute.org/gatk/download/)|
-| [gatk4-GenotypeGVCFs-nf](https://github.com/IARCbioinfo/gatk4-GenotypeGVCFs-nf)   |Apr 2019|?| Runs joint genotyping on gvcf files following GATK best practices|[GATK](https://software.broadinstitute.org/gatk/download/)|
 | [GVCF_pipeline-nf](https://github.com/IARCbioinfo/GVCF_pipeline-nf)   |Nov 2016|?| Performs bam realignment and recalibration + variant calling in GVCF mode following GATK best practices|[bwa](https://github.com/lh3/bwa), [samblaster](https://github.com/GregoryFaust/samblaster), [sambamba](https://github.com/lomereiter/sambamba), [GATK](https://software.broadinstitute.org/gatk/download/)|
 | [platypus-nf](https://github.com/IARCbioinfo/platypus-nf)   |v1.0 - Apr 2018|?| Runs Platypus (germline variant caller) |[Platypus](https://github.com/andyrimmer/Platypus)|
 | [TCGA_platypus-nf](https://github.com/IARCbioinfo/TCGA_platypus-nf)   |Aug 2018|?| Converts TCGA Platypus vcf in format for annotation with annovar |[vt](https://github.com/atks/vt),[VCFTools](https://github.com/vcftools/vcftools)|
@@ -114,34 +103,33 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 |****************** |*********** |*********** |************************* |************************ |
 | [purple-nf](https://github.com/IARCbioinfo/purple-nf)   |v1.1 - Nov 2021|:heavy_check_mark: Yes| Pipeline to perform copy number calling from tumor/normal or tumor-only sequencing data using PURPLE |[PURPLE](https://github.com/hartwigmedical/hmftools/tree/master/purple)|
 | [facets-nf](https://github.com/IARCbioinfo/facets-nf)   |v2.0 - Oct 2020|:heavy_check_mark: Yes| Performs fraction and copy number estimate from tumor/normal sequencing data using facets |[facets](https://github.com/mskcc/facets) , [R](https://www.r-project.org) |
-| [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)   |Mar 2017|?| Performs copy number variant calling from whole exome sequencing data using CODEX |[R](https://www.r-project.org) with package Codex, Rscript |
 | [svaba-nf](https://github.com/IARCbioinfo/svaba-nf)   |v1.0 - August 2020|:heavy_check_mark: Yes| Performs structural variant calling using SvABA |[SvABA](https://github.com/walaj/svaba) , [R](https://www.r-project.org) |
 | [sv_somatic_cns-nf](https://github.com/IARCbioinfo/sv_somatic_cns-nf)   |v1.0 - Nov 2021|:heavy_check_mark: Yes| Pipeline using multiple SV callers for consensus structural variant calling from tumor/normal sequencing data |[Delly](https://github.com/dellytools/delly), [SvABA](https://github.com/walaj/svaba), [Manta](https://github.com/Illumina/manta), [SURVIVOR](https://github.com/fritzsedlazeck/SURVIVOR), [bcftools](https://github.com/samtools/bcftools), [Samtools](https://github.com/samtools/samtools) |
 | [ssvht](https://github.com/IARCbioinfo/ssvht)   |v1 - Oct 2022|:heavy_check_mark: Yes| 🔴 NEW set of scripts to assist the calling of somatic structural variants from short reads using a random forest classifier ||
 
 ### <a name="head1f">1f. Deep learning pipelines and tools for digital pathology
 
-* Whole slide images (WSI) pre-processing
+Whole slide images (WSI) pre-processing
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [WSIPreprocessing](https://github.com/IARCbioinfo/WSIPreprocessing)   |December 2023|:heavy_check_mark: Yes| Preprocessing pipeline for WSIs (Tiling, color normalization) | Python, openslide |
 
-* Tumor segmentation with CFlow AD
+Tumor segmentation with CFlow AD
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [TumorSegmentationCFlowAD](https://github.com/IARCbioinfo/TumorSegmentationCFlowAD)   |December 2023|:heavy_check_mark: Yes| Tumour segmentation with an anomaly detection model | Python, PyTorch |
 
-* Supervised learning on immunohistochemistry slides
+Supervised learning on immunohistochemistry slides
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [PathonetLNEN](https://github.com/IARCbioinfo/PathonetLNEN)   |December 2023|:heavy_check_mark: Yes| Detection and classification of cells as positive or negative for an immunomarker developed for PHH3 and Ki-67 in lung carcinoma. | Python, TensorFlow |
 
-* Self-suprevised feature extractor for WSIs
+Self-suprevised feature extractor for WSIs
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [LNENBarlowTwins](https://github.com/IARCbioinfo/LNENBarlowTwins)   |December 2023|:heavy_check_mark: Yes| Extractions of HE tiles features with Barlow Twins a self-supervised deep learning model. | Python, Pytorch |
 
-* Additional tools
+Additional tools
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [SpatialPCAForWSIs](https://github.com/IARCbioinfo/SpatialPCAForWSIs)   |December 2023|:heavy_check_mark: Yes| Spatially aware principal component analysis to obtain a low-dimensional representation of the tiles encoding vectors. | R |
@@ -280,8 +268,19 @@ You can also automatically update the pipeline when you run it by adding the opt
 nextflow run iarcbioinfo/pipeline_name --help
 ```
 
-## <a name="head6">5. Outdated and unmaintained pipelines and tools
+## <a name="head6">5. Past work (Deprecated and unmaintained pipelines and tools)
 
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [GATK-Alignment-nf](https://github.com/IARCbioinfo/GATK-Alignment-nf)   |June 2017|No| Performs bwa alignment and pre-processing (realignment and recalibration) following first version of GATK best practices (less performant than [alignment-nf](https://github.com/IARCbioinfo/alignment-nf) ) |[bwa](https://github.com/lh3/bwa), [picard](https://broadinstitute.github.io/picard/), [GATK](www.broadinstitute.org/gatk/download)|
+| [gatk4-DataPreProcessing-nf](https://github.com/IARCbioinfo/gatk4-DataPreProcessing-nf)   |Nov 2018|?| Performs bwa alignment and pre-processing (mark duplicates and recalibration) following GATK4 best practices - compatible with hg38 |[bwa](https://github.com/lh3/bwa), [picard](https://broadinstitute.github.io/picard/), [GATK4](https://software.broadinstitute.org/gatk/download/), [sambamba](https://github.com/lomereiter/sambamba), [qualimap](http://qualimap.bioinfo.cipf.es/)|
+| [marathon-wgs](https://github.com/IARCbioinfo/marathon-wgs)   |June 2018|?| Studies intratumor heterogeneity with Canopy|[bwa](https://github.com/lh3/bwa), [platypus](https://github.com/andyrimmer/Platypus), [strelka2](https://github.com/Illumina/strelka), [vt](https://github.com/atks/vt), [annovar](http://annovar.openbioinformatics.org/en/latest/), [R](https://www.r-project.org), [Falcon](https://cran.r-project.org/web/packages/falcon/index.html), [Canopy](https://github.com/yuchaojiang/Canopy)|
+| [ITH-nf](https://github.com/IARCbioinfo/ITH-nf)   |Sept 2018|?| Perform intra-tumoral heterogeneity (ITH) analysis |[Strelka2](https://github.com/Illumina/strelka) , [Platypus](https://www.well.ox.ac.uk/platypus), [Bcftools](https://samtools.github.io/bcftools/bcftools.html), [Tabix](http://www.htslib.org/doc/tabix.html), [Falcon](https://omictools.com/falcon-3-tool), [Canopy](https://github.com/yuchaojiang/Canopy)|
+| [conpair-nf](https://github.com/IARCbioinfo/conpair-nf)   |June 2018|?| Runs conpair (concordance and contamination estimator) |[conpair](https://github.com/nygenome/Conpair), [Python 2.7](www.python.org), [numpy 1.7.0 or higher](www.numpy.org), [scipy 0.14.0 or higher](www.scipy.org), [GATK 2.3 or higher](www.broadinstitute.org/gatk/download)|
+| [damage-estimator-nf](https://github.com/IARCbioinfo/damage-estimator-nf)   |June 2017|?| Runs "Damage Estimator" |[Damage Estimator](https://github.com/Ettwiller/Damage-estimator), [samtools](http://samtools.sourceforge.net/), [R](https://www.r-project.org) with GGPLOT2 package|
+| [bamsurgeon-nf](https://github.com/IARCbioinfo/bamsurgeon-nf)   |Mar 2019|?| Runs bamsurgeon (tool to add mutations to bam files) with step of variant simulation |[Python 2.7](www.python.org), [bamsurgeon](http://github.com/adamewing/bamsurgeon/), [R software](https://www.r-project.org/) (tested with R version 3.2.3)|
+| [target-seq](https://github.com/IARCbioinfo/target-seq)   |Aug 2019|?| Whole pipeline to perform multi-sample somatic variant calling using Needlestack on targeted sequencing data|[abra2](https://github.com/IARCbioinfo/abra-nf),[QC3](https://github.com/slzhao/QC3) ,[needlestack](https://github.com/IARCbioinfo/needlestack), [annovar](http://annovar.openbioinformatics.org/en/latest/) and [R software](https://www.r-project.org/) |
+| [strelka-nf](https://github.com/IARCbioinfo/strelka-nf)   |Jun 2017|No| Runs Strelka (germline and somatic variant caller)|[Strelka](https://sites.google.com/site/strelkasomaticvariantcaller/home/strelka-workflow-installation)|
+| [gatk4-HaplotypeCaller-nf](https://github.com/IARCbioinfo/gatk4-HaplotypeCaller-nf)   |Dec 2019|?| Runs variant calling in GVCF mode on bam files following GATK best practices|[GATK](https://software.broadinstitute.org/gatk/download/)|
+| [gatk4-GenotypeGVCFs-nf](https://github.com/IARCbioinfo/gatk4-GenotypeGVCFs-nf)   |Apr 2019|?| Runs joint genotyping on gvcf files following GATK best practices|[GATK](https://software.broadinstitute.org/gatk/download/)|
+| [CODEX-nf](https://github.com/IARCbioinfo/CODEX-nf)   |Mar 2017|?| Performs copy number variant calling from whole exome sequencing data using CODEX |[R](https://www.r-project.org) with package Codex, Rscript |
