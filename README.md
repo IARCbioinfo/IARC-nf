@@ -111,9 +111,9 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
-|Whole slide images (WSI) pre-processing|||||
+|Whole slide images (WSI) pre-processing|
 | [WSIPreprocessing](https://github.com/IARCbioinfo/WSIPreprocessing)   |December 2023|:heavy_check_mark: Yes| Preprocessing pipeline for WSIs (Tiling, color normalization) | Python, openslide |
-|Tumor segmentation with CFlow AD|||||
+|Tumor segmentation with CFlow AD|
 | [TumorSegmentationCFlowAD](https://github.com/IARCbioinfo/TumorSegmentationCFlowAD)   |December 2023|:heavy_check_mark: Yes| Tumour segmentation with an anomaly detection model | Python, PyTorch |
 |Supervised learning on immunohistochemistry slides|||||
 | [PathonetLNEN](https://github.com/IARCbioinfo/PathonetLNEN)   |December 2023|:heavy_check_mark: Yes| Detection and classification of cells as positive or negative for an immunomarker developed for PHH3 and Ki-67 in lung carcinoma. | Python, TensorFlow |
