@@ -1,4 +1,4 @@
-# IARC bioinformatics pipelines, tools and other resources (updated on 17/07/2025)
+# IARC bioinformatics pipelines, tools and other resources (updated on 27/10/2025)
 
 This page lists all the pipelines and tools developed at IARC (mostly nextflow pipelines which are suffixed with -nf). It includes also some useful ressources like courses, data notes, manuscripts code/datasets and tips/tricks. Finally at the bottom of the page you will also find explanations on how to use nextflow pipelines.
 
@@ -18,20 +18,8 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
  
  * [1f. Deep learning pipelines and tools for digital pathology](#head1f)
 
-	 * [1f1. Whole slide images (WSI) pre-processing](#head1f1)
-	
-	 * [1f2. Tumor segmentation](#head1f2)
-	   
-	 * [1f3. Supervised learning on immunohistochemistry slides](#head1f3)
-	
-	 * [1f4. Self-suprevised feature extractor for WSIs](#head1f4)
-	   
-	 * [1f5. Additional tools](#head1f5)
-
  * [1g. Other tools/pipelines](#head1g)
    
-
-
 [2. Courses, data notes and manuscripts code/datasets](#head2)
 
 [3. Tips & Tricks](#head3)
@@ -133,38 +121,31 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 
 ### <a name="head1f">1f. Deep learning pipelines and tools for digital pathology
 
-#### <a name="head1f1">1f1.  Whole slide images (WSI) pre-processing
-
+* Whole slide images (WSI) pre-processing
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [WSIPreprocessing](https://github.com/IARCbioinfo/WSIPreprocessing)   |December 2023|:heavy_check_mark: Yes| Preprocessing pipeline for WSIs (Tiling, color normalization) | Python, openslide |
 
-#### <a name="head1f2">1f2. Tumor segmentation with CFlow AD
-
+* Tumor segmentation with CFlow AD
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [TumorSegmentationCFlowAD](https://github.com/IARCbioinfo/TumorSegmentationCFlowAD)   |December 2023|:heavy_check_mark: Yes| Tumour segmentation with an anomaly detection model | Python, PyTorch |
 
-#### <a name="head1f3">1f3. Supervised learning on immunohistochemistry slides
-
+* Supervised learning on immunohistochemistry slides
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [PathonetLNEN](https://github.com/IARCbioinfo/PathonetLNEN)   |December 2023|:heavy_check_mark: Yes| Detection and classification of cells as positive or negative for an immunomarker developed for PHH3 and Ki-67 in lung carcinoma. | Python, TensorFlow |
 
-#### <a name="head1f4">1f4. Self-suprevised feature extractor for WSIs
-
+* Self-suprevised feature extractor for WSIs
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [LNENBarlowTwins](https://github.com/IARCbioinfo/LNENBarlowTwins)   |December 2023|:heavy_check_mark: Yes| Extractions of HE tiles features with Barlow Twins a self-supervised deep learning model. | Python, Pytorch |
 
-#### <a name="head1f5">1f5. Additional tools
-
+* Additional tools
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
 | [SpatialPCAForWSIs](https://github.com/IARCbioinfo/SpatialPCAForWSIs)   |December 2023|:heavy_check_mark: Yes| Spatially aware principal component analysis to obtain a low-dimensional representation of the tiles encoding vectors. | R |
 | [LeidenForTilesCommunity_accGPU](https://github.com/IARCbioinfo/LeidenForTilesCommunity_accGPU)   |December 2024|:heavy_check_mark: Yes| tools for GPU-accelerated Leiden community detection using the RAPIDS package (focus on clustering encoded vectors from high-dimensional data) | |
-
-
 
 ### <a name="head1g">1g. Other tools/pipelines
 | Name      |Latest version|Maintained | Description     |	Tools used	|
