@@ -110,15 +110,15 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
-|Whole slide images (WSI) pre-processing|||||
+|1fa. Whole slide images (WSI) pre-processing|||||
 | [WSIPreprocessing](https://github.com/IARCbioinfo/WSIPreprocessing)   |December 2023|:heavy_check_mark: Yes| Preprocessing pipeline for WSIs (Tiling, color normalization) | Python, openslide |
-|Tumor segmentation with CFlow AD|||||
+|1fb. Tumor segmentation with CFlow AD|||||
 | [TumorSegmentationCFlowAD](https://github.com/IARCbioinfo/TumorSegmentationCFlowAD)   |December 2023|:heavy_check_mark: Yes| Tumour segmentation with an anomaly detection model | Python, PyTorch |
-|Supervised learning on immunohistochemistry slides|||||
+|1fc. Supervised learning on immunohistochemistry slides|||||
 | [PathonetLNEN](https://github.com/IARCbioinfo/PathonetLNEN)   |December 2023|:heavy_check_mark: Yes| Detection and classification of cells as positive or negative for an immunomarker developed for PHH3 and Ki-67 in lung carcinoma. | Python, TensorFlow |
-|Self-suprevised feature extractor for WSIs|||||
+|1fd. Self-suprevised feature extractor for WSIs|||||
 | [LNENBarlowTwins](https://github.com/IARCbioinfo/LNENBarlowTwins)   |December 2023|:heavy_check_mark: Yes| Extractions of HE tiles features with Barlow Twins a self-supervised deep learning model. | Python, Pytorch |
-|Additional tools|||||
+|1fe. Additional tools|||||
 | [SpatialPCAForWSIs](https://github.com/IARCbioinfo/SpatialPCAForWSIs)   |December 2023|:heavy_check_mark: Yes| Spatially aware principal component analysis to obtain a low-dimensional representation of the tiles encoding vectors. | R |
 | [LeidenForTilesCommunity_accGPU](https://github.com/IARCbioinfo/LeidenForTilesCommunity_accGPU)   |December 2024|:heavy_check_mark: Yes| tools for GPU-accelerated Leiden community detection using the RAPIDS package (focus on clustering encoded vectors from high-dimensional data) | |
 
