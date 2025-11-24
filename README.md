@@ -129,7 +129,7 @@ This page lists all the pipelines and tools developed or used at IARC (mostly ne
 | [template-nf](https://github.com/IARCbioinfo/template-nf)   |May 2020|:heavy_check_mark: Yes | Empty template for nextflow pipelines |NA|
 | [data_test](https://github.com/IARCbioinfo/data_test)   |Aug 2020|:heavy_check_mark: Yes| Small data files to test IARC nextflow pipelines |NA|
 ||||
-| [bam/cram2fastq-nf](https://github.com/nf-core/bamtofastq))   |🍏 nf-core pipeline|not developed by IARC|🔴 NEW : Pipeline to convert bam files or cram files to fastq files|[samtools](http://samtools.sourceforge.net/)|
+| [bam/cram2fastq-nf](https://github.com/nf-core/bamtofastq)   |🍏 nf-core pipeline|not developed by IARC|🔴 NEW : Pipeline to convert bam files or cram files to fastq files|[samtools](http://samtools.sourceforge.net/)|
 | [bam2cram-nf](https://github.com/IARCbioinfo/bam2cram-nf)   |v1.0 - Nov 2020|:heavy_check_mark: Yes|Pipeline to convert bam files to cram files|[samtools](http://samtools.sourceforge.net/)|
 | [DPclust-nf](https://github.com/IARCbioinfo/DPclust-nf)   | |:heavy_check_mark: Yes|Method for subclonal reconstruction using SNVs and/or CNAs from whole genome or whole exome sequencing data|[dpclust](https://github.com/Wedge-lab/dpclust) , [R](https://www.r-project.org) |
 | [ITH_pipeline](https://github.com/IARCbioinfo/ITH_pipeline)   | |:heavy_check_mark: Yes|Study intra-tumoral heterogeneity (ITH) through subclonality reconstruction |[HATCHet](https://github.com/raphael-group/hatchet) , [DeCiFer](https://github.com/raphael-group/decifer), [ClonEvol](https://github.com/hdng/clonevol)|
