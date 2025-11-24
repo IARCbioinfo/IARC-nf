@@ -1,6 +1,6 @@
 # IARC bioinformatics pipelines, tools and other resources (updated on 27/10/2025)
 
-This page lists all the pipelines and tools developed at IARC (mostly nextflow pipelines which are suffixed with -nf). It includes also some useful ressources like courses, data notes, manuscripts code/datasets and tips/tricks. Finally at the bottom of the page you will also find explanations on how to use nextflow pipelines.
+This page lists all the pipelines and tools developed or used at IARC (mostly nextflow pipelines which are suffixed with -nf). It includes also some useful ressources like courses, data notes, manuscripts code/datasets and tips/tricks. Finally at the bottom of the page you will also find explanations on how to use nextflow pipelines.
 
 <ins>Table of Content:</ins>
 
@@ -68,6 +68,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 ### <a name="head1c">1c. Single-cell RNA seq
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
+[singlecell_preprocessing](https://github.com/nf-core/scrnaseq) |nf-core pipeline|not developed by IARC| 🔴 NEW : best-practice analysis pipeline for processing 10x Genomics single-cell RNA-seq data | Salmon-Alevin, Kallisto, STARsolo, [Cellranger](https://www.10xgenomics.com/support/software/cell-ranger/latest), [CellBender](https://github.com/broadinstitute/CellBender), MultiQC |
 | [singlecell_scripts](https://github.com/IARCbioinfo/singlecell_scripts)   |January 2025|:heavy_check_mark: Yes| 🔴 NEW : Python notebook for single-cell analyses following ['Single-cell best practices guide'](https://www.nature.com/articles/s41576-023-00586-w) | Python |
 | [SComatic-nf](https://github.com/IARCbioinfo/SComatic-nf)   |April 2024|:heavy_check_mark: Yes| Performs variant calling from single-cell RNAseq data | [SComatic](https://github.com/cortes-ciriano-lab/SComatic), [annovar](https://annovar.openbioinformatics.org/en/latest/) | 
 | [numbat-nf](https://github.com/IARCbioinfo/numbat-nf)   |April 2024|:heavy_check_mark: Yes| Performs variant calling from single-cell RNAseq data | [numbat](https://kharchenkolab.github.io/numbat/articles/numbat.html), [SigProfilerExtractor](https://github.com/AlexandrovLab/SigProfilerExtractor) |
@@ -104,7 +105,7 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [facets-nf](https://github.com/IARCbioinfo/facets-nf)   |v2.0 - Oct 2020|:heavy_check_mark: Yes| Performs fraction and copy number estimate from tumor/normal sequencing data using facets |[facets](https://github.com/mskcc/facets) , [R](https://www.r-project.org) |
 | [svaba-nf](https://github.com/IARCbioinfo/svaba-nf)   |v1.0 - August 2020|:heavy_check_mark: Yes| Performs structural variant calling using SvABA |[SvABA](https://github.com/walaj/svaba) , [R](https://www.r-project.org) |
 | [sv_somatic_cns-nf](https://github.com/IARCbioinfo/sv_somatic_cns-nf)   |v1.0 - Nov 2021|:heavy_check_mark: Yes| Pipeline using multiple SV callers for consensus structural variant calling from tumor/normal sequencing data |[Delly](https://github.com/dellytools/delly), [SvABA](https://github.com/walaj/svaba), [Manta](https://github.com/Illumina/manta), [SURVIVOR](https://github.com/fritzsedlazeck/SURVIVOR), [bcftools](https://github.com/samtools/bcftools), [Samtools](https://github.com/samtools/samtools) |
-| [ssvht](https://github.com/IARCbioinfo/ssvht)   |v1 - Oct 2022|:heavy_check_mark: Yes| 🔴 NEW set of scripts to assist the calling of somatic structural variants from short reads using a random forest classifier ||
+| [ssvht](https://github.com/IARCbioinfo/ssvht)   |v1 - Oct 2022|:heavy_check_mark: Yes| 🔴 NEW : set of scripts to assist the calling of somatic structural variants from short reads using a random forest classifier ||
 
 ### <a name="head1f">1f. Deep learning pipelines and tools for digital pathology
 
@@ -128,13 +129,14 @@ This page lists all the pipelines and tools developed at IARC (mostly nextflow p
 | [template-nf](https://github.com/IARCbioinfo/template-nf)   |May 2020|:heavy_check_mark: Yes | Empty template for nextflow pipelines |NA|
 | [data_test](https://github.com/IARCbioinfo/data_test)   |Aug 2020|:heavy_check_mark: Yes| Small data files to test IARC nextflow pipelines |NA|
 ||||
+| [bam/cram2fastq-nf](https://github.com/nf-core/bamtofastq))   |nf-core pipeline|not developed by IARC|🔴 NEW : Pipeline to convert bam files or cram files to fastq files|[samtools](http://samtools.sourceforge.net/)|
 | [bam2cram-nf](https://github.com/IARCbioinfo/bam2cram-nf)   |v1.0 - Nov 2020|:heavy_check_mark: Yes|Pipeline to convert bam files to cram files|[samtools](http://samtools.sourceforge.net/)|
 | [DPclust-nf](https://github.com/IARCbioinfo/DPclust-nf)   | |:heavy_check_mark: Yes|Method for subclonal reconstruction using SNVs and/or CNAs from whole genome or whole exome sequencing data|[dpclust](https://github.com/Wedge-lab/dpclust) , [R](https://www.r-project.org) |
 | [ITH_pipeline](https://github.com/IARCbioinfo/ITH_pipeline)   | |:heavy_check_mark: Yes|Study intra-tumoral heterogeneity (ITH) through subclonality reconstruction |[HATCHet](https://github.com/raphael-group/hatchet) , [DeCiFer](https://github.com/raphael-group/decifer), [ClonEvol](https://github.com/hdng/clonevol)|
 | [hla-neo-nf](https://github.com/IARCbioinfo/hla-neo-nf)   |v1.1 - June 2021|:heavy_check_mark: Yes|Pipeline to predict neoantigens from WGS of T/N pairs |[xHLA](https://github.com/humanlongevity/HLA), [VEP](https://github.com/Ensembl/ensembl-vep), [pVACtools](https://github.com/griffithlab/pVACtools)|
 | [PRSice](https://github.com/IARCbioinfo/PRSice-nf)   |Nov 2020|| Pipeline to compute polygenic risk scores|[PRSice-2](https://www.prsice.info/)|
 | [methylkey](https://github.com/IARCbioinfo/methylkey)   | Nov 2024 |:heavy_check_mark: Yes|Pipeline for 450k and 850k array analysis (bisulfite data analysis using Minfi, Methylumi, Comet, Bumphunter and DMRcate packages)|[R software](https://www.r-project.org/)|
-| [bam2peaks](https://github.com/IARCbioinfo/bam2peaks-nf)   | Oct 2024 |:heavy_check_mark: Yes|🔴 NEW Pipeline designed for peak calling using MACS and IDR, coupled with QC generation using deeptools|[MACS](https://github.com/macs3-project/MACS), [IDR](https://github.com/nboley/idr),[Deeptools](https://github.com/deeptools/deepTools)|
+| [bam2peaks](https://github.com/IARCbioinfo/bam2peaks-nf)   | Oct 2024 |:heavy_check_mark: Yes|🔴 NEW : Pipeline designed for peak calling using MACS and IDR, coupled with QC generation using deeptools|[MACS](https://github.com/macs3-project/MACS), [IDR](https://github.com/nboley/idr),[Deeptools](https://github.com/deeptools/deepTools)|
 | [wsearch-nf](https://github.com/IARCbioinfo/wsearch-nf)   | July 2022 |:heavy_check_mark: Yes|Microbiome analysis with usearch, vsearch and phyloseq||
 | [AmpliconArchitect-nf](https://github.com/IARCbioinfo/ampliconarchitect-nf)   |v1.0 - Oct 2021 |:heavy_check_mark: Yes| Discovers ecDNA in cancer genomes using AmpliconArchitect |[AmpliconArchitect](https://github.com/virajbdeshpande/AmpliconArchitect)|
 | [addreplacerg-nf](https://github.com/IARCbioinfo/addreplacerg-nf)   |Jan 2017|?| Adds and replaces read group tags in BAM files |[samtools](http://samtools.sourceforge.net/)|
