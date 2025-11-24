@@ -1,4 +1,4 @@
-# IARC bioinformatics pipelines, tools and other resources (updated on 27/10/2025)
+# IARC bioinformatics pipelines, tools and other resources (updated on 24/11/2025)
 
 This page lists all the pipelines and tools developed or used at IARC (mostly nextflow pipelines which are suffixed with -nf). It includes also some useful ressources like courses, data notes, manuscripts code/datasets and tips/tricks. Finally at the bottom of the page you will also find explanations on how to use nextflow pipelines.
 
@@ -68,7 +68,7 @@ This page lists all the pipelines and tools developed or used at IARC (mostly ne
 ### <a name="head1c">1c. Single-cell RNA seq
 | Name      |Latest version|Maintained | Description     |	Tools used	|
 |-----------|--------------|-----------|-----------------|----------------------|
-[singlecell_preprocessing](https://github.com/nf-core/scrnaseq) |nf-core pipeline|not developed by IARC| 🔴 NEW : best-practice analysis pipeline for processing 10x Genomics single-cell RNA-seq data | [Salmon-Alevin](https://salmon.readthedocs.io/en/latest/index.html), [Kallisto](https://github.com/pachterlab/kallisto), STARsolo, [Cellranger](https://www.10xgenomics.com/support/software/cell-ranger/latest), [CellBender](https://github.com/broadinstitute/CellBender), [MultiQC](https://docs.seqera.io/multiqc/) |
+[singlecell_preprocessing](https://github.com/nf-core/scrnaseq) |🍏 nf-core pipeline|not developed by IARC| 🔴 NEW : best-practice analysis pipeline for processing 10x Genomics single-cell RNA-seq data | [Salmon-Alevin](https://salmon.readthedocs.io/en/latest/index.html), [Kallisto](https://github.com/pachterlab/kallisto), STARsolo, [Cellranger](https://www.10xgenomics.com/support/software/cell-ranger/latest), [CellBender](https://github.com/broadinstitute/CellBender), [MultiQC](https://docs.seqera.io/multiqc/) |
 | [singlecell_scripts](https://github.com/IARCbioinfo/singlecell_scripts)   |January 2025|:heavy_check_mark: Yes| 🔴 NEW : Python notebook for single-cell analyses following ['Single-cell best practices guide'](https://www.nature.com/articles/s41576-023-00586-w) | Python |
 | [SComatic-nf](https://github.com/IARCbioinfo/SComatic-nf)   |April 2024|:heavy_check_mark: Yes| Performs variant calling from single-cell RNAseq data | [SComatic](https://github.com/cortes-ciriano-lab/SComatic), [annovar](https://annovar.openbioinformatics.org/en/latest/) | 
 | [numbat-nf](https://github.com/IARCbioinfo/numbat-nf)   |April 2024|:heavy_check_mark: Yes| Performs variant calling from single-cell RNAseq data | [numbat](https://kharchenkolab.github.io/numbat/articles/numbat.html), [SigProfilerExtractor](https://github.com/AlexandrovLab/SigProfilerExtractor) |
@@ -129,7 +129,7 @@ This page lists all the pipelines and tools developed or used at IARC (mostly ne
 | [template-nf](https://github.com/IARCbioinfo/template-nf)   |May 2020|:heavy_check_mark: Yes | Empty template for nextflow pipelines |NA|
 | [data_test](https://github.com/IARCbioinfo/data_test)   |Aug 2020|:heavy_check_mark: Yes| Small data files to test IARC nextflow pipelines |NA|
 ||||
-| [bam/cram2fastq-nf](https://github.com/nf-core/bamtofastq))   |nf-core pipeline|not developed by IARC|🔴 NEW : Pipeline to convert bam files or cram files to fastq files|[samtools](http://samtools.sourceforge.net/)|
+| [bam/cram2fastq-nf](https://github.com/nf-core/bamtofastq))   |🍏 nf-core pipeline|not developed by IARC|🔴 NEW : Pipeline to convert bam files or cram files to fastq files|[samtools](http://samtools.sourceforge.net/)|
 | [bam2cram-nf](https://github.com/IARCbioinfo/bam2cram-nf)   |v1.0 - Nov 2020|:heavy_check_mark: Yes|Pipeline to convert bam files to cram files|[samtools](http://samtools.sourceforge.net/)|
 | [DPclust-nf](https://github.com/IARCbioinfo/DPclust-nf)   | |:heavy_check_mark: Yes|Method for subclonal reconstruction using SNVs and/or CNAs from whole genome or whole exome sequencing data|[dpclust](https://github.com/Wedge-lab/dpclust) , [R](https://www.r-project.org) |
 | [ITH_pipeline](https://github.com/IARCbioinfo/ITH_pipeline)   | |:heavy_check_mark: Yes|Study intra-tumoral heterogeneity (ITH) through subclonality reconstruction |[HATCHet](https://github.com/raphael-group/hatchet) , [DeCiFer](https://github.com/raphael-group/decifer), [ClonEvol](https://github.com/hdng/clonevol)|
